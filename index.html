@@ -94,8 +94,8 @@
         <li role="none"><a href="#amenities" role="menuitem">Amenities</a></li>
         <li role="none"><a href="gallery.html" role="menuitem">Gallery</a></li>
         <li role="none"><a href="#rooms" role="menuitem">Rooms</a></li>
-        <li role="none"><a href="local-guide.html" role="menuitem">Local Guide</a></li>
-        <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
+        <li role="none"><a href="local-guide.html" role="menuitem">Area Guide</a></li>
+        <li role="none"><a href="blog/index.html" role="menuitem">WNC Insider</a></li>
         <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
       </ul>
       <a href="#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
@@ -111,8 +111,8 @@
       <li><a href="#amenities">Amenities</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="#rooms">Rooms</a></li>
-      <li><a href="local-guide.html">Local Guide</a></li>
-      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="local-guide.html">Area Guide</a></li>
+      <li><a href="blog/index.html">WNC Insider</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <a href="#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
@@ -120,12 +120,58 @@
 
   <!-- ==================== HERO ==================== -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <picture>
-        <source srcset="Images/Optimized/listing/1-web-or-mls-29-timothy-lane-waynesville-01 (1) - Copy.webp" type="image/webp">
-        <img src="Images/Optimized/listing/1-web-or-mls-29-timothy-lane-waynesville-01 (1) - Copy.jpg" alt="Mojo Manor — luxury mountain retreat exterior at dusk" class="hero-img" loading="eager" fetchpriority="high">
-      </picture>
-      <div class="hero-overlay"></div>
+    <!-- Hero Carousel -->
+    <div class="hero-carousel" id="heroCarousel" aria-hidden="true">
+      <div class="hero-slide active">
+        <picture>
+          <source srcset="Images/Optimized/furnished/Hot Tub - Night best.webp" type="image/webp">
+          <img src="Images/Optimized/furnished/Hot Tub - Night best.jpg" alt="Mojo Manor hot tub at night with string lights" class="hero-img" loading="eager" fetchpriority="high">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source srcset="Images/Optimized/furnished/Living Room - Best.webp" type="image/webp">
+          <img src="Images/Optimized/furnished/Living Room - Best.jpg" alt="Mojo Manor modern living room with 85-inch TV" class="hero-img" loading="lazy">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source srcset="Images/Optimized/furnished/Backyard1.webp" type="image/webp">
+          <img src="Images/Optimized/furnished/Backyard1.jpg" alt="Mojo Manor backyard with bocce court and fire pit" class="hero-img" loading="lazy">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source srcset="Images/Optimized/furnished/Bedroom - King - Master (best).webp" type="image/webp">
+          <img src="Images/Optimized/furnished/Bedroom - King - Master (best).jpg" alt="Mojo Manor master king bedroom suite" class="hero-img" loading="lazy">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-slide">
+        <picture>
+          <source srcset="Images/Optimized/furnished/Game Room.webp" type="image/webp">
+          <img src="Images/Optimized/furnished/Game Room.jpg" alt="Mojo Manor game room with pool table and arcade games" class="hero-img" loading="lazy">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="hero-carousel-prev" id="heroPrev" aria-label="Previous image">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="hero-carousel-next" id="heroNext" aria-label="Next image">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+    <!-- Carousel Dots -->
+    <div class="hero-carousel-dots" id="heroDots" aria-hidden="true">
+      <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+      <button class="hero-dot" data-slide="4" aria-label="Slide 5"></button>
     </div>
     <div class="hero-content">
       <p class="hero-tag animate-fade-up">Waynesville, North Carolina</p>
@@ -442,7 +488,7 @@
             </div>
           </div>
         </div>
-        <div class="location-map">
+        <div class="location-map" style="position:relative;">
           <iframe
             title="Mojo Manor location map — Waynesville, North Carolina"
             src="https://maps.google.com/maps?q=29+Timothy+Ln,+Waynesville,+NC+28786&t=&z=16&ie=UTF8&iwloc=&output=embed"
@@ -453,6 +499,10 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
+          <!-- House icon overlay centered on property pin -->
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-72%);pointer-events:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.5));">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" fill="#01916e"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </div>
         </div>
       </div>
     </div>
@@ -635,6 +685,8 @@
           </div>
         </div>
         <div class="booking-form-wrap">
+          <p style="font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-bronze);margin-bottom:0.5rem;">Check Availability</p>
+          <h3 style="font-size:1.35rem;color:var(--color-navy);margin-bottom:1.25rem;font-weight:600;">Find Your Dates</h3>
           <!-- Lodgify Booking Widget -->
           <style>
             :root {
@@ -788,7 +840,7 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="#rooms">Rooms</a></li>
             <li><a href="#location">Location</a></li>
-            <li><a href="local-guide.html">Local Guide</a></li>
+            <li><a href="local-guide.html">Area Guide</a></li>
           </ul>
         </div>
         <div class="footer-links">
@@ -796,7 +848,7 @@
           <ul>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="rates.html">Rates &amp; Policies</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="blog/index.html">WNC Insider</a></li>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="#booking">Book Now</a></li>
           </ul>
@@ -825,5 +877,51 @@
   <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
   <script src="scripts.js" defer></script>
   <script src="chat.js" defer></script>
+
+  <!-- Hero Carousel -->
+  <script>
+    (function() {
+      var slides = document.querySelectorAll('.hero-slide');
+      var dots   = document.querySelectorAll('.hero-dot');
+      var current = 0;
+      var total   = slides.length;
+      var timer;
+
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (n + total) % total;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 5000);
+      }
+
+      document.getElementById('heroNext').addEventListener('click', function() { next(); startTimer(); });
+      document.getElementById('heroPrev').addEventListener('click', function() { prev(); startTimer(); });
+
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          goTo(parseInt(this.dataset.slide, 10));
+          startTimer();
+        });
+      });
+
+      // Pause on hover
+      var hero = document.getElementById('hero');
+      if (hero) {
+        hero.addEventListener('mouseenter', function() { clearInterval(timer); });
+        hero.addEventListener('mouseleave', startTimer);
+      }
+
+      startTimer();
+    })();
+  </script>
 </body>
 </html>

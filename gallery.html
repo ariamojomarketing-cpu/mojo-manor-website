@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Mojo Manor Waynesville NC</title>
+  <meta name="description" content="Browse all photos of Mojo Manor — a luxury vacation rental in Waynesville, NC. Living spaces, bedrooms, hot tub, game room, outdoor areas, and more.">
+  <link rel="canonical" href="https://mojomanor.com/gallery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: 0.45rem 1.1rem;
+      border: 1.5px solid var(--color-warm-gray);
+      border-radius: var(--radius-full);
+      background: var(--color-white);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--color-slate);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--color-navy);
+      border-color: var(--color-navy);
+      color: var(--color-white);
+    }
+    .gallery-section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-bronze);
+      margin: 2.5rem 0 1rem;
+      grid-column: 1 / -1;
+    }
+    .gallery-full-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+    @media (min-width: 640px) { .gallery-full-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+    @media (min-width: 1024px) { .gallery-full-grid { grid-template-columns: repeat(4, 1fr); } }
+    .gal-item { aspect-ratio: 4/3; }
+    .gal-wide { grid-column: span 2; }
+    .video-section { background: var(--color-navy); padding: clamp(3rem,6vw,5rem) 0; }
+  </style>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Mojo Manor home">
+        <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
+        <span class="logo-text">Mojo Manor</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html#amenities" role="menuitem">Amenities</a></li>
+        <li role="none"><a href="gallery.html" role="menuitem" aria-current="page">Gallery</a></li>
+        <li role="none"><a href="index.html#rooms" role="menuitem">Rooms</a></li>
+        <li role="none"><a href="local-guide.html" role="menuitem">Local Guide</a></li>
+        <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
+        <li role="none"><a href="index.html#faq" role="menuitem">FAQ</a></li>
+      </ul>
+      <a href="index.html#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#amenities">Amenities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#rooms">Rooms</a></li>
+      <li><a href="local-guide.html">Local Guide</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="index.html#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Gallery</span>
+      </nav>
+      <p class="page-hero-tag">Inside Mojo Manor</p>
+      <h1 class="page-hero-title">Photo Gallery</h1>
+      <p class="page-hero-subtitle">Every room. Every view. Every reason to book.</p>
+    </div>
+  </section>
+
+  <!-- VIDEO TOUR -->
+  <section class="video-section">
+    <div class="container">
+      <div class="section-header section-header-center" style="margin-bottom:2rem;">
+        <span class="section-tag section-tag-light">Property Tour</span>
+        <h2 class="section-title section-title-light">See It in Motion</h2>
+      </div>
+      <div class="video-wrap reveal">
+        <video controls poster="Images/Optimized/listing/1-web-or-mls-29-timothy-lane-waynesville-01 (1) - Copy.jpg" preload="none">
+          <source src="Images/Listing Photos/MLS  - Web/29-timothy-lane-waynesville (1).mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="section grain" id="photos">
+    <div class="container">
+
+      <div class="section-header section-header-center">
+        <span class="section-tag">All Photos</span>
+        <h2 class="section-title">The Full Picture</h2>
+        <p class="section-subtitle">Tap any image to view full size.</p>
+      </div>
+
+      <div class="gallery-full-grid" id="galleryGrid">
+
+        <!-- Living Spaces -->
+        <p class="gallery-section-label">Living Spaces</p>
+        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Family room">
+          <picture><source srcset="Images/Optimized/furnished/Family Room (Best).webp" type="image/webp"><img src="Images/Optimized/furnished/Family Room (Best).jpg" alt="Spacious family room with mountain views" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Family Room</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Living room">
+          <picture><source srcset="Images/Optimized/furnished/Living Room - Best.webp" type="image/webp"><img src="Images/Optimized/furnished/Living Room - Best.jpg" alt="Modern living room with designer furnishings" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Living Room</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Family room alternate">
+          <picture><source srcset="Images/Optimized/furnished/Family Room - BEST ALTERNATE.webp" type="image/webp"><img src="Images/Optimized/furnished/Family Room - BEST ALTERNATE.jpg" alt="Family room alternate view" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Living Area</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Living and dining">
+          <picture><source srcset="Images/Optimized/furnished/Living + Dining Room.webp" type="image/webp"><img src="Images/Optimized/furnished/Living + Dining Room.jpg" alt="Open concept living and dining room" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Living &amp; Dining</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Dining room">
+          <picture><source srcset="Images/Optimized/furnished/Dining Room.webp" type="image/webp"><img src="Images/Optimized/furnished/Dining Room.jpg" alt="Dining room with large table for group dinners" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Dining Room</span></div>
+        </div>
+
+        <!-- Bedrooms -->
+        <p class="gallery-section-label">Bedrooms</p>
+        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Master suite">
+          <picture><source srcset="Images/Optimized/furnished/Bedroom - King - Master (best).webp" type="image/webp"><img src="Images/Optimized/furnished/Bedroom - King - Master (best).jpg" alt="Master suite with king bed and mountain views" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Master Suite</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Master bedroom angle 2">
+          <picture><source srcset="Images/Optimized/furnished/Bedroom - King - Master.webp" type="image/webp"><img src="Images/Optimized/furnished/Bedroom - King - Master.jpg" alt="Master bedroom" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Master — King</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Queen bedroom">
+          <picture><source srcset="Images/Optimized/furnished/Bedroom - Queen - Best1.webp" type="image/webp"><img src="Images/Optimized/furnished/Bedroom - Queen - Best1.jpg" alt="The Hideaway — queen bedroom" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>The Hideaway — Queen</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Kids bunk room">
+          <picture><source srcset="Images/Optimized/furnished/Bedroom - Kids - Best.webp" type="image/webp"><img src="Images/Optimized/furnished/Bedroom - Kids - Best.jpg" alt="Kids bunk room with twin beds" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Bunk Room</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: The Den">
+          <picture><source srcset="Images/Optimized/furnished/Bedroom - King5 (Best).webp" type="image/webp"><img src="Images/Optimized/furnished/Bedroom - King5 (Best).jpg" alt="The Den — lower level bedroom with private entrance" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>The Den</span></div>
+        </div>
+
+        <!-- Bathrooms -->
+        <p class="gallery-section-label">Bathrooms</p>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Master bathroom">
+          <picture><source srcset="Images/Optimized/furnished/Bathroom - Master.webp" type="image/webp"><img src="Images/Optimized/furnished/Bathroom - Master.jpg" alt="Master ensuite bathroom with walk-in shower" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Master Bath</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Hallway bathroom">
+          <picture><source srcset="Images/Optimized/furnished/Bathroom - Hallway1.webp" type="image/webp"><img src="Images/Optimized/furnished/Bathroom - Hallway1.jpg" alt="Hallway bathroom" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Guest Bath</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Hallway bathroom 2">
+          <picture><source srcset="Images/Optimized/furnished/Bathroom - Hallway2.webp" type="image/webp"><img src="Images/Optimized/furnished/Bathroom - Hallway2.jpg" alt="Second guest bathroom" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Guest Bath 2</span></div>
+        </div>
+
+        <!-- Hot Tub & Entertainment -->
+        <p class="gallery-section-label">Hot Tub &amp; Entertainment</p>
+        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Hot tub at night">
+          <picture><source srcset="Images/Optimized/furnished/Hot Tub - Night best.webp" type="image/webp"><img src="Images/Optimized/furnished/Hot Tub - Night best.jpg" alt="Hot tub lit up at night with mountain breezes" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Hot Tub — Night</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Hot tub daytime">
+          <picture><source srcset="Images/Optimized/furnished/Hot Tub - 1.webp" type="image/webp"><img src="Images/Optimized/furnished/Hot Tub - 1.jpg" alt="Hot tub during the day" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Hot Tub</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Game room">
+          <picture><source srcset="Images/Optimized/furnished/Game Room.webp" type="image/webp"><img src="Images/Optimized/furnished/Game Room.jpg" alt="Game room with arcade machine and entertainment" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Game Room</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Karaoke">
+          <picture><source srcset="Images/Optimized/furnished/Karaoke.webp" type="image/webp"><img src="Images/Optimized/furnished/Karaoke.jpg" alt="Karaoke setup in entertainment area" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Karaoke</span></div>
+        </div>
+
+        <!-- Outdoor -->
+        <p class="gallery-section-label">Outdoor Spaces</p>
+        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Backyard">
+          <picture><source srcset="Images/Optimized/furnished/Backyard1.webp" type="image/webp"><img src="Images/Optimized/furnished/Backyard1.jpg" alt="Spacious fenced backyard with seating" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Backyard</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Fire pit at night">
+          <picture><source srcset="Images/Optimized/furnished/Fire Pit + Boccee - Night.webp" type="image/webp"><img src="Images/Optimized/furnished/Fire Pit + Boccee - Night.jpg" alt="Fire pit and bocce ball court at night" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Fire Pit — Night</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Fire pit and bocce">
+          <picture><source srcset="Images/Optimized/furnished/Fire Pit + Boccee .webp" type="image/webp"><img src="Images/Optimized/furnished/Fire Pit + Boccee .jpg" alt="Fire pit with bocce ball court" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Fire Pit &amp; Bocce</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Bocce ball court">
+          <picture><source srcset="Images/Optimized/furnished/Boccee - Best.webp" type="image/webp"><img src="Images/Optimized/furnished/Boccee - Best.jpg" alt="Bocce ball court" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Bocce Court</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Putting green">
+          <picture><source srcset="Images/Optimized/furnished/Putting Green.webp" type="image/webp"><img src="Images/Optimized/furnished/Putting Green.jpg" alt="Outdoor putting green" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Putting Green</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Putting green at night">
+          <picture><source srcset="Images/Optimized/furnished/Putting Green - Night.webp" type="image/webp"><img src="Images/Optimized/furnished/Putting Green - Night.jpg" alt="Putting green lit up at night" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Putting Green — Night</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Playset">
+          <picture><source srcset="Images/Optimized/furnished/Playset.webp" type="image/webp"><img src="Images/Optimized/furnished/Playset.jpg" alt="Kids playset in backyard" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Kids Playset</span></div>
+        </div>
+
+        <!-- MLS Professional Shots -->
+        <p class="gallery-section-label">Professional Listing Photos</p>
+        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Exterior front">
+          <picture><source srcset="Images/Optimized/listing/1-web-or-mls-29-timothy-lane-waynesville-01 (1) - Copy.webp" type="image/webp"><img src="Images/Optimized/listing/1-web-or-mls-29-timothy-lane-waynesville-01 (1) - Copy.jpg" alt="Mojo Manor exterior at dusk" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Exterior — Dusk</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Exterior 2">
+          <picture><source srcset="Images/Optimized/listing/2-web-or-mls-29-timothy-lane-waynesville-02 (1) - Copy.webp" type="image/webp"><img src="Images/Optimized/listing/2-web-or-mls-29-timothy-lane-waynesville-02 (1) - Copy.jpg" alt="Mojo Manor exterior" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Exterior</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Interior listing photo 3">
+          <picture><source srcset="Images/Optimized/listing/3-web-or-mls-29-timothy-lane-waynesville-03 (1) - Copy.webp" type="image/webp"><img src="Images/Optimized/listing/3-web-or-mls-29-timothy-lane-waynesville-03 (1) - Copy.jpg" alt="Interior professional photo" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Interior</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Interior listing photo 4">
+          <picture><source srcset="Images/Optimized/listing/4-web-or-mls-29-timothy-lane-waynesville-04 (1) - Copy.webp" type="image/webp"><img src="Images/Optimized/listing/4-web-or-mls-29-timothy-lane-waynesville-04 (1) - Copy.jpg" alt="Interior professional photo" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Interior</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Interior listing photo 5">
+          <picture><source srcset="Images/Optimized/listing/5-web-or-mls-29-timothy-lane-waynesville-05 (1).webp" type="image/webp"><img src="Images/Optimized/listing/5-web-or-mls-29-timothy-lane-waynesville-05 (1).jpg" alt="Interior professional photo" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Interior</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Interior listing photo 6">
+          <picture><source srcset="Images/Optimized/listing/6-web-or-mls-29-timothy-lane-waynesville-06 (1).webp" type="image/webp"><img src="Images/Optimized/listing/6-web-or-mls-29-timothy-lane-waynesville-06 (1).jpg" alt="Interior professional photo" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Interior</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Interior listing photo 7">
+          <picture><source srcset="Images/Optimized/listing/7-web-or-mls-29-timothy-lane-waynesville-07 (1) - Copy - Copy.webp" type="image/webp"><img src="Images/Optimized/listing/7-web-or-mls-29-timothy-lane-waynesville-07 (1) - Copy - Copy.jpg" alt="Interior professional photo" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Interior</span></div>
+        </div>
+        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Interior listing photo 8">
+          <picture><source srcset="Images/Optimized/listing/8-web-or-mls-29-timothy-lane-waynesville-08 (1).webp" type="image/webp"><img src="Images/Optimized/listing/8-web-or-mls-29-timothy-lane-waynesville-08 (1).jpg" alt="Interior professional photo" loading="lazy"></picture>
+          <div class="gallery-item-overlay"><span>Interior</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="lightbox-next" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- BOOKING CTA -->
+  <section class="section section-dark">
+    <div class="container" style="text-align:center;max-width:560px;">
+      <span class="section-tag section-tag-light">Ready to Experience It?</span>
+      <h2 class="section-title section-title-light">Book <em>Mojo Manor</em></h2>
+      <p class="section-subtitle section-subtitle-light" style="margin:0 auto 2rem;">4 bedrooms &bull; 3.5 baths &bull; Sleeps 10 &bull; From $350/night</p>
+      <a href="index.html#booking" class="btn btn-primary btn-lg">Check Availability</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo" aria-label="Mojo Manor home">
+            <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
+            <span class="logo-text">Mojo Manor</span>
+          </a>
+          <p>A modern luxury mountain retreat in Waynesville, NC — where upscale comfort meets serious fun.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#amenities">Amenities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#rooms">Rooms</a></li>
+            <li><a href="index.html#location">Location</a></li>
+            <li><a href="local-guide.html">Local Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="rates.html">Rates &amp; Policies</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="index.html#booking">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@mojomanor.com">hello@mojomanor.com</a></li>
+            <li><a href="tel:+18285550199">(828) 555-0199</a></li>
+            <li>Waynesville, NC 28786</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+  <script src="chat.js" defer></script>
+</body>
+</html>

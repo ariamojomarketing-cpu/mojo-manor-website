@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Guide — Waynesville NC | Mojo Manor</title>
+  <meta name="description" content="Your insider guide to Waynesville, NC and surrounding Western North Carolina — best restaurants, hiking, breweries, attractions, and things to do near Mojo Manor.">
+  <link rel="canonical" href="https://mojomanor.com/local-guide.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Schema.org for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Waynesville NC Local Guide",
+    "description": "Things to do near Mojo Manor in Waynesville, North Carolina",
+    "url": "https://mojomanor.com/local-guide.html",
+    "touristType": ["Family", "Adventure", "Luxury"]
+  }
+  </script>
+  <link rel="stylesheet" href="chat.css">
+  <!-- Guide items are content — always visible regardless of animation state -->
+  <style>
+    .guide-category { opacity: 1 !important; transform: none !important; }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Mojo Manor home">
+        <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
+        <span class="logo-text">Mojo Manor</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html#amenities" role="menuitem">Amenities</a></li>
+        <li role="none"><a href="gallery.html" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="index.html#rooms" role="menuitem">Rooms</a></li>
+        <li role="none"><a href="local-guide.html" role="menuitem" aria-current="page">Local Guide</a></li>
+        <li role="none"><a href="blog/index.html" role="menuitem">Blog</a></li>
+        <li role="none"><a href="index.html#faq" role="menuitem">FAQ</a></li>
+      </ul>
+      <a href="index.html#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#amenities">Amenities</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#rooms">Rooms</a></li>
+      <li><a href="local-guide.html">Local Guide</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="index.html#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Local Guide</span>
+      </nav>
+      <p class="page-hero-tag">Western North Carolina</p>
+      <h1 class="page-hero-title">Your Local Guide to<br><em>Waynesville &amp; Beyond</em></h1>
+      <p class="page-hero-subtitle">From farm-to-table dinners to all-day hikes — here's everything worth doing near Mojo Manor.</p>
+    </div>
+  </section>
+
+  <!-- QUICK DISTANCES -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <span class="section-tag">Getting Around</span>
+        <h2 class="section-title">You're at the Center of It All</h2>
+        <p class="section-subtitle">Mojo Manor's location puts Western NC's best within easy reach.</p>
+      </div>
+      <div style="display:grid;gap:0.75rem;max-width:700px;margin:0 auto;" class="reveal">
+        <div class="location-item"><span class="location-dist">5 min</span><span class="location-name">Downtown Waynesville — Main Street shops, dining, and nightlife</span></div>
+        <div class="location-item"><span class="location-dist">15 min</span><span class="location-name">Blue Ridge Parkway — scenic drives and overlooks</span></div>
+        <div class="location-item"><span class="location-dist">25 min</span><span class="location-name">Cataloochee Valley — elk sightings and Smoky Mountain access</span></div>
+        <div class="location-item"><span class="location-dist">30 min</span><span class="location-name">Downtown Asheville — food, art, Biltmore Estate</span></div>
+        <div class="location-item"><span class="location-dist">35 min</span><span class="location-name">Maggie Valley — ski area and outdoor adventure hub</span></div>
+        <div class="location-item"><span class="location-dist">40 min</span><span class="location-name">Great Smoky Mountains National Park entrance</span></div>
+        <div class="location-item"><span class="location-dist">45 min</span><span class="location-name">Pisgah National Forest — Sliding Rock and Looking Glass Falls</span></div>
+        <div class="location-item"><span class="location-dist">60 min</span><span class="location-name">Cherokee &amp; Harrah's Cherokee Casino</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUIDE CONTENT -->
+  <section class="section grain" id="guide">
+    <div class="container">
+
+      <!-- Dining -->
+      <div class="guide-category">
+        <div class="guide-category-header">
+          <div class="guide-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+          </div>
+          <div>
+            <h2 style="font-size:1.75rem;color:var(--color-navy);">Restaurants &amp; Dining</h2>
+            <p style="color:var(--color-steel);font-weight:300;font-size:0.95rem;">Waynesville punches above its weight — great food, locally sourced, chef-driven</p>
+          </div>
+        </div>
+        <div class="guide-items">
+          <div class="guide-item reveal">
+            <p class="guide-item-name">The Sweet Onion</p>
+            <p class="guide-item-desc">Ranked among Waynesville's best, this New American kitchen at 39 Miller St blends Southern tradition with contemporary flair. Order the crab cakes with lemon basil aioli or the bubbling French onion soup — both are house-made and worth coming back for. One of the most reliably great dinner spots in town.</p>
+            <span class="guide-item-tag">American · Fine Dining</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Haywood Smokehouse</p>
+            <p class="guide-item-desc">Waynesville's #1-rated restaurant on TripAdvisor — and it earns it. All-natural meats, never frozen, slow-smoked daily over native hickory wood. The Texas-style brisket and ribs are legendary in this part of NC. Don't skip the house-made pecan pie. Serious BBQ, no frills, no shortcuts.</p>
+            <span class="guide-item-tag">BBQ · Casual</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Boojum Brewing</p>
+            <p class="guide-item-desc">Family-owned craft brewery right on Main Street with 16 rotating taps and solid pub fare. The Whistle Pigs (pretzels with pimento cheese and bacon) are a must. Head downstairs to The Gem — a separate bar and entertainment space with pool, darts, shuffleboard, and full liquor service. A Waynesville institution since 2014.</p>
+            <span class="guide-item-tag">Brewery · Bar Food</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Panacea Coffee Co.</p>
+            <p class="guide-item-desc">Hand-roasting coffee since 2002 in the historic Frog Level district, housed in a 1916 warehouse at 66 Commerce St. Grab an espresso and sit on the back deck overlooking Richland Creek. They also pour 21 taps of craft beer — one of Waynesville's most charming, multi-purpose spots. Open daily 8:30 AM–3:30 PM.</p>
+            <span class="guide-item-tag">Coffee · Brewery · Frog Level</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Bogart's Restaurant &amp; Tavern</p>
+            <p class="guide-item-desc">A family-owned Waynesville staple at 303 S Main St known for flame-grilled steaks and house-made soups. Come on a Thursday for live bluegrass music — locals pack in for it. A genuine, unpretentious slice of downtown Waynesville that's been feeding the community for decades.</p>
+            <span class="guide-item-tag">American · Steaks · Live Music</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">The Strand at 38 Main</p>
+            <p class="guide-item-desc">A reimagined 1945 movie theater turned intimate listening venue and boutique cinema at 38 N Main St. Stop in for first-run films, live concerts, handcrafted ice cream, espresso, draft beer, and wine — all under one roof in a space that still honors its theatrical roots. A truly one-of-a-kind Waynesville night out.</p>
+            <span class="guide-item-tag">Live Music · Cinema · Drinks</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outdoor -->
+      <div class="guide-category">
+        <div class="guide-category-header">
+          <div class="guide-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 17L8 8l5 8 3-4 5 8H3z"/></svg>
+          </div>
+          <div>
+            <h2 style="font-size:1.75rem;color:var(--color-navy);">Outdoor Adventures</h2>
+            <p style="color:var(--color-steel);font-weight:300;font-size:0.95rem;">World-class hiking, waterfalls, and scenic drives right outside your door</p>
+          </div>
+        </div>
+        <div class="guide-items">
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Blue Ridge Parkway</p>
+            <p class="guide-item-desc">Enter America's favorite scenic drive at Balsam Gap (Mile 443.1) — less than 15 minutes from Mojo Manor. Head to Cowee Overlook (Mile 430.7) for jaw-dropping sunset panoramas, or stop at Richland Balsam (Mile 431.4) — the Parkway's highest point at 6,053 ft — for a short loop trail through spruce-fir forest. Nearly 200 overlooks, all free.</p>
+            <span class="guide-item-tag">Scenic Drive · Free</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Cataloochee Valley</p>
+            <p class="guide-item-desc">Home to a wild elk herd of nearly 200 — reintroduced here in 2001 and thriving. Visit at dawn or dusk, and come in fall (Sept–Nov) to hear bull elk bugling across the meadow during mating season. The Rough Fork Trail is an easy 2-mile round-trip past historic pioneer structures and a cascading creek.</p>
+            <span class="guide-item-tag">Wildlife · Hiking · Free</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Max Patch</p>
+            <p class="guide-item-desc">A bald mountain summit at 4,629 ft on the Appalachian Trail with 360° views of the Great Smokies, Black Mountains, and Bald Mountains. The most popular route is a 2.6-mile loop from the parking area — a rewarding climb to one of the finest panoramas in Western NC. Sunrise and sunset here are exceptional.</p>
+            <span class="guide-item-tag">Hiking · AT · Views</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Waterrock Knob</p>
+            <p class="guide-item-desc">At 6,292 feet, Waterrock Knob is the 16th highest peak in the Eastern United States — and remarkably accessible. Just 1.2 miles roundtrip with 50-mile views of Great Smoky Mountains National Park on a clear day. Located at Mile 451.2 on the Blue Ridge Parkway, about 30 minutes from Mojo Manor. One of the best sunset spots in all of WNC.</p>
+            <span class="guide-item-tag">Hiking · Views · 30 min</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Sliding Rock</p>
+            <p class="guide-item-desc">A 60-foot natural waterslide on Looking Glass Creek that empties into a deep mountain pool (8–10 ft). The water stays near 55°F year-round — cold, clear, and exhilarating. Lifeguards on duty Memorial Day through Labor Day. $5/person, open 9 AM–6 PM. In Pisgah National Forest. Bring water shoes and a towel.</p>
+            <span class="guide-item-tag">Waterfall · Swimming · $</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Looking Glass Falls</p>
+            <p class="guide-item-desc">A stunning 60-foot waterfall framed by a towering cliff face on US 276 in Pisgah National Forest — one of the most photographed in North Carolina. A short staircase leads right to the base where visitors can wade in the cool pool. Free, family-friendly, and just steps from the road. Pair it with Sliding Rock nearby.</p>
+            <span class="guide-item-tag">Waterfall · Easy · Free</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Cataloochee Ski Area</p>
+            <p class="guide-item-desc">North Carolina's premier ski destination in Maggie Valley with 18 slopes reaching 5,400 ft and a 740-ft vertical drop. With 100% snowmaking coverage, it boasts one of the Southeast's longest seasons — averaging 125 days from November through March. Snow tubing at Tube World available at the base. Lessons, rentals, dining, and a full bar on-site.</p>
+            <span class="guide-item-tag">Skiing · Winter Only · $$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asheville -->
+      <div class="guide-category">
+        <div class="guide-category-header">
+          <div class="guide-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <div>
+            <h2 style="font-size:1.75rem;color:var(--color-navy);">Asheville Day Trips</h2>
+            <p style="color:var(--color-steel);font-weight:300;font-size:0.95rem;">30 minutes east — one of the South's most vibrant cities</p>
+          </div>
+        </div>
+        <div class="guide-items">
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Biltmore Estate</p>
+            <p class="guide-item-desc">America's largest private home — George Vanderbilt's 250-room French Renaissance château built in 1895 on 8,000 mountain acres. The grounds were designed by Frederick Law Olmsted (the landscape architect behind Central Park). Admission includes the mansion tour, 75 acres of formal gardens, and a complimentary tasting at America's most-visited winery. Book online 7+ days ahead for a $10 discount.</p>
+            <span class="guide-item-tag">Historic · $$$ · Full Day</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">River Arts District</p>
+            <p class="guide-item-desc">Over 700 working artists in converted historic warehouses and mills along the French Broad River — studios open so you can watch potters, glassblowers, welders, and painters at work. Browse The Marquee, a 50,000 sq ft converted warehouse packed with vintage crafts and eclectic vendors. Best visited Wednesday–Saturday. Grab a pint at Wedge Brewing between studios.</p>
+            <span class="guide-item-tag">Art · Food · Free Entry</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Downtown Asheville</p>
+            <p class="guide-item-desc">One of the South's most celebrated food cities — home to multiple James Beard Award winners including Chai Pani (Most Outstanding Restaurant) and Cúrate (Best Hospitality). Beyond the culinary scene, Asheville's downtown has live music venues, craft cocktail bars, boutique shops, and electric late-night energy. Park once and walk everywhere.</p>
+            <span class="guide-item-tag">Food &amp; Drink · Nightlife</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">New Belgium Brewing</p>
+            <p class="guide-item-desc">Fat Tire's home away from home — a massive riverside brewery at 21 Craven St in the River Arts District with a cantilevered deck perched directly over the French Broad River. Excellent craft beers, 90-minute brewery tours (book in advance), and one of the best outdoor patios in Asheville. Open Mon–Sat 11 AM–8 PM, Sun noon–8 PM.</p>
+            <span class="guide-item-tag">Brewery · Tours · $$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Local Experiences -->
+      <div class="guide-category">
+        <div class="guide-category-header">
+          <div class="guide-category-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h2 style="font-size:1.75rem;color:var(--color-navy);">Local Experiences</h2>
+            <p style="color:var(--color-steel);font-weight:300;font-size:0.95rem;">The authentic Waynesville experience — beyond the tourist trail</p>
+          </div>
+        </div>
+        <div class="guide-items">
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Downtown Waynesville Main Street</p>
+            <p class="guide-item-desc">Charming walkable downtown with indie boutiques, art galleries, coffee shops, and restaurants. Friday night is the social hub — often with live music and farmers markets.</p>
+            <span class="guide-item-tag">Shopping · Dining · Free</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Folkmoot USA</p>
+            <p class="guide-item-desc">The State International Festival of North Carolina — held every July since 1984, making it one of the longest-running international dance and music festivals in the world. Over 40 years, 8,000+ performers from roughly 200 countries have taken the stage in Waynesville. International Festival Day transforms downtown into a global bazaar. If your trip overlaps with July, don't miss it.</p>
+            <span class="guide-item-tag">Festival · July · $</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Canton Paper Mill Area</p>
+            <p class="guide-item-desc">Historic mill town neighboring Waynesville with a growing arts and dining scene. Grab lunch at one of the newer spots opening along the riverfront.</p>
+            <span class="guide-item-tag">Local · Historic</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Harrah's Cherokee Casino</p>
+            <p class="guide-item-desc">The largest hotel in North Carolina — 1,833 rooms, a 150,000 sq ft gaming floor with 3,000+ machines and 100+ live table games, and a 3,000-seat event center hosting major acts (past performers: Dolly Parton, Alicia Keys, Chris Rock). Dine at Gordon Ramsay Food Market or Guy Fieri's Cherokee Kitchen + Bar. About 50 miles from Mojo Manor at the entrance to Great Smoky Mountains National Park.</p>
+            <span class="guide-item-tag">Casino · Entertainment · 50 min</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Fall Foliage Season</p>
+            <p class="guide-item-desc">Mid-September through November, the mountains turn spectacular shades of orange, red, and gold. Waynesville and the Blue Ridge Parkway are prime viewing spots — book early, as this is the most popular time of year in Western NC.</p>
+            <span class="guide-item-tag">Seasonal · Scenic · Free</span>
+          </div>
+          <div class="guide-item reveal">
+            <p class="guide-item-name">Whitewater Rafting — Nantahala River</p>
+            <p class="guide-item-desc">The Nantahala River Gorge (about 45 minutes away) offers Class II–III rapids in a stunning river gorge — thrilling but family-friendly. The Nantahala Outdoor Center (NOC) is the premier outfitter: a 500-acre campus in Bryson City with rafting, ziplining, mountain biking, dining, and lodging. Named "One of the Best Outfitters on Earth" by National Geographic Adventure.</p>
+            <span class="guide-item-tag">Rafting · Family · $$</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-header section-header-center">
+        <span class="section-tag">Find Your Way</span>
+        <h2 class="section-title">Waynesville, NC</h2>
+      </div>
+      <div class="location-map reveal" style="height:450px;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg);">
+        <iframe
+          title="Waynesville NC map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52146.69881451399!2d-83.03!3d35.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859e1b3e0f02e29%3A0x69d8c2d0f8e3cb6e!2sWaynesville%2C%20NC%2028786!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING CTA -->
+  <section class="section section-dark">
+    <div class="container" style="text-align:center;max-width:600px;">
+      <span class="section-tag section-tag-light">Ready to Explore?</span>
+      <h2 class="section-title section-title-light">Book <em>Mojo Manor</em><br>as Your Home Base</h2>
+      <p class="section-subtitle section-subtitle-light" style="margin:0 auto 2rem;">Stay at Mojo Manor and spend your days exploring the best of Western NC — then come home to a hot tub and a game room.</p>
+      <a href="index.html#booking" class="btn btn-primary btn-lg">Check Availability</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo" aria-label="Mojo Manor home">
+            <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
+            <span class="logo-text">Mojo Manor</span>
+          </a>
+          <p>A modern luxury mountain retreat in Waynesville, NC — where upscale comfort meets serious fun.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#amenities">Amenities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#rooms">Rooms</a></li>
+            <li><a href="index.html#location">Location</a></li>
+            <li><a href="local-guide.html">Local Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="rates.html">Rates &amp; Policies</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="index.html#booking">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@mojomanor.com">hello@mojomanor.com</a></li>
+            <li><a href="tel:+18285550199">(828) 555-0199</a></li>
+            <li>Waynesville, NC 28786</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+  <script src="chat.js" defer></script>
+</body>
+</html>

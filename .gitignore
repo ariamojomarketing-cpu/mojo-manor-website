@@ -1,0 +1,5 @@
+*.mp4
+server.js
+.DS_Store
+node_modules/
+.claude

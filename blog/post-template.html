@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ARIA: Update title, description, canonical, og:image for each post -->
+  <title>POST TITLE | Mojo Manor Blog</title>
+  <meta name="description" content="POST META DESCRIPTION — keep under 160 characters for SEO.">
+  <link rel="canonical" href="https://mojomanor.com/blog/POST-SLUG.html">
+  <meta property="og:title" content="POST TITLE | Mojo Manor">
+  <meta property="og:description" content="POST META DESCRIPTION">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mojomanor.com/blog/POST-SLUG.html">
+  <meta property="og:image" content="https://mojomanor.com/Images/Optimized/furnished/HERO-IMAGE.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "POST TITLE",
+    "description": "POST META DESCRIPTION",
+    "image": "https://mojomanor.com/Images/Optimized/furnished/HERO-IMAGE.jpg",
+    "author": { "@type": "Organization", "name": "Mojo Manor" },
+    "publisher": { "@type": "Organization", "name": "Mojo Manor", "url": "https://mojomanor.com" },
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "mainEntityOfPage": "https://mojomanor.com/blog/POST-SLUG.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header scrolled" id="siteHeader">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo" aria-label="Mojo Manor home">
+        <img src="../Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
+        <span class="logo-text">Mojo Manor</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="../index.html#amenities" role="menuitem">Amenities</a></li>
+        <li role="none"><a href="../gallery.html" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="../index.html#rooms" role="menuitem">Rooms</a></li>
+        <li role="none"><a href="../local-guide.html" role="menuitem">Local Guide</a></li>
+        <li role="none"><a href="index.html" role="menuitem">Blog</a></li>
+        <li role="none"><a href="../index.html#faq" role="menuitem">FAQ</a></li>
+      </ul>
+      <a href="../index.html#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="../index.html#amenities">Amenities</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../index.html#rooms">Rooms</a></li>
+      <li><a href="../local-guide.html">Local Guide</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="../index.html#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
+  </div>
+
+  <!-- ARTICLE -->
+  <article>
+
+    <!-- POST HERO -->
+    <section class="page-hero" style="padding-bottom:0;">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          <a href="index.html">Blog</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>POST CATEGORY</span>
+        </nav>
+        <p class="page-hero-tag">POST CATEGORY</p>
+        <h1 class="page-hero-title" style="max-width:700px;">POST TITLE GOES HERE</h1>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.875rem;margin-top:1rem;">
+          By Mojo Manor &nbsp;&middot;&nbsp; MONTH YEAR &nbsp;&middot;&nbsp; X min read
+        </p>
+      </div>
+    </section>
+
+    <!-- HERO IMAGE -->
+    <div style="background:var(--color-navy);padding:0 0 0;">
+      <div class="container" style="padding-top:2rem;padding-bottom:0;">
+        <div class="blog-post-hero reveal">
+          <picture>
+            <source srcset="../Images/Optimized/furnished/HERO-IMAGE.webp" type="image/webp">
+            <img src="../Images/Optimized/furnished/HERO-IMAGE.jpg" alt="POST HERO ALT TEXT" loading="eager">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <!-- POST CONTENT -->
+    <section class="section grain">
+      <div class="container container-narrow">
+
+        <!-- Introduction -->
+        <div class="blog-post-header reveal">
+          <p style="font-size:1.15rem;font-weight:400;color:var(--color-charcoal);line-height:1.75;margin-bottom:0;">
+            INTRODUCTION PARAGRAPH — This is the hook. Write 2-3 sentences that draw the reader in and establish what this post is about and why it matters to someone planning a trip to Waynesville, NC.
+          </p>
+        </div>
+
+        <div class="blog-post-body reveal">
+
+          <h2>First Section Heading</h2>
+          <p>Body copy goes here. Write naturally, with SEO in mind — use Waynesville NC, Western North Carolina, and relevant keywords naturally throughout. Each paragraph should add value and be easy to read.</p>
+          <p>Continue with useful information. Link to the local guide page or other internal pages where relevant.</p>
+
+          <h2>Second Section Heading</h2>
+          <p>More content. Include practical tips, specific details (names, distances, prices where relevant), and personal recommendations where possible.</p>
+
+          <h3>Sub-section if needed</h3>
+          <p>Detail-level content for this subsection.</p>
+
+          <h2>Third Section Heading</h2>
+          <p>Continue the post. Aim for 800-1200 words total for strong SEO. Every section should answer a question the reader might have.</p>
+
+          <ul>
+            <li>Bullet point if useful</li>
+            <li>Another relevant tip or fact</li>
+            <li>Third item</li>
+          </ul>
+
+          <h2>Wrap It Up</h2>
+          <p>Conclusion paragraph. Summarize key takeaways and naturally lead into the call to action — staying at Mojo Manor as the perfect home base for this experience.</p>
+
+        </div>
+
+        <!-- INLINE CTA -->
+        <div style="background:var(--color-navy);border-radius:var(--radius-xl);padding:2.5rem;text-align:center;margin:3rem 0;" class="reveal">
+          <p class="page-hero-tag" style="margin-bottom:0.5rem;">Ready to Experience It?</p>
+          <h3 style="color:var(--color-white);font-size:1.75rem;margin-bottom:0.75rem;">Stay at Mojo Manor</h3>
+          <p style="color:rgba(255,255,255,0.65);font-weight:300;margin-bottom:1.5rem;font-size:0.95rem;">The perfect base for your Western NC adventure — hot tub, game room, and all of it just minutes from everything.</p>
+          <a href="../index.html#booking" class="btn btn-primary btn-lg">Check Availability</a>
+        </div>
+
+        <!-- RELATED POSTS -->
+        <div class="reveal">
+          <h3 style="font-size:1.25rem;color:var(--color-navy);margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:2px solid var(--color-warm-gray);">More from the Blog</h3>
+          <div style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));">
+            <!-- Add 2-3 related post links here -->
+            <a href="index.html" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <p style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-bronze);margin-bottom:0.35rem;">View All Posts</p>
+              <p style="font-weight:500;color:var(--color-navy);font-size:0.95rem;line-height:1.4;">Browse the full Mojo Manor blog &rarr;</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo footer-logo" aria-label="Mojo Manor home">
+            <img src="../Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
+            <span class="logo-text">Mojo Manor</span>
+          </a>
+          <p>A modern luxury mountain retreat in Waynesville, NC — where upscale comfort meets serious fun.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../index.html#amenities">Amenities</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../index.html#rooms">Rooms</a></li>
+            <li><a href="../local-guide.html">Local Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="../index.html#faq">FAQ</a></li>
+            <li><a href="../rates.html">Rates &amp; Policies</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../index.html#booking">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@mojomanor.com">hello@mojomanor.com</a></li>
+            <li><a href="tel:+18285550199">(828) 555-0199</a></li>
+            <li>Waynesville, NC 28786</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="../privacy-policy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts.js" defer></script>
+</body>
+</html>

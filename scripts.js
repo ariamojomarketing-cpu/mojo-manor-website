@@ -155,7 +155,7 @@
     '.section-header, .amenity-card-featured, .amenity-item, .gallery-item, ' +
     '.room-card, .review-card, .location-item, .booking-detail, .faq-item, ' +
     '.intro-text, .intro-img, .booking-info, .booking-form-wrap, .location-text, .location-map, ' +
-    '.guide-item, .guide-category-header'
+    '.guide-item, .guide-category-header, .blog-card'
   );
 
   revealElements.forEach(function (el) {

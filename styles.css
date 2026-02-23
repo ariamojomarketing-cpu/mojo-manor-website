@@ -1198,72 +1198,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ── Booking ──────────────────────────────────────────────── */
-.booking-grid {
-  display: grid;
-  gap: 3rem;
-  align-items: start;
-}
-
-@media (min-width: 768px) {
-  .booking-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-}
-
-.booking-info .section-title {
-  margin-bottom: 1rem;
-}
-
-.booking-info > p {
-  color: var(--color-steel);
-  font-weight: 300;
-  font-size: 1.05rem;
-  margin-bottom: 2rem;
-}
-
-.booking-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.booking-detail {
-  padding: 1rem;
-  background: var(--color-warm-bg);
-  border-radius: var(--radius-md);
-}
-
-.booking-detail strong {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-bronze);
-  margin-bottom: 0.25rem;
-}
-
-.booking-detail span {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--color-navy);
-}
-
-/* Booking Widget Wrap */
-.booking-form-wrap {
-  background: var(--color-white);
-  border-radius: var(--radius-xl);
-  padding: 2rem 2rem 2.25rem;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(0,0,0,0.06);
-}
-
-@media (min-width: 768px) {
-  .booking-grid {
-    align-items: center;
-  }
+.booking {
+  text-align: center;
 }
 
 .booking-form h3 {

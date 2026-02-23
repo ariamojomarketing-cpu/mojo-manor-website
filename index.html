@@ -675,91 +675,92 @@
 
   <!-- ==================== BOOKING / CTA ==================== -->
   <section class="booking section" id="booking">
-    <div class="container">
-      <div class="booking-grid">
-        <div class="booking-info">
-          <span class="section-tag">Book Your Stay</span>
-          <h2 class="section-title">Ready for Mojo Manor?</h2>
-          <p>Select your dates to see availability and pricing. Book directly for the best rates. Have questions? Drop us a note and we'll get back to you fast.</p>
-          <div class="booking-details">
-            <div class="booking-detail">
-              <strong>Minimum Stay</strong>
-              <span>2 nights (3 on holidays)</span>
-            </div>
-            <div class="booking-detail">
-              <strong>Max Guests</strong>
-              <span>10 guests</span>
-            </div>
-            <div class="booking-detail">
-              <strong>Check-in</strong>
-              <span>4:00 PM</span>
-            </div>
-            <div class="booking-detail">
-              <strong>Check-out</strong>
-              <span>11:00 AM</span>
-            </div>
-          </div>
+    <div class="container" style="max-width:860px;">
+
+      <!-- Header -->
+      <div class="section-header section-header-center" style="margin-bottom:2rem;">
+        <span class="section-tag">Book Your Stay</span>
+        <h2 class="section-title" style="margin-bottom:0.75rem;">Ready for Mojo Manor?</h2>
+        <p style="color:var(--color-steel);font-weight:300;font-size:1.05rem;max-width:520px;margin:0 auto;">Select your dates below to check availability and pricing. Book directly for the best rates.</p>
+      </div>
+
+      <!-- Quick details row -->
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem;margin-bottom:2.25rem;">
+        <div style="display:flex;align-items:center;gap:0.5rem;background:var(--color-warm-bg);border-radius:var(--radius-full);padding:0.5rem 1.1rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-bronze)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--color-navy);">2-night min <span style="font-weight:400;color:var(--color-steel);">(3 on holidays)</span></span>
         </div>
-        <div class="booking-form-wrap">
-          <p style="font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-bronze);margin-bottom:0.5rem;">Check Availability</p>
-          <h3 style="font-size:1.35rem;color:var(--color-navy);margin-bottom:1.25rem;font-weight:600;">Find Your Dates</h3>
-          <!-- Lodgify Booking Widget -->
-          <style>
-            :root {
-              --ldg-psb-background: #ffffff;
-              --ldg-psb-border-radius: 0.42em;
-              --ldg-psb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
-              --ldg-psb-padding: 14px;
-              --ldg-psb-input-background: #ffffff;
-              --ldg-psb-button-border-radius: 3.58em;
-              --ldg-psb-color-primary: #01916e;
-              --ldg-psb-color-primary-lighter:#80c8b7;
-              --ldg-psb-color-primary-darker: #014937;
-              --ldg-psb-color-primary-contrast: #333333;
-              --ldg-semantic-color-primary:  #01916e;
-              --ldg-semantic-color-primary-lighter: #80c8b7;
-              --ldg-semantic-color-primary-darker: #014937;
-              --ldg-semantic-color-primary-contrast: #333333;
-              --ldg-component-modal-z-index: 999;
-            }
-            #lodgify-search-bar {
-              width:100%;
-            }
-          </style>
-          <div
-            id="lodgify-search-bar"
-            data-website-id="637973"
-            data-language-code="en"
-            data-checkout-page-url='https://checkout.lodgify.com/jacob-unknown-4f8237/en/#/768708'
-
-            data-dates-check-in-label='Check-in'
-            data-dates-check-out-label='Check-out'
-            data-guests-counter-label='Guests'
-            data-guests-input-singular-label='{{NumberOfGuests}} guest'
-            data-guests-input-plural-label='{{NumberOfGuests}} guests'
-            data-location-input-label='Location'
-            data-search-button-label='Search'
-            data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} night","other":"Minimum {minStay} nights"}'
-            data-guests-breakdown-label='Guests'
-            data-adults-label='{"one":"adult","other":"adults"}'
-            data-adults-description='Ages {minAge} or above'
-            data-children-label='{"one":"child","other":"children"}'
-            data-children-description='Ages {minAge}-{maxAge}'
-            data-children-not-allowed-label='Not suitable for children'
-            data-infants-label='{"one":"infant","other":"infants"}'
-            data-infants-description='Under {maxAge}'
-            data-infants-not-allowed-label='Not suitable for infants'
-            data-pets-label='{"one":"pet","other":"pets"}'
-            data-pets-not-allowed-label='Not allowed'
-            data-done-label='Done'
-
-            data-new-tab="true"
-            data-version="stable"
-            data-has-guests-breakdown
-
-          ></div>
+        <div style="display:flex;align-items:center;gap:0.5rem;background:var(--color-warm-bg);border-radius:var(--radius-full);padding:0.5rem 1.1rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-bronze)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--color-navy);">Up to <span style="font-weight:400;color:var(--color-steel);">10 guests</span></span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;background:var(--color-warm-bg);border-radius:var(--radius-full);padding:0.5rem 1.1rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-bronze)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--color-navy);">Check-in 4 PM <span style="font-weight:400;color:var(--color-steel);">/ Check-out 11 AM</span></span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;background:var(--color-warm-bg);border-radius:var(--radius-full);padding:0.5rem 1.1rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-bronze)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span style="font-size:0.82rem;font-weight:600;color:var(--color-navy);">Pets <span style="font-weight:400;color:var(--color-steel);">welcome</span></span>
         </div>
       </div>
+
+      <!-- Lodgify Widget - full width, clean card -->
+      <div style="background:var(--color-white);border-radius:var(--radius-xl);padding:2rem;box-shadow:var(--shadow-lg);border:1px solid rgba(0,0,0,0.06);">
+        <!-- Lodgify Booking Widget -->
+        <style>
+          :root {
+            --ldg-psb-background: #ffffff;
+            --ldg-psb-border-radius: 0.42em;
+            --ldg-psb-box-shadow: none;
+            --ldg-psb-padding: 14px;
+            --ldg-psb-input-background: #f8f7f4;
+            --ldg-psb-button-border-radius: 3.58em;
+            --ldg-psb-color-primary: #01916e;
+            --ldg-psb-color-primary-lighter:#80c8b7;
+            --ldg-psb-color-primary-darker: #014937;
+            --ldg-psb-color-primary-contrast: #333333;
+            --ldg-semantic-color-primary:  #01916e;
+            --ldg-semantic-color-primary-lighter: #80c8b7;
+            --ldg-semantic-color-primary-darker: #014937;
+            --ldg-semantic-color-primary-contrast: #333333;
+            --ldg-component-modal-z-index: 999;
+          }
+          #lodgify-search-bar { width:100%; }
+        </style>
+        <div
+          id="lodgify-search-bar"
+          data-website-id="637973"
+          data-language-code="en"
+          data-checkout-page-url='https://checkout.lodgify.com/jacob-unknown-4f8237/en/#/768708'
+          data-dates-check-in-label='Check-in'
+          data-dates-check-out-label='Check-out'
+          data-guests-counter-label='Guests'
+          data-guests-input-singular-label='{{NumberOfGuests}} guest'
+          data-guests-input-plural-label='{{NumberOfGuests}} guests'
+          data-location-input-label='Location'
+          data-search-button-label='Search'
+          data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} night","other":"Minimum {minStay} nights"}'
+          data-guests-breakdown-label='Guests'
+          data-adults-label='{"one":"adult","other":"adults"}'
+          data-adults-description='Ages {minAge} or above'
+          data-children-label='{"one":"child","other":"children"}'
+          data-children-description='Ages {minAge}-{maxAge}'
+          data-children-not-allowed-label='Not suitable for children'
+          data-infants-label='{"one":"infant","other":"infants"}'
+          data-infants-description='Under {maxAge}'
+          data-infants-not-allowed-label='Not suitable for infants'
+          data-pets-label='{"one":"pet","other":"pets"}'
+          data-pets-not-allowed-label='Not allowed'
+          data-done-label='Done'
+          data-new-tab="true"
+          data-version="stable"
+          data-has-guests-breakdown
+        ></div>
+      </div>
+
+      <!-- Reassurance line -->
+      <p style="text-align:center;margin-top:1.25rem;font-size:0.85rem;color:var(--color-steel);font-weight:300;">Questions? Call or text <a href="tel:+18284230805" style="color:var(--color-forest);font-weight:500;">(828) 423-0805</a> and we'll get back to you fast.</p>
+
     </div>
   </section>
 

@@ -785,8 +785,20 @@ h1, h2, h3, h4, h5, h6 {
 /* Amenity Grid */
 .amenity-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .amenity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .amenity-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .amenity-item {

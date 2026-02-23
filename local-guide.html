@@ -409,9 +409,17 @@
           src="https://maps.google.com/maps?q=29+Timothy+Ln,+Waynesville,+NC+28786&t=&z=14&ie=UTF8&iwloc=&output=embed"
           width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <!-- House icon overlay centered on property pin -->
-        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-72%);pointer-events:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.5));">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="42" height="42" fill="#01916e"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <!-- Custom Mojo Manor logo pin overlay -->
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-100%);pointer-events:none;text-align:center;">
+          <!-- Pin shape -->
+          <div style="position:relative;display:inline-block;">
+            <div style="width:54px;height:54px;background:#01916e;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 3px 10px rgba(0,0,0,0.4);border:2px solid #fff;"></div>
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;overflow:hidden;background:#fff;">
+              <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor" style="width:100%;height:100%;object-fit:contain;padding:3px;">
+            </div>
+          </div>
+          <!-- Label -->
+          <div style="margin-top:6px;background:#01916e;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:12px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.3);letter-spacing:0.5px;">Mojo Manor</div>
         </div>
       </div>
     </div>

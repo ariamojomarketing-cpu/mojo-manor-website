@@ -499,17 +499,23 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
-          <!-- Custom Mojo Manor logo pin overlay -->
-          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-100%);pointer-events:none;text-align:center;">
-            <!-- Pin shape -->
-            <div style="position:relative;display:inline-block;">
-              <div style="width:54px;height:54px;background:#01916e;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 3px 10px rgba(0,0,0,0.4);border:2px solid #fff;"></div>
-              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;overflow:hidden;background:#fff;">
-                <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor" style="width:100%;height:100%;object-fit:contain;padding:3px;">
+          <!-- Branded Mojo Manor map pin -->
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-100%);pointer-events:none;text-align:center;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.45));">
+            <div style="position:relative;display:inline-flex;flex-direction:column;align-items:center;">
+              <!-- Teardrop pin body -->
+              <div style="position:relative;width:62px;height:62px;">
+                <!-- SVG teardrop shape -->
+                <svg viewBox="0 0 62 74" width="62" height="74" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                  <path d="M31 0C14 0 0 14 0 31c0 20 31 43 31 43S62 51 62 31C62 14 48 0 31 0z" fill="#01916e" stroke="#fff" stroke-width="2.5"/>
+                </svg>
+                <!-- Logo centered inside pin -->
+                <div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:42px;height:42px;border-radius:50%;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+                  <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor" style="width:36px;height:36px;object-fit:contain;">
+                </div>
               </div>
+              <!-- "Mojo Manor" label pill below pin -->
+              <div style="margin-top:5px;background:#01916e;color:#fff;font-family:inherit;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:4px 10px;border-radius:20px;white-space:nowrap;border:2px solid #fff;">Mojo Manor</div>
             </div>
-            <!-- Label -->
-            <div style="margin-top:6px;background:#01916e;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:12px;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.3);letter-spacing:0.5px;">Mojo Manor</div>
           </div>
         </div>
       </div>

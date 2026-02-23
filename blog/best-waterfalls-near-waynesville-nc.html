@@ -35,6 +35,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* Force blog content visible — reveal animation handled by scripts.js but content must never be hidden */
+    .blog-post-hero, .blog-post-header, .blog-post-body, .blog-post-body * { opacity: 1 !important; transform: none !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  </style>
   <link rel="stylesheet" href="../chat.css">
 </head>
 <body>

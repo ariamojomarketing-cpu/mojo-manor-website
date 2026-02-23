@@ -129,11 +129,42 @@
       <span class="section-tag">Stay in the Loop</span>
       <h2 class="section-title">Get the Latest from Mojo Manor</h2>
       <p style="color:var(--color-steel);font-weight:300;margin-bottom:2rem;">Seasonal guides, special offers, and local tips delivered straight to your inbox.</p>
-      <form action="https://formspree.io/f/xwvnwpdg" method="POST" style="display:flex;gap:0.75rem;max-width:420px;margin:0 auto;" onsubmit="this.innerHTML='<p style=\'color:var(--color-bronze);font-weight:600;\'>Thanks! You\'re on the list.</p>';">
+      <form id="newsletter-form" action="https://formspree.io/f/xwvnwpdg" method="POST" style="display:flex;gap:0.75rem;max-width:420px;margin:0 auto;">
         <input type="email" name="email" placeholder="Your email address" required style="flex:1;padding:0.875rem 1.25rem;border:1.5px solid var(--color-warm-gray);border-radius:var(--radius-full);font-family:inherit;font-size:0.95rem;background:var(--color-white);outline:none;">
         <input type="hidden" name="_subject" value="New Mojo Manor Newsletter Signup">
+        <input type="hidden" name="_next" value="https://mojomanorwaynesville.com/blog/?subscribed=true">
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
+      <p id="subscribe-thanks" style="display:none;color:var(--color-bronze);font-weight:600;margin-top:1rem;">Thanks! You're on the list.</p>
+      <script>
+        (function(){
+          var form = document.getElementById('newsletter-form');
+          if(!form) return;
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var data = new FormData(form);
+            fetch(form.action, {
+              method: 'POST',
+              body: data,
+              headers: { 'Accept': 'application/json' }
+            }).then(function(r){
+              if(r.ok){
+                form.style.display = 'none';
+                document.getElementById('subscribe-thanks').style.display = 'block';
+              } else {
+                alert('Oops! Something went wrong. Please try again.');
+              }
+            }).catch(function(){
+              alert('Oops! Something went wrong. Please try again.');
+            });
+          });
+          // Show success if redirected back with ?subscribed=true
+          if(window.location.search.indexOf('subscribed=true') > -1){
+            form.style.display = 'none';
+            document.getElementById('subscribe-thanks').style.display = 'block';
+          }
+        })();
+      </script>
     </div>
   </section>
 

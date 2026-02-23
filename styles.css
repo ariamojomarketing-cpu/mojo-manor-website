@@ -2161,3 +2161,70 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
   }
 }
+
+/* ── Mobile: Featured Blog Card (stacks on small screens) ─── */
+.featured-post-card {
+  display: block !important;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-fast);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.featured-post-card:hover {
+  transform: translateY(-4px);
+}
+.featured-post-card .featured-post-img {
+  min-height: 220px;
+  overflow: hidden;
+}
+.featured-post-card .featured-post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.featured-post-card .featured-post-content {
+  padding: 1.75rem;
+  background: var(--color-white);
+}
+@media (min-width: 640px) {
+  .featured-post-card {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .featured-post-card .featured-post-img {
+    min-height: 320px;
+  }
+  .featured-post-card .featured-post-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ── Mobile: Rates Table scroll wrapper ───────────────────── */
+.rates-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 2rem;
+  border-radius: var(--radius-lg);
+}
+.rates-table-wrap .rates-table {
+  margin-bottom: 0;
+  min-width: 540px;
+}
+
+/* ── Mobile: Blog post inline tables scroll ───────────────── */
+@media (max-width: 639px) {
+  .blog-post-body table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.82rem;
+  }
+}

@@ -124,7 +124,7 @@ Guests can book directly on this website (best rates, no extra fees) or via Airb
 
 ## Contact
 - Email: hello@mojomanor.com
-- Phone: (828) 555-0199
+- Phone: (828) 423-0805
 
 ## Your Personality
 - Warm, friendly, and genuinely helpful — like a knowledgeable local friend who happens to know this house perfectly

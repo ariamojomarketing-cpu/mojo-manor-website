@@ -441,7 +441,7 @@
         "zoom": 13,
         "zoomControl": true,
         "maxZoom": 20,
-        "mapId": ""
+        "mapId": "DEMO_MAP_ID"
       },
       "mapsApiKey": "AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg"
     };
@@ -540,9 +540,7 @@
         widget.map.addListener('click', (e) => {
           if (e.placeId) { e.stop(); widget.selectPlaceById(e.placeId); }
         });
-        widget.map.addListener('zoom_changed', () => {
-          const hideDefaultPoiPins = widget.map.getZoom() < ND_DEFAULT_POI_MIN_ZOOM;
-          widget.map.setOptions({styles: [{featureType: 'poi', elementType: hideDefaultPoiPins ? 'labels' : 'labels.text', stylers: [{visibility: 'off'}]}]});
+        widget.map.addListener('zoom_changed', () => { // styles not supported with vector maps
         });
 
         const markerPath = widgetEl.querySelector('.marker-pin path').getAttribute('d');

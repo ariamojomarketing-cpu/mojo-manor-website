@@ -522,36 +522,45 @@
             </div>
           </div>
         </div>
+        <!-- Real Maps API pin — stays locked to house coordinates when panning/zooming -->
         <div class="location-map" style="position:relative;">
-          <iframe
-            title="Mojo Manor location map — Waynesville, North Carolina"
-            src="https://maps.google.com/maps?q=29+Timothy+Ln,+Waynesville,+NC+28786&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="100%"
-            style="border:0;border-radius:16px;"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-          <!-- Branded Mojo Manor map pin -->
-          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-100%);pointer-events:none;text-align:center;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.45));">
-            <div style="position:relative;display:inline-flex;flex-direction:column;align-items:center;">
-              <!-- Teardrop pin body -->
-              <div style="position:relative;width:62px;height:62px;">
-                <!-- SVG teardrop shape -->
-                <svg viewBox="0 0 62 74" width="62" height="74" xmlns="http://www.w3.org/2000/svg" style="display:block;">
-                  <path d="M31 0C14 0 0 14 0 31c0 20 31 43 31 43S62 51 62 31C62 14 48 0 31 0z" fill="#01916e" stroke="#fff" stroke-width="2.5"/>
-                </svg>
-                <!-- Logo centered inside pin -->
-                <div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:42px;height:42px;border-radius:50%;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;">
-                  <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor" style="width:36px;height:36px;object-fit:contain;">
-                </div>
-              </div>
-              <!-- "Mojo Manor" label pill below pin -->
-              <div style="margin-top:5px;background:#01916e;color:#fff;font-family:inherit;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:4px 10px;border-radius:20px;white-space:nowrap;border:2px solid #fff;">Mojo Manor</div>
-            </div>
-          </div>
+          <div id="homepage-map" style="width:100%;height:100%;border-radius:16px;"></div>
         </div>
+        <script>
+          function initHomepageMap() {
+            const MOJO_COORDS = { lat: 35.4890909, lng: -83.0013223 };
+            const map = new google.maps.Map(document.getElementById('homepage-map'), {
+              center: MOJO_COORDS,
+              zoom: 16,
+              mapTypeControl: false,
+              streetViewControl: false,
+              fullscreenControl: true,
+              zoomControl: true,
+              styles: [{featureType:'poi',elementType:'labels',stylers:[{visibility:'off'}]}]
+            });
+            google.maps.importLibrary('marker').then(({ AdvancedMarkerElement }) => {
+              const pinEl = document.createElement('div');
+              pinEl.style.cssText = 'display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.50));cursor:default;';
+              pinEl.innerHTML = `
+                <div style="position:relative;width:58px;height:70px;">
+                  <svg viewBox="0 0 62 74" width="58" height="70" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                    <path d="M31 0C14 0 0 14 0 31c0 20 31 43 31 43S62 51 62 31C62 14 48 0 31 0z" fill="#01916e" stroke="#fff" stroke-width="2.5"/>
+                  </svg>
+                  <div style="position:absolute;top:7px;left:50%;transform:translateX(-50%);width:40px;height:40px;border-radius:50%;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,0.3);">
+                    <img src="Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor" style="width:34px;height:34px;object-fit:contain;">
+                  </div>
+                </div>
+                <div style="margin-top:4px;background:#01916e;color:#fff;font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:3px 9px;border-radius:20px;white-space:nowrap;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.3);">Mojo Manor</div>
+              `;
+              new AdvancedMarkerElement({ map, position: MOJO_COORDS, title: 'Mojo Manor', content: pinEl, zIndex: 9999 });
+            }).catch(() => {
+              new google.maps.Marker({ map, position: MOJO_COORDS, title: 'Mojo Manor',
+                icon: { url: 'Images/Mojo_Mountain_Logo_Transparent.png', scaledSize: new google.maps.Size(40,40), anchor: new google.maps.Point(20,40) }
+              });
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg&callback=initHomepageMap&libraries=marker" async defer></script>
       </div>
     </div>
   </section>

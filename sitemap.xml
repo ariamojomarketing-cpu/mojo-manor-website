@@ -4,39 +4,47 @@
   <!-- Core Pages -->
   <url>
     <loc>https://mojomanorwaynesville.com/</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/gallery</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/rates</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/local-guide</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/privacy-policy</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Interactive Map -->
+  <url>
+    <loc>https://mojomanorwaynesville.com/neighborhood-map</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Blog Index -->
   <url>
     <loc>https://mojomanorwaynesville.com/blog/</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -44,49 +52,49 @@
   <!-- Blog Posts -->
   <url>
     <loc>https://mojomanorwaynesville.com/blog/best-hikes-near-waynesville-nc</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/best-waterfalls-near-waynesville-nc</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/fall-foliage-waynesville-nc</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/things-to-do-waynesville-nc-families</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/waynesville-nc-breweries-guide</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/great-smoky-mountains-from-waynesville</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/asheville-day-trip-from-waynesville</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/group-vacation-rentals-waynesville-nc</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

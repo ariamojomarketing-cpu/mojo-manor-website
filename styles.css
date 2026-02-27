@@ -1217,6 +1217,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-lg);
   min-height: 220px;
   max-height: 300px;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -1225,6 +1228,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     min-height: 480px;
     max-height: none;
+    max-width: none;
+    margin: 0;
+    width: auto;
   }
 }
 

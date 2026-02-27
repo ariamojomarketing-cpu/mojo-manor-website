@@ -345,11 +345,23 @@
   .mojo-chat-panel {
     right: 12px;
     left: 12px;
-    bottom: 90px;
+    bottom: 150px;
     width: auto;
   }
   .mojo-chat-trigger {
     right: 16px;
-    bottom: 20px;
+    bottom: 80px; /* sits above the sticky Check Availability bar (~60px tall) */
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* When sticky CTA is present on mobile (max 1024px), push chat trigger up */
+@media (max-width: 1024px) {
+  .mojo-chat-trigger {
+    bottom: 80px;
+  }
+  .mojo-chat-panel {
+    bottom: 150px;
   }
 }

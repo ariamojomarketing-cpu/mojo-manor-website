@@ -63,6 +63,8 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -732,9 +734,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .amenity-card-featured:hover {
   background: rgba(255,255,255,0.08);
-  border-color: rgba(45,74,62,0.3);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-glow);
+  border-color: var(--color-bronze);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-glow), 0 0 0 1px var(--color-bronze), 0 0 30px rgba(1,145,110,0.3);
 }
 
 .amenity-card-img {
@@ -869,9 +871,16 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 4/3;
-  transition: box-shadow var(--transition-med), transform var(--transition-med);
-  outline: 3px solid transparent;
-  outline-offset: -3px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  border-color: var(--color-bronze);
+  box-shadow: 0 0 24px rgba(1,145,110,0.4), 0 8px 32px rgba(15,26,46,0.2);
+  transform: scale(1.02);
+  outline: none;
 }
 
 .gallery-item-wide {
@@ -1071,14 +1080,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
   overflow: visible;
   box-shadow: none;
-  transition: transform var(--transition-fast);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: center;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .room-card:hover {
-  transform: translateY(-6px);
-  box-shadow: none;
+  transform: translateY(-8px) scale(1.03);
+  z-index: 2;
 }
 
 /* Arch-shaped image frame */
@@ -1103,12 +1114,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--transition-slow);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   display: block;
 }
 
 .room-card:hover .room-card-img img {
-  transform: scale(1.07);
+  transform: scale(1.08);
 }
 
 .room-card-content {
@@ -1180,14 +1191,17 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 56px;
-  padding: 0.3rem 0.5rem;
+  width: 64px;
+  min-width: 64px;
+  height: 30px;
+  padding: 0;
   background: var(--color-bronze);
   color: var(--color-white);
   font-size: 0.75rem;
   font-weight: 700;
-  border-radius: var(--radius-full);
+  border-radius: 15px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .location-name {
@@ -2296,5 +2310,49 @@ h1, h2, h3, h4, h5, h6 {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     font-size: 0.82rem;
+  }
+}
+
+/* ── Mobile: Booking Stats 2×2 Grid ───────────────────────── */
+@media (max-width: 640px) {
+  .booking-stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .booking-stats-grid > div:nth-child(2) {
+    border-right: none !important;
+  }
+  .booking-stats-grid > div:nth-child(1),
+  .booking-stats-grid > div:nth-child(2) {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .booking-stats-grid > div:nth-child(3) {
+    border-right: 1px solid rgba(255,255,255,0.12) !important;
+  }
+}
+
+/* ── Mobile: Carousel Scrollbar & Arrows ──────────────────── */
+@media (max-width: 768px) {
+  .hero-carousel {
+    overflow: hidden !important;
+  }
+  .hero-carousel-prev,
+  .hero-carousel-next {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0.25rem !important;
+    min-width: unset !important;
+  }
+  .hero-carousel-prev svg,
+  .hero-carousel-next svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  /* Booking widget — full width, no overflow */
+  #lodgify-search-bar,
+  [id*="lodgify"],
+  .lodgify-portable-search-bar {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
   }
 }

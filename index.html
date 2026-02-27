@@ -757,6 +757,21 @@
               --ldg-psb-padding: 6px;
               --ldg-psb-background: #ffffff;
             }
+            /* Force date fields to stack vertically */
+            #lodgify-search-bar .css-khkv60 {
+              flex-direction: column !important;
+            }
+            /* Remove the divider between the two date fields */
+            #lodgify-search-bar .css-khkv60 > div + div {
+              border-top: 1px solid #e8e4de !important;
+              border-left: none !important;
+            }
+            /* Each date field takes full width */
+            #lodgify-search-bar [data-testid="start-date-button"],
+            #lodgify-search-bar [data-testid="end-date-button"] {
+              width: 100% !important;
+              flex: 1 1 100% !important;
+            }
           }
         </style>
         <div

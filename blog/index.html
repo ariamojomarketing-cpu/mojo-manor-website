@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=2">
   <link rel="stylesheet" href="../chat.css">
 
   <!-- Schema.org Structured Data -->
@@ -54,6 +54,13 @@
       }
     },
     "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Soco Falls: The Hidden Waterfall 20 Minutes from Waynesville NC",
+        "url": "https://mojomanorwaynesville.com/blog/soco-falls-waynesville-nc-hike",
+        "datePublished": "2026-03-10",
+        "description": "Soco Falls is a stunning double waterfall near Waynesville, NC - just 20 minutes away and totally free. Here's what to know before you go."
+      },
       {
         "@type": "BlogPosting",
         "headline": "The 8 Best Hikes Near Waynesville, NC for Every Skill Level",
@@ -123,16 +130,16 @@
   <!-- NAVIGATION -->
   <header class="site-header scrolled" id="siteHeader">
     <nav class="nav-container" aria-label="Main navigation">
-      <a href="../index.html" class="nav-logo" aria-label="Mojo Manor home">
+      <a href="/" class="nav-logo" aria-label="Mojo Manor home">
         <img src="../Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
         <span class="logo-text">Mojo Manor</span>
       </a>
       <ul class="nav-links" id="navLinks" role="menubar">
         <li role="none"><a href="../index.html#amenities" role="menuitem">Amenities</a></li>
-        <li role="none"><a href="../gallery.html" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="/gallery" role="menuitem">Gallery</a></li>
         <li role="none"><a href="../index.html#rooms" role="menuitem">Rooms</a></li>
-        <li role="none"><a href="../local-guide.html" role="menuitem">Area Guide</a></li>
-        <li role="none"><a href="index.html" role="menuitem" aria-current="page">WNC Insider</a></li>
+        <li role="none"><a href="/local-guide" role="menuitem">Area Guide</a></li>
+        <li role="none"><a href="/" role="menuitem" aria-current="page">WNC Insider</a></li>
         <li role="none"><a href="../index.html#faq" role="menuitem">FAQ</a></li>
       </ul>
       <a href="../index.html#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
@@ -145,10 +152,10 @@
   <div class="mobile-nav" id="mobileNav" aria-hidden="true">
     <ul class="mobile-nav-links">
       <li><a href="../index.html#amenities">Amenities</a></li>
-      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
       <li><a href="../index.html#rooms">Rooms</a></li>
-      <li><a href="../local-guide.html">Area Guide</a></li>
-      <li><a href="index.html">WNC Insider</a></li>
+      <li><a href="/local-guide">Area Guide</a></li>
+      <li><a href="/">WNC Insider</a></li>
       <li><a href="../index.html#faq">FAQ</a></li>
     </ul>
     <a href="../index.html#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
@@ -158,7 +165,7 @@
   <section class="page-hero">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a>
+        <a href="/">Home</a>
         <span class="breadcrumb-sep">›</span>
         <span>WNC Insider</span>
       </nav>
@@ -174,7 +181,21 @@
 
       <div class="blog-grid">
 
-        <a href="best-hikes-near-waynesville-nc.html" class="blog-card reveal">
+        <a href="soco-falls-waynesville-nc-hike.html" class="blog-card reveal">
+          <div class="blog-card-img">
+            <picture>
+              <img src="../Images/blog/soco-falls-waynesville-nc-hike.jpg" alt="Soco Falls double waterfall near Waynesville NC" loading="lazy">
+            </picture>
+          </div>
+          <div class="blog-card-content">
+            <p class="blog-card-tag">Waterfalls &amp; Day Trips</p>
+            <h2 class="blog-card-title">Soco Falls: The Hidden Waterfall 20 Minutes from Waynesville NC</h2>
+            <p class="blog-card-excerpt">A free double waterfall just off US-19 near Cherokee - 0.5 miles round trip, no permit needed, and most guests have no idea it's there until we tell them.</p>
+            <p class="blog-card-meta">March 2026 &bull; 5 min read</p>
+          </div>
+        </a>
+
+        <a href="best-hikes-near-waynesville-nc" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Appalachian_Trail_at_Newfound_Gap.JPG" alt="Appalachian Trail at Newfound Gap near Waynesville NC" loading="lazy">
@@ -188,7 +209,7 @@
           </div>
         </a>
 
-        <a href="best-waterfalls-near-waynesville-nc.html" class="blog-card reveal">
+        <a href="best-waterfalls-near-waynesville-nc" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Soco_Falls_North_Carolina_2020_2.jpg" alt="Soco Falls waterfall near Waynesville NC" loading="lazy">
@@ -202,7 +223,7 @@
           </div>
         </a>
 
-        <a href="fall-foliage-waynesville-nc.html" class="blog-card reveal">
+        <a href="fall-foliage-waynesville-nc" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Blue_Ridge_Parkway_-_Nature%27s_Palette_on_the_Blue_Ridge_Parkway_-_NARA_-_7717421.jpg" alt="Fall foliage on the Blue Ridge Parkway near Waynesville NC" loading="lazy">
@@ -216,7 +237,7 @@
           </div>
         </a>
 
-        <a href="great-smoky-mountains-from-waynesville.html" class="blog-card reveal">
+        <a href="great-smoky-mountains-from-waynesville" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Great_Smoky_Mountains_National_Park_-_October_2023_-_Sarah_Stierch_01.jpg" alt="Great Smoky Mountains National Park misty ridgelines" loading="lazy">
@@ -230,7 +251,7 @@
           </div>
         </a>
 
-        <a href="asheville-day-trip-from-waynesville.html" class="blog-card reveal">
+        <a href="asheville-day-trip-from-waynesville" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Biltmore_Estate%2C_Asheville%2C_North_Carolina.jpg" alt="Biltmore Estate in Asheville North Carolina" loading="lazy">
@@ -244,7 +265,7 @@
           </div>
         </a>
 
-        <a href="waynesville-nc-breweries-guide.html" class="blog-card reveal">
+        <a href="waynesville-nc-breweries-guide" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://images.squarespace-cdn.com/content/v1/5bda12fdf2e6b1de2d88bfd6/1601926568172-LN42918TIHPC3RVO5HXD/Boojum+Front+Car+Crop.jpg" alt="Boojum Brewing taproom storefront in Waynesville NC" loading="lazy">
@@ -258,7 +279,7 @@
           </div>
         </a>
 
-        <a href="things-to-do-waynesville-nc-families.html" class="blog-card reveal">
+        <a href="things-to-do-waynesville-nc-families" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Elk_in_Meadow%2C_Cataloochee%2C_NC_%2832846789968%29.jpg" alt="Elk in Cataloochee Valley near Waynesville NC - a top family activity" loading="lazy">
@@ -272,7 +293,7 @@
           </div>
         </a>
 
-        <a href="group-vacation-rentals-waynesville-nc.html" class="blog-card reveal">
+        <a href="group-vacation-rentals-waynesville-nc" class="blog-card reveal">
           <div class="blog-card-img">
             <picture>
               <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Downtown_Waynesville_NC.jpg" alt="Downtown Waynesville NC - group vacation base in the mountains" loading="lazy">
@@ -341,7 +362,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="../index.html" class="nav-logo footer-logo" aria-label="Mojo Manor home">
+          <a href="/" class="nav-logo footer-logo" aria-label="Mojo Manor home">
             <img src="../Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
             <span class="logo-text">Mojo Manor</span>
           </a>
@@ -351,18 +372,18 @@
           <h4>Explore</h4>
           <ul>
             <li><a href="../index.html#amenities">Amenities</a></li>
-            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="../index.html#rooms">Rooms</a></li>
-            <li><a href="../local-guide.html">Area Guide</a></li>
+            <li><a href="/local-guide">Area Guide</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <h4>Info</h4>
           <ul>
             <li><a href="../index.html#faq">FAQ</a></li>
-            <li><a href="../rates.html">Rates &amp; Policies</a></li>
-            <li><a href="index.html">WNC Insider</a></li>
-            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/rates">Rates &amp; Policies</a></li>
+            <li><a href="/">WNC Insider</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
             <li><a href="../index.html#booking">Book Now</a></li>
           </ul>
         </div>
@@ -376,7 +397,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="../privacy-policy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy-policy" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
       </div>
     </div>
   </footer>

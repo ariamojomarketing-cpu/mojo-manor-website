@@ -282,3 +282,332 @@
   }
 
 })();
+
+// ── Mojo Manor 3D Medallion (Three.js + GSAP scroll) ──────────────────────
+(function () {
+  function initMedallion() {
+    if (typeof THREE === 'undefined') return;
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    var canvas    = document.getElementById('medallionCanvas');
+    var medallion = document.getElementById('heroMedallion');
+    var navLogo   = document.querySelector('.logo-img');
+    var shadow    = medallion ? medallion.querySelector('.hero-medallion-shadow') : null;
+
+    if (!canvas || !medallion) return;
+
+    // ── Three.js Scene Setup ──────────────────────────────────
+    var size = 180;
+    var dpr  = Math.min(window.devicePixelRatio, 2);
+
+    var renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      alpha: true,
+      antialias: true
+    });
+    renderer.setSize(size, size);
+    renderer.setPixelRatio(dpr);
+    renderer.outputEncoding = THREE.sRGBEncoding;
+
+    var scene  = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
+    camera.position.z = 4.2;
+
+    // ── Lighting ──────────────────────────────────────────────
+    // Key light — warm gold highlight from upper-right
+    var keyLight = new THREE.DirectionalLight(0xfff4e0, 1.4);
+    keyLight.position.set(3, 4, 5);
+    scene.add(keyLight);
+
+    // Fill light — soft cool from left
+    var fillLight = new THREE.DirectionalLight(0xc8d8ff, 0.5);
+    fillLight.position.set(-4, 1, 3);
+    scene.add(fillLight);
+
+    // Rim light — behind and below for edge glow
+    var rimLight = new THREE.DirectionalLight(0xffd080, 0.7);
+    rimLight.position.set(0, -3, -4);
+    scene.add(rimLight);
+
+    // Ambient — lift shadows and let colors show
+    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+
+    // ── Medallion Geometry ────────────────────────────────────
+    // Thick cylinder for the disc body
+    var radius     = 1.35;
+    var thickness  = 0.18;
+    var segments   = 64;
+
+    var discGeo = new THREE.CylinderGeometry(radius, radius, thickness, segments);
+    // Rotate so the flat face points at camera (cylinder default is Y-up)
+    discGeo.rotateX(Math.PI / 2);
+
+    // Gold metallic material for the rim/edge
+    var goldMat = new THREE.MeshStandardMaterial({
+      color:      0xd4a840,
+      metalness:  0.85,
+      roughness:  0.28,
+      emissive:   0x1a0f00,
+      emissiveIntensity: 0.15
+    });
+
+    var disc = new THREE.Mesh(discGeo, goldMat);
+    scene.add(disc);
+
+    // ── Logo as Embossed Relief on Both Faces ───────────────────
+    // Converts the logo into a gold-toned bump-mapped coin face
+    var logoImg = new Image();
+    logoImg.onload = function () {
+      var texSize = 512;
+
+      // ── Step 1: Draw logo onto canvas and extract pixel data ──
+      var srcCanvas = document.createElement('canvas');
+      srcCanvas.width = texSize;
+      srcCanvas.height = texSize;
+      var srcCtx = srcCanvas.getContext('2d');
+      srcCtx.drawImage(logoImg, 0, 0, texSize, texSize);
+      var srcData = srcCtx.getImageData(0, 0, texSize, texSize);
+      var pixels = srcData.data;
+
+      // ── Step 2: Create color map ──
+      // Original logo colors where opaque, gold where transparent (negative space)
+      var colorCanvas = document.createElement('canvas');
+      colorCanvas.width = texSize;
+      colorCanvas.height = texSize;
+      var colorCtx = colorCanvas.getContext('2d');
+      var colorImg = colorCtx.createImageData(texSize, texSize);
+      var cd = colorImg.data;
+
+      // Gold fill for negative space
+      var goldR = 212, goldG = 168, goldB = 64;
+
+      for (var i = 0; i < pixels.length; i += 4) {
+        var a = pixels[i + 3] / 255;
+        if (a > 0.1) {
+          // Opaque: keep original logo color
+          cd[i]     = pixels[i];
+          cd[i + 1] = pixels[i + 1];
+          cd[i + 2] = pixels[i + 2];
+        } else {
+          // Transparent: gold fill
+          cd[i]     = goldR;
+          cd[i + 1] = goldG;
+          cd[i + 2] = goldB;
+        }
+        cd[i + 3] = 255;
+      }
+      colorCtx.putImageData(colorImg, 0, 0);
+
+      // ── Step 3: Create bump map (height map) ──
+      // Opaque design areas = raised (white), transparent = flat (dark grey)
+      // Also use edge detection for sharper relief lines
+      var bumpCanvas = document.createElement('canvas');
+      bumpCanvas.width = texSize;
+      bumpCanvas.height = texSize;
+      var bumpCtx = bumpCanvas.getContext('2d');
+      var bumpImg = bumpCtx.createImageData(texSize, texSize);
+      var bd = bumpImg.data;
+
+      for (var i = 0; i < pixels.length; i += 4) {
+        var a = pixels[i + 3] / 255;
+        // Height: opaque = raised (white), transparent = base (black)
+        var height = Math.round(a * 255);
+        bd[i] = bd[i + 1] = bd[i + 2] = height;
+        bd[i + 3] = 255;
+      }
+
+      // Edge enhancement: detect alpha transitions for crisp relief edges
+      var edgeData = bumpCtx.createImageData(texSize, texSize);
+      var ed = edgeData.data;
+      for (var y = 1; y < texSize - 1; y++) {
+        for (var x = 1; x < texSize - 1; x++) {
+          var idx = (y * texSize + x) * 4;
+          var left  = pixels[idx - 4 + 3];
+          var right = pixels[idx + 4 + 3];
+          var up    = pixels[idx - texSize * 4 + 3];
+          var down  = pixels[idx + texSize * 4 + 3];
+          var edge  = Math.min(255, Math.abs(right - left) + Math.abs(down - up));
+          // Boost the bump at edges
+          var base = bd[idx];
+          var boosted = Math.min(255, base + edge * 1.2);
+          ed[idx] = ed[idx + 1] = ed[idx + 2] = Math.round(boosted);
+          ed[idx + 3] = 255;
+        }
+      }
+      bumpCtx.putImageData(edgeData, 0, 0);
+
+      // ── Step 4: Create materials with bump mapping ──
+      var maxAniso = renderer.capabilities.getMaxAnisotropy();
+
+      var colorTex = new THREE.CanvasTexture(colorCanvas);
+      colorTex.encoding = THREE.sRGBEncoding;
+      colorTex.anisotropy = maxAniso;
+
+      var bumpTex = new THREE.CanvasTexture(bumpCanvas);
+      bumpTex.anisotropy = maxAniso;
+
+      var faceMat = new THREE.MeshStandardMaterial({
+        map:       colorTex,
+        bumpMap:   bumpTex,
+        bumpScale: 0.6,        // Heavy emboss — deep relief lines
+        metalness: 0.3,
+        roughness: 0.55,
+        side:      THREE.FrontSide
+      });
+
+      // Front face
+      var faceGeo = new THREE.CircleGeometry(radius * 0.93, segments);
+      var frontFace = new THREE.Mesh(faceGeo, faceMat);
+      frontFace.position.z = thickness / 2 + 0.001;
+      disc.add(frontFace);
+
+      // ── Back face: mirrored ──
+      var colorCanvas2 = document.createElement('canvas');
+      colorCanvas2.width = texSize;
+      colorCanvas2.height = texSize;
+      var cc2 = colorCanvas2.getContext('2d');
+      cc2.translate(texSize, 0);
+      cc2.scale(-1, 1);
+      cc2.drawImage(colorCanvas, 0, 0);
+
+      var bumpCanvas2 = document.createElement('canvas');
+      bumpCanvas2.width = texSize;
+      bumpCanvas2.height = texSize;
+      var bc2 = bumpCanvas2.getContext('2d');
+      bc2.translate(texSize, 0);
+      bc2.scale(-1, 1);
+      bc2.drawImage(bumpCanvas, 0, 0);
+
+      var colorTex2 = new THREE.CanvasTexture(colorCanvas2);
+      colorTex2.encoding = THREE.sRGBEncoding;
+      colorTex2.anisotropy = maxAniso;
+      var bumpTex2 = new THREE.CanvasTexture(bumpCanvas2);
+      bumpTex2.anisotropy = maxAniso;
+
+      var backMat = new THREE.MeshStandardMaterial({
+        map:       colorTex2,
+        bumpMap:   bumpTex2,
+        bumpScale: 0.6,        // Heavy emboss — match front
+        metalness: 0.3,
+        roughness: 0.55,
+        side:      THREE.FrontSide
+      });
+
+      var backFace = new THREE.Mesh(faceGeo.clone(), backMat);
+      backFace.position.z = -(thickness / 2 + 0.001);
+      backFace.rotation.y = Math.PI;
+      disc.add(backFace);
+    };
+    logoImg.src = MOJO_LOGO_BASE64;
+
+    // ── Beveled Ring (outer edge highlight) ───────────────────
+    var ringGeo = new THREE.TorusGeometry(radius, 0.04, 16, segments);
+    var ringMat = new THREE.MeshStandardMaterial({
+      color:     0xf0d060,
+      metalness: 0.95,
+      roughness: 0.15
+    });
+    // Front ring
+    var frontRing = new THREE.Mesh(ringGeo, ringMat);
+    frontRing.position.z = thickness / 2;
+    disc.add(frontRing);
+    // Back ring
+    var backRing = new THREE.Mesh(ringGeo.clone(), ringMat);
+    backRing.position.z = -thickness / 2;
+    disc.add(backRing);
+
+    // ── Animation State ──────────────────────────────────────
+    var clock   = new THREE.Clock();
+    var floatY  = { value: 0 };
+    var running = true;
+
+    // Gyroscopic rotation speeds (radians/sec)
+    var spinY = 0.45;   // Primary spin — like a coin
+    var spinX = 0.07;   // Very gentle nod forward/back
+    var spinZ = 0.04;   // Subtle axial roll
+
+    // Floating bob via GSAP
+    gsap.to(floatY, {
+      value: -0.18,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: 'sine.inOut'
+    });
+
+    // Shadow breathes
+    if (shadow) {
+      gsap.to(shadow, {
+        scaleX: 0.65,
+        opacity: 0.45,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+      });
+    }
+
+    // Scroll fade-out
+    gsap.to(medallion, {
+      opacity: 0,
+      scale: 0.55,
+      scrollTrigger: {
+        trigger: '#hero',
+        start: 'top top',
+        end: '22% top',
+        scrub: 0.6
+      }
+    });
+
+    // ── Render Loop ──────────────────────────────────────────
+    function animate() {
+      if (!running) return;
+      requestAnimationFrame(animate);
+
+      var t = clock.getElapsedTime();
+
+      // Gyroscopic rotation — all three axes at different rates
+      disc.rotation.y = t * spinY;
+      disc.rotation.x = Math.sin(t * spinX) * 0.06;  // Very slight nod
+      disc.rotation.z = Math.sin(t * spinZ) * 0.03;   // Barely perceptible roll
+
+      // Floating bob
+      disc.position.y = floatY.value;
+
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Pause when off-screen to save GPU
+    var observer = new IntersectionObserver(function (entries) {
+      running = entries[0].isIntersecting;
+      if (running) {
+        clock.start();
+        animate();
+      }
+    }, { threshold: 0.05 });
+    observer.observe(medallion);
+
+    // ── Nav Logo Spin (GSAP, same as before) ──────────────────
+    if (navLogo) {
+      gsap.to(navLogo, {
+        rotateY: 360,
+        duration: 18,
+        repeat: -1,
+        ease: 'none',
+        transformOrigin: 'center center',
+        delay: 1.2
+      });
+    }
+  }
+
+  // Wait for scripts to be ready (deferred)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      requestAnimationFrame(function () { setTimeout(initMedallion, 0); });
+    });
+  } else {
+    requestAnimationFrame(function () { setTimeout(initMedallion, 0); });
+  }
+})();

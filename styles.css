@@ -84,6 +84,12 @@ img {
   height: auto;
   display: block;
 }
+/* Leaflet tile images must not be constrained by global img rules */
+.leaflet-container img {
+  max-width: none !important;
+  height: auto !important;
+  display: inline !important;
+}
 
 a {
   color: inherit;
@@ -565,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 4rem var(--section-pad-x) 6rem;
+  padding: 7rem var(--section-pad-x) 6rem;
   max-width: 800px;
 }
 
@@ -633,6 +639,50 @@ h1, h2, h3, h4, h5, h6 {
   width: 1px;
   height: 36px;
   background: rgba(255,255,255,0.15);
+}
+
+/* ── Hero Medallion Gyro (Three.js) ────────────────────────── */
+.hero-medallion-wrap {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;
+  pointer-events: none;
+  width: 180px;
+  height: 210px;
+  will-change: transform, opacity;
+}
+
+#medallionCanvas {
+  width: 180px;
+  height: 180px;
+  display: block;
+}
+
+/* Floating shadow — contracts when coin floats up, expands when down */
+.hero-medallion-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(0,0,0,0.5) 0%, transparent 70%);
+  filter: blur(7px);
+  will-change: transform, opacity;
+}
+
+@media (max-width: 768px) {
+  .hero-medallion-wrap {
+    display: none;
+  }
+}
+
+/* ── Nav logo persistent slow spin ──────────────────────── */
+.logo-img {
+  will-change: transform;
 }
 
 .hero-scroll {
@@ -1093,11 +1143,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-/* Arch-shaped image frame */
+/* Room image card */
 .room-card-img {
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/3;
   overflow: hidden;
-  border-radius: 9999px 9999px 1rem 1rem;
+  border-radius: 0.75rem;
   margin-bottom: 1.1rem;
   position: relative;
   transition: box-shadow var(--transition-med);
@@ -1221,8 +1271,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.location-map iframe,
-.location-map > div {
+.location-map iframe {
   width: 100% !important;
   max-width: 100% !important;
   height: 100% !important;
@@ -1704,26 +1753,42 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Review Ticker ────────────────────────────────────────── */
 .reviews-ticker-outer {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: clamp(1.5rem, 3vw, 2.5rem) 0;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+}
+
+.reviews-row {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
 
 .reviews-ticker {
   display: flex;
   width: max-content;
-  gap: 1.5rem;
-  animation: ticker-scroll 90s linear infinite;
+  gap: 1.25rem;
+  animation: ticker-scroll 55s linear infinite;
 }
 
-.reviews-ticker:hover {
+.reviews-ticker-reverse {
+  animation: ticker-scroll-reverse 65s linear infinite;
+}
+
+.reviews-ticker:hover,
+.reviews-ticker-reverse:hover {
   animation-play-state: paused;
 }
 
 @keyframes ticker-scroll {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+@keyframes ticker-scroll-reverse {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
 }
 
 .ticker-card {

@@ -42,7 +42,73 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
+
+  <!-- FAQPage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Mojo Manor pet-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We welcome well-behaved dogs (up to 2). There's a private fenced yard with an 8' privacy fence and we provide bowls, a dog bed, and waste bags. A $75 pet fee applies per dog."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's included in the rental?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Everything. Linens, towels, toiletries, a fully stocked kitchen, high-speed WiFi, large Smart TVs in every room, game room access, hot tub, fire pit supplies, kids gear, and more. Just bring your clothes and groceries."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the property suitable for young children?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We have a pack-n-play, high chair, outlet covers, and baby gate available on request. The private fenced yard and game room are great for kids of all ages. The hot tub has a locking cover for safety."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the cancellation policy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Full refund if cancelled 30+ days before check-in. 50% refund if cancelled 14–30 days out. No refund within 14 days. We recommend travel insurance for peace of mind."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are events or parties allowed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mojo Manor is a residential property and we do not permit parties or events. Quiet hours are 10 PM – 8 AM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is Mojo Manor from Asheville?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "About 30 minutes west of downtown Asheville via I-40. Close enough for day trips to Asheville's restaurants, Biltmore Estate, and breweries — far enough to enjoy a peaceful mountain setting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there parking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, flat paved driveway with room for 3+ vehicles. No steep mountain roads or gravel driveways to worry about."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -107,10 +173,10 @@
       </a>
       <ul class="nav-links" id="navLinks" role="menubar">
         <li role="none"><a href="#amenities" role="menuitem">Amenities</a></li>
-        <li role="none"><a href="gallery.html" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="gallery" role="menuitem">Gallery</a></li>
         <li role="none"><a href="#rooms" role="menuitem">Rooms</a></li>
-        <li role="none"><a href="local-guide.html" role="menuitem">Area Guide</a></li>
-        <li role="none"><a href="blog/index.html" role="menuitem">WNC Insider</a></li>
+        <li role="none"><a href="local-guide" role="menuitem">Area Guide</a></li>
+        <li role="none"><a href="blog/" role="menuitem">WNC Insider</a></li>
         <li role="none"><a href="#faq" role="menuitem">FAQ</a></li>
       </ul>
       <a href="#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
@@ -124,10 +190,10 @@
   <div class="mobile-nav" id="mobileNav" aria-hidden="true">
     <ul class="mobile-nav-links">
       <li><a href="#amenities">Amenities</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="gallery">Gallery</a></li>
       <li><a href="#rooms">Rooms</a></li>
-      <li><a href="local-guide.html">Area Guide</a></li>
-      <li><a href="blog/index.html">WNC Insider</a></li>
+      <li><a href="local-guide">Area Guide</a></li>
+      <li><a href="blog/">WNC Insider</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <a href="#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
@@ -135,6 +201,11 @@
 
   <!-- ==================== HERO ==================== -->
   <section class="hero" id="hero">
+    <!-- 3D Gyro Medallion (Three.js) -->
+    <div class="hero-medallion-wrap" id="heroMedallion" aria-hidden="true">
+      <canvas id="medallionCanvas"></canvas>
+      <div class="hero-medallion-shadow"></div>
+    </div>
 <!-- Hero Carousel -->
     <div class="hero-carousel" id="heroCarousel" aria-hidden="true">
       <div class="hero-slide active">
@@ -200,7 +271,7 @@
     <div class="hero-content">
       <p class="hero-tag animate-fade-up">Waynesville, North Carolina</p>
       <h1 class="hero-title animate-fade-up delay-1">Luxury Retreat.<br>Serious Fun.</h1>
-      <p class="hero-subtitle animate-fade-up delay-2">A modern mountain manor in Waynesville, NC with boutique hotel style and amenities for families and groups who want it all — in the heart of Western North Carolina.</p>
+      <p class="hero-subtitle animate-fade-up delay-2">Hot tub under the stars. A neon-lit arcade. A chef's kitchen for the whole crew. All 5 minutes from downtown Waynesville, NC.</p>
       <div class="hero-actions animate-fade-up delay-3">
         <a href="#booking" class="btn btn-primary btn-lg">Check Availability</a>
         <a href="#amenities" class="btn btn-ghost btn-lg">View Amenities</a>
@@ -298,6 +369,18 @@
         </article>
         <article class="amenity-card amenity-card-featured">
           <div class="amenity-card-img">
+            <img src="Images/Optimized/furnished/Kitchen Island Wide v2.jpg" alt="Chef's kitchen with long quartz countertops and peninsula island at Mojo Manor" loading="lazy">
+          </div>
+          <div class="amenity-card-content">
+            <div class="amenity-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M21 15V2a5 5 0 00-5 5v6h3v6a1 1 0 002 0V2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Chef's Kitchen</h3>
+            <p>Gourmet kitchen with long quartz countertops, a full peninsula island, premium appliances, and every pot, pan, and tool you need to cook for the whole crew.</p>
+          </div>
+        </article>
+        <article class="amenity-card amenity-card-featured">
+          <div class="amenity-card-img">
             <img src="Images/Furnished Photos/Coffee Bar.jpeg" alt="Stocked coffee bar with espresso, syrups, and morning essentials at Mojo Manor" loading="lazy">
           </div>
           <div class="amenity-card-content">
@@ -318,13 +401,6 @@
           </div>
           <h4>Large Smart TVs</h4>
           <p>85" Smart TV in the living room, large Smart TVs in every bedroom - log in with your own streaming apps.</p>
-        </div>
-        <div class="amenity-item">
-          <div class="amenity-item-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 9h18M9 21V9M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h4>Chef's Kitchen</h4>
-          <p>Full gourmet kitchen with premium appliances, quartz counters, and everything you need.</p>
         </div>
         <div class="amenity-item">
           <div class="amenity-item-icon">
@@ -392,7 +468,7 @@
       <div class="section-header section-header-center">
         <span class="section-tag">Photo Gallery</span>
         <h2 class="section-title">See the Space</h2>
-        <p class="section-subtitle">Tap any image for a closer look, or <a href="gallery.html" style="color:var(--color-bronze);text-decoration:underline;text-underline-offset:3px;">view all photos &rarr;</a></p>
+        <p class="section-subtitle">Tap any image for a closer look, or <a href="gallery" style="color:var(--color-bronze);text-decoration:underline;text-underline-offset:3px;">view all photos &rarr;</a></p>
       </div>
       <div class="gallery-grid">
         <!-- Row 1: 3 tall images -->
@@ -536,14 +612,7 @@
             </div>
           </div>
         </div>
-        <!-- Map embed — simple iframe, no popups, fully contained -->
-        <div class="location-map">
-          <iframe
-            title="Mojo Manor location map"
-            src="https://maps.google.com/maps?q=29+Timothy+Ln,+Waynesville,+NC+28786&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            width="100%" height="100%" style="border:0;display:block;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+        <div class="location-map" id="home-map"></div>
       </div>
     </div>
   </section>
@@ -556,144 +625,109 @@
         <h2 class="section-title">Don't Take Our Word for It</h2>
         <p class="section-subtitle section-subtitle-light">Here's what recent guests had to say about Mojo Manor.</p>
       </div>
-      <!-- Infinite Review Ticker -->
+      <!-- Infinite Dual-Row Review Ticker -->
       <div class="reviews-ticker-outer" aria-label="Guest reviews">
+
+        <!-- Row 1 — scrolls left -->
+        <div class="reviews-row">
         <div class="reviews-ticker" role="list">
 
-          <!-- === SET 1 (original) === -->
+          <!-- Row 1 reviews (1–4) + duplicate for seamless loop -->
           <blockquote class="ticker-card" role="listitem">
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="review-text">"Absolutely incredible property. The renovation is stunning - it felt like a boutique hotel but with all the comforts of home. Kids loved the game room, and the hot tub views were unreal."</p>
-            <footer class="review-author">
-              <strong>Sarah M.</strong>
-              <span>Family Trip &bull; October 2024</span>
-            </footer>
+            <p class="review-text">"Absolutely incredible property. The renovation is stunning — it felt like a boutique hotel but with all the comforts of home. Kids loved the game room, and the hot tub views were unreal."</p>
+            <footer class="review-author"><strong>Sarah M.</strong><span>Family Trip &bull; October 2024</span></footer>
           </blockquote>
           <blockquote class="ticker-card" role="listitem">
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-text">"We've rented a lot of mountain houses and this is the best we've stayed in. Modern, clean, well-stocked, and the location is perfect for exploring Waynesville and beyond."</p>
-            <footer class="review-author">
-              <strong>Jake &amp; Liz R.</strong>
-              <span>Couples Weekend &bull; September 2024</span>
-            </footer>
+            <footer class="review-author"><strong>Jake &amp; Liz R.</strong><span>Couples Weekend &bull; September 2024</span></footer>
           </blockquote>
           <blockquote class="ticker-card" role="listitem">
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-text">"Brought the whole crew — grandparents, kids, and the dog. Everyone had the best time. The house is gorgeous and the attention to detail is top-notch. Already re-booked."</p>
-            <footer class="review-author">
-              <strong>The Davis Family</strong>
-              <span>Multi-Gen Trip &bull; November 2024</span>
-            </footer>
+            <footer class="review-author"><strong>The Davis Family</strong><span>Multi-Gen Trip &bull; November 2024</span></footer>
           </blockquote>
           <blockquote class="ticker-card" role="listitem">
             <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="review-text">"Ten of us stayed for a long weekend and everyone was blown away. The game room kept the kids entertained for hours, and the adults claimed the hot tub every night. Perfection."</p>
-            <footer class="review-author">
-              <strong>Marcus T.</strong>
-              <span>Group Stay &bull; December 2024</span>
-            </footer>
+            <footer class="review-author"><strong>Marcus T.</strong><span>Group Stay &bull; December 2024</span></footer>
           </blockquote>
-          <blockquote class="ticker-card" role="listitem">
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="review-text">"The photos don't do it justice - it's even more beautiful in person. The kitchen was stocked with everything we needed, and being minutes from downtown Waynesville was a huge bonus."</p>
-            <footer class="review-author">
-              <strong>Amanda K.</strong>
-              <span>Family Vacation &bull; August 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem">
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="review-text">"We booked Mojo Manor for Thanksgiving and it was the best decision we've ever made. The space handled our whole family with room to spare. We'll be back every year."</p>
-            <footer class="review-author">
-              <strong>The Morrison Family</strong>
-              <span>Holiday Stay &bull; November 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem">
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="review-text">"Our anniversary trip exceeded every expectation. The house feels like a proper luxury escape, not just a rental. The hot tub under the stars was magical. Highly, highly recommend."</p>
-            <footer class="review-author">
-              <strong>Derek &amp; Nicole W.</strong>
-              <span>Anniversary &bull; September 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem">
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="review-text">"Perfect base for exploring the Smokies. We hiked every day and came back to pure luxury each night. The host was incredibly responsive and the check-in was seamless."</p>
-            <footer class="review-author">
-              <strong>The Chen Family</strong>
-              <span>Summer Trip &bull; July 2024</span>
-            </footer>
-          </blockquote>
-
-          <!-- === SET 2 (duplicate for seamless loop) === -->
+          <!-- duplicate set for seamless loop -->
           <blockquote class="ticker-card" role="listitem" aria-hidden="true">
             <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Absolutely incredible property. The renovation is stunning - it felt like a boutique hotel but with all the comforts of home. Kids loved the game room, and the hot tub views were unreal."</p>
-            <footer class="review-author">
-              <strong>Sarah M.</strong>
-              <span>Family Trip &bull; October 2024</span>
-            </footer>
+            <p class="review-text">"Absolutely incredible property. The renovation is stunning — it felt like a boutique hotel but with all the comforts of home. Kids loved the game room, and the hot tub views were unreal."</p>
+            <footer class="review-author"><strong>Sarah M.</strong><span>Family Trip &bull; October 2024</span></footer>
           </blockquote>
           <blockquote class="ticker-card" role="listitem" aria-hidden="true">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">"We've rented a lot of mountain houses and this is the best we've stayed in. Modern, clean, well-stocked, and the location is perfect for exploring Waynesville and beyond."</p>
-            <footer class="review-author">
-              <strong>Jake &amp; Liz R.</strong>
-              <span>Couples Weekend &bull; September 2024</span>
-            </footer>
+            <footer class="review-author"><strong>Jake &amp; Liz R.</strong><span>Couples Weekend &bull; September 2024</span></footer>
           </blockquote>
           <blockquote class="ticker-card" role="listitem" aria-hidden="true">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">"Brought the whole crew — grandparents, kids, and the dog. Everyone had the best time. The house is gorgeous and the attention to detail is top-notch. Already re-booked."</p>
-            <footer class="review-author">
-              <strong>The Davis Family</strong>
-              <span>Multi-Gen Trip &bull; November 2024</span>
-            </footer>
+            <footer class="review-author"><strong>The Davis Family</strong><span>Multi-Gen Trip &bull; November 2024</span></footer>
           </blockquote>
           <blockquote class="ticker-card" role="listitem" aria-hidden="true">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">"Ten of us stayed for a long weekend and everyone was blown away. The game room kept the kids entertained for hours, and the adults claimed the hot tub every night. Perfection."</p>
-            <footer class="review-author">
-              <strong>Marcus T.</strong>
-              <span>Group Stay &bull; December 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"The photos don't do it justice - it's even more beautiful in person. The kitchen was stocked with everything we needed, and being minutes from downtown Waynesville was a huge bonus."</p>
-            <footer class="review-author">
-              <strong>Amanda K.</strong>
-              <span>Family Vacation &bull; August 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"We booked Mojo Manor for Thanksgiving and it was the best decision we've ever made. The space handled our whole family with room to spare. We'll be back every year."</p>
-            <footer class="review-author">
-              <strong>The Morrison Family</strong>
-              <span>Holiday Stay &bull; November 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Our anniversary trip exceeded every expectation. The house feels like a proper luxury escape, not just a rental. The hot tub under the stars was magical. Highly, highly recommend."</p>
-            <footer class="review-author">
-              <strong>Derek &amp; Nicole W.</strong>
-              <span>Anniversary &bull; September 2024</span>
-            </footer>
-          </blockquote>
-          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Perfect base for exploring the Smokies. We hiked every day and came back to pure luxury each night. The host was incredibly responsive and the check-in was seamless."</p>
-            <footer class="review-author">
-              <strong>The Chen Family</strong>
-              <span>Summer Trip &bull; July 2024</span>
-            </footer>
+            <footer class="review-author"><strong>Marcus T.</strong><span>Group Stay &bull; December 2024</span></footer>
           </blockquote>
 
         </div>
-      </div>
+        </div><!-- /reviews-row-left -->
+
+        <!-- Row 2 — scrolls right -->
+        <div class="reviews-row">
+        <div class="reviews-ticker reviews-ticker-reverse" role="list">
+          <!-- Row 2 reviews (5–8) + duplicate for seamless loop -->
+          <blockquote class="ticker-card" role="listitem">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"The photos don't do it justice — it's even more beautiful in person. The kitchen was stocked with everything we needed, and being minutes from downtown Waynesville was a huge bonus."</p>
+            <footer class="review-author"><strong>Amanda K.</strong><span>Family Vacation &bull; August 2024</span></footer>
+          </blockquote>
+          <blockquote class="ticker-card" role="listitem">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"We booked Mojo Manor for Thanksgiving and it was the best decision we've ever made. The space handled our whole family with room to spare. We'll be back every year."</p>
+            <footer class="review-author"><strong>The Morrison Family</strong><span>Holiday Stay &bull; November 2024</span></footer>
+          </blockquote>
+          <blockquote class="ticker-card" role="listitem">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Our anniversary trip exceeded every expectation. The house feels like a proper luxury escape, not just a rental. The hot tub under the stars was magical. Highly, highly recommend."</p>
+            <footer class="review-author"><strong>Derek &amp; Nicole W.</strong><span>Anniversary &bull; September 2024</span></footer>
+          </blockquote>
+          <blockquote class="ticker-card" role="listitem">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">"Perfect base for exploring the Smokies. We hiked every day and came back to pure luxury each night. The host was incredibly responsive and the check-in was seamless."</p>
+            <footer class="review-author"><strong>The Chen Family</strong><span>Summer Trip &bull; July 2024</span></footer>
+          </blockquote>
+          <!-- duplicate set for seamless loop -->
+          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"The photos don't do it justice — it's even more beautiful in person. The kitchen was stocked with everything we needed, and being minutes from downtown Waynesville was a huge bonus."</p>
+            <footer class="review-author"><strong>Amanda K.</strong><span>Family Vacation &bull; August 2024</span></footer>
+          </blockquote>
+          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"We booked Mojo Manor for Thanksgiving and it was the best decision we've ever made. The space handled our whole family with room to spare. We'll be back every year."</p>
+            <footer class="review-author"><strong>The Morrison Family</strong><span>Holiday Stay &bull; November 2024</span></footer>
+          </blockquote>
+          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Our anniversary trip exceeded every expectation. The house feels like a proper luxury escape, not just a rental. The hot tub under the stars was magical. Highly, highly recommend."</p>
+            <footer class="review-author"><strong>Derek &amp; Nicole W.</strong><span>Anniversary &bull; September 2024</span></footer>
+          </blockquote>
+          <blockquote class="ticker-card" role="listitem" aria-hidden="true">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Perfect base for exploring the Smokies. We hiked every day and came back to pure luxury each night. The host was incredibly responsive and the check-in was seamless."</p>
+            <footer class="review-author"><strong>The Chen Family</strong><span>Summer Trip &bull; July 2024</span></footer>
+          </blockquote>
+
+        </div>
+        </div><!-- /reviews-row-right -->
+
+      </div><!-- /reviews-ticker-outer -->
     </div>
   </section>
 
@@ -731,7 +765,7 @@
       </div>
 
       <!-- Lodgify Widget card -->
-      <div style="background:#ffffff;border-radius:var(--radius-xl);padding:0.75rem 0 1rem;box-shadow:var(--shadow-lg);overflow:hidden;max-width:100%;width:100%;box-sizing:border-box;">
+      <div style="background:#ffffff;border-radius:var(--radius-xl);padding:0.75rem 0 1rem;box-shadow:var(--shadow-lg);max-width:100%;width:100%;box-sizing:border-box;">
         <!-- Lodgify Booking Widget -->
         <style>
           :root {
@@ -805,8 +839,8 @@
         ></div>
       </div>
 
-      <!-- Reassurance line -->
-      <p style="text-align:center;margin-top:1.75rem;font-size:0.85rem;color:rgba(255,255,255,0.5);font-weight:300;">Questions? Call or text <a href="tel:+18284230805" style="color:var(--color-forest);font-weight:500;">(828) 423-0805</a> - we get back to you fast.</p>
+      <!-- Contact line -->
+      <p style="text-align:center;margin-top:1.75rem;font-size:0.85rem;color:rgba(255,255,255,0.5);font-weight:300;">Questions? Call or text <a href="tel:+18284230805" style="color:var(--color-forest);font-weight:500;">(828) 423-0805</a></p>
 
     </div>
   </section>
@@ -901,19 +935,19 @@
           <h4>Explore</h4>
           <ul>
             <li><a href="#amenities">Amenities</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery">Gallery</a></li>
             <li><a href="#rooms">Rooms</a></li>
             <li><a href="#location">Location</a></li>
-            <li><a href="local-guide.html">Area Guide</a></li>
+            <li><a href="local-guide">Area Guide</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <h4>Info</h4>
           <ul>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="rates.html">Rates &amp; Policies</a></li>
-            <li><a href="blog/index.html">WNC Insider</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="rates">Rates &amp; Policies</a></li>
+            <li><a href="blog/">WNC Insider</a></li>
+            <li><a href="privacy-policy">Privacy Policy</a></li>
             <li><a href="#booking">Book Now</a></li>
           </ul>
         </div>
@@ -927,7 +961,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="privacy-policy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="privacy-policy" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
       </div>
     </div>
   </footer>
@@ -939,7 +973,34 @@
 
   <!-- Scripts -->
   <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="medallion-logo.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
   <script src="scripts.js" defer></script>
+  <!-- Google Maps with Mojo Manor pin -->
+  <script>
+    function initHomeMaps() {
+      var coords = { lat: 35.4892858, lng: -83.0015376 };
+      var map = new google.maps.Map(document.getElementById('home-map'), {
+        center: coords,
+        zoom: 15,
+        gestureHandling: 'cooperative',
+        mapId: 'DEMO_MAP_ID'
+      });
+      var pinEl = document.createElement('div');
+      pinEl.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.45));">'
+        + '<div style="position:relative;width:62px;height:74px;">'
+        + '<svg viewBox="0 0 62 74" width="62" height="74" xmlns="http://www.w3.org/2000/svg"><path d="M31 0C14 0 0 14 0 31c0 20 31 43 31 43S62 51 62 31C62 14 48 0 31 0z" fill="#01916e" stroke="#fff" stroke-width="2.5"/></svg>'
+        + '<div style="position:absolute;top:8px;left:50%;transform:translateX(-50%);width:42px;height:42px;border-radius:50%;background:#fff;overflow:hidden;display:flex;align-items:center;justify-content:center;">'
+        + '<img src="/Images/Mojo_Mountain_Logo_Transparent.png" style="width:36px;height:36px;object-fit:contain;" alt="Mojo Manor">'
+        + '</div></div>'
+        + '<div style="margin-top:5px;background:#01916e;color:#fff;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:4px 10px;border-radius:20px;white-space:nowrap;border:2px solid #fff;">Mojo Manor</div>'
+        + '</div>';
+      new google.maps.marker.AdvancedMarkerElement({ position: coords, map: map, content: pinEl, title: 'Mojo Manor' });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg&callback=initHomeMaps&libraries=marker&v=beta" async defer></script>
   <script src="chat.js" defer></script>
 
   <!-- Hero Carousel -->

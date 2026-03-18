@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=2">
   <style>
     /* Force blog content visible  -  reveal animation handled by scripts.js but content must never be hidden */
     .blog-post-hero, .blog-post-header, .blog-post-body, .blog-post-body * { opacity: 1 !important; transform: none !important; }
@@ -56,16 +56,16 @@
   <!-- NAVIGATION -->
   <header class="site-header scrolled" id="siteHeader">
     <nav class="nav-container" aria-label="Main navigation">
-      <a href="../index.html" class="nav-logo" aria-label="Mojo Manor home">
+      <a href="/" class="nav-logo" aria-label="Mojo Manor home">
         <img src="../Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
         <span class="logo-text">Mojo Manor</span>
       </a>
       <ul class="nav-links" id="navLinks" role="menubar">
         <li role="none"><a href="../index.html#amenities" role="menuitem">Amenities</a></li>
-        <li role="none"><a href="../gallery.html" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="/gallery" role="menuitem">Gallery</a></li>
         <li role="none"><a href="../index.html#rooms" role="menuitem">Rooms</a></li>
-        <li role="none"><a href="../local-guide.html" role="menuitem">Area Guide</a></li>
-        <li role="none"><a href="index.html" role="menuitem">WNC Insider</a></li>
+        <li role="none"><a href="/local-guide" role="menuitem">Area Guide</a></li>
+        <li role="none"><a href="/" role="menuitem">WNC Insider</a></li>
         <li role="none"><a href="../index.html#faq" role="menuitem">FAQ</a></li>
       </ul>
       <a href="../index.html#booking" class="nav-cta btn btn-primary btn-sm">Book Now</a>
@@ -78,10 +78,10 @@
   <div class="mobile-nav" id="mobileNav" aria-hidden="true">
     <ul class="mobile-nav-links">
       <li><a href="../index.html#amenities">Amenities</a></li>
-      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="/gallery">Gallery</a></li>
       <li><a href="../index.html#rooms">Rooms</a></li>
-      <li><a href="../local-guide.html">Area Guide</a></li>
-      <li><a href="index.html">WNC Insider</a></li>
+      <li><a href="/local-guide">Area Guide</a></li>
+      <li><a href="/">WNC Insider</a></li>
       <li><a href="../index.html#faq">FAQ</a></li>
     </ul>
     <a href="../index.html#booking" class="btn btn-primary btn-lg mobile-nav-cta">Check Availability</a>
@@ -94,9 +94,9 @@
     <section class="page-hero" style="padding-bottom:0;">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
+          <a href="/">Home</a>
           <span class="breadcrumb-sep">›</span>
-          <a href="index.html">Blog</a>
+          <a href="/">Blog</a>
           <span class="breadcrumb-sep">›</span>
           <span>Hiking</span>
         </nav>
@@ -194,7 +194,7 @@
 
           <h2>Your Perfect WNC Hiking Base: Mojo Manor</h2>
           <p>Every single one of these trails is within 45 minutes of Mojo Manor in Waynesville. That's the thing about staying here  -  you're not deep in the woods, disconnected from everything. You're five minutes from downtown Waynesville's restaurants and breweries, and within easy reach of some of the most spectacular hiking in the eastern United States. Come home from the trail, soak in the hot tub under the string lights, and wake up ready to do it again.</p>
-          <p>Check out our <a href="../local-guide.html">Local Guide</a> for the full breakdown of every trail, restaurant, brewery, and attraction near the property  -  with distances, tips, and honest recommendations from people who know this area well.</p>
+          <p>Check out our <a href="/local-guide">Local Guide</a> for the full breakdown of every trail, restaurant, brewery, and attraction near the property  -  with distances, tips, and honest recommendations from people who know this area well.</p>
 
         </div>
 
@@ -274,15 +274,15 @@
         <div class="reveal">
           <h3 style="font-size:1.25rem;color:var(--color-navy);margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:2px solid var(--color-warm-gray);">More from the WNC Insider</h3>
           <div style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));">
-            <a href="great-smoky-mountains-from-waynesville.html" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+            <a href="great-smoky-mountains-from-waynesville" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
               <p style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-bronze);margin-bottom:0.35rem;">National Parks</p>
               <p style="font-weight:500;color:var(--color-navy);font-size:0.95rem;line-height:1.4;">Day Trips to the Great Smoky Mountains from Waynesville &rarr;</p>
             </a>
-            <a href="asheville-day-trip-from-waynesville.html" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+            <a href="asheville-day-trip-from-waynesville" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
               <p style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-bronze);margin-bottom:0.35rem;">Day Trips</p>
               <p style="font-weight:500;color:var(--color-navy);font-size:0.95rem;line-height:1.4;">A Perfect Day Trip to Asheville from Waynesville &rarr;</p>
             </a>
-            <a href="fall-foliage-waynesville-nc.html" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+            <a href="fall-foliage-waynesville-nc" style="display:block;padding:1.25rem;background:var(--color-warm-bg);border-radius:var(--radius-lg);text-decoration:none;transition:all var(--transition-fast);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
               <p style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-bronze);margin-bottom:0.35rem;">Fall Foliage</p>
               <p style="font-weight:500;color:var(--color-navy);font-size:0.95rem;line-height:1.4;">Fall Foliage in Waynesville, NC: When to Go &amp; Where to Look &rarr;</p>
             </a>
@@ -299,7 +299,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="../index.html" class="nav-logo footer-logo" aria-label="Mojo Manor home">
+          <a href="/" class="nav-logo footer-logo" aria-label="Mojo Manor home">
             <img src="../Images/Mojo_Mountain_Logo_Transparent.png" alt="Mojo Manor Logo" class="logo-img">
             <span class="logo-text">Mojo Manor</span>
           </a>
@@ -309,18 +309,18 @@
           <h4>Explore</h4>
           <ul>
             <li><a href="../index.html#amenities">Amenities</a></li>
-            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="../index.html#rooms">Rooms</a></li>
-            <li><a href="../local-guide.html">Area Guide</a></li>
+            <li><a href="/local-guide">Area Guide</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <h4>Info</h4>
           <ul>
             <li><a href="../index.html#faq">FAQ</a></li>
-            <li><a href="../rates.html">Rates &amp; Policies</a></li>
-            <li><a href="index.html">WNC Insider</a></li>
-            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/rates">Rates &amp; Policies</a></li>
+            <li><a href="/">WNC Insider</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
             <li><a href="../index.html#booking">Book Now</a></li>
           </ul>
         </div>
@@ -334,7 +334,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="../privacy-policy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+        <p>&copy; 2026 Mojo Manor. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy-policy" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
       </div>
     </div>
   </footer>

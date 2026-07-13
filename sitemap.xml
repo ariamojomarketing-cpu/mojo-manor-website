@@ -4,13 +4,13 @@
   <!-- Core Pages -->
   <url>
     <loc>https://mojomanorwaynesville.com/</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/gallery</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -105,4 +105,10 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://mojomanorwaynesville.com/blog/waynesville-nc-fall-events-2026</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

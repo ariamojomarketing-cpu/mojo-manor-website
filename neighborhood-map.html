@@ -431,7 +431,7 @@
         {"placeId": "ChIJecYkNNlxWYgRBIp6khFo7E4"},
         {"placeId": "ChIJseDD9rFxWYgRKd3WCefznA8"}
       ],
-      // centerMarker.icon is intentionally omitted — we draw our own custom Mojo pin below
+      // centerMarker.icon is intentionally omitted  -  we draw our own custom Mojo pin below
       "mapRadius": 8000,
       "mapOptions": {
         "center": {"lat": 35.4890909, "lng": -83.0013223},
@@ -443,7 +443,7 @@
         "maxZoom": 20,
         "mapId": "DEMO_MAP_ID"
       },
-      "mapsApiKey": "AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg"
+      "mapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"  // TODO: Load from server-side config, not client code
     };
   </script>
 
@@ -596,7 +596,7 @@
           new AdvancedMarkerElement({
             map: widget.map,
             position: widget.center,
-            title: 'Mojo Manor — Your Mountain Home Base',
+            title: 'Mojo Manor  -  Your Mountain Home Base',
             content: pinEl,
             zIndex: 9999,
           });
@@ -843,7 +843,7 @@
     }
   </script>
 
-  <!-- Google Maps API — replace AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg-->
+  <!-- Google Maps API  -  replace AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJUlk0XS922beld0_K1v2Bq_EcdeS9FCg&callback=initMap&libraries=places,geometry,marker&solution_channel=GMP_QB_neighborhooddiscovery_v3_cABCDEFX" async defer></script>
 
   <script src="scripts.js"></script>

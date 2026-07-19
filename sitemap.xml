@@ -44,12 +44,24 @@
   <!-- Blog Index -->
   <url>
     <loc>https://mojomanorwaynesville.com/blog/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog Posts -->
+  <url>
+    <loc>https://mojomanorwaynesville.com/blog/dog-friendly-vacation-rental-waynesville-nc</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mojomanorwaynesville.com/blog/spring-waynesville-nc</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/soco-falls-waynesville-nc-hike</loc>
     <lastmod>2026-03-10</lastmod>

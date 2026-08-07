@@ -31,8 +31,7 @@
 
     // Sticky CTA visibility (show after hero)
     if (stickyCta) {
-      const heroBottom = document.getElementById('hero')?.offsetHeight || 600;
-      if (y > heroBottom) {
+      if (y > 300) {
         stickyCta.classList.add('visible');
         stickyCta.setAttribute('aria-hidden', 'false');
       } else {

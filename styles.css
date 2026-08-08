@@ -2183,9 +2183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .policy-list li {
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
+  display: block;
   font-size: 0.95rem;
   color: var(--color-steel);
   font-weight: 300;
@@ -2196,8 +2194,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '—';
   color: var(--color-bronze);
   font-weight: 600;
-  flex-shrink: 0;
-  margin-top: 0.05em;
+  margin-right: 0.75rem;
 }
 
 /* ── Page Hero (inner pages) ──────────────────────────────── */
@@ -2444,6 +2441,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 18px !important;
     height: 18px !important;
   }
+  /* keep arrows clear of the book-direct badge: anchor to bottom, above the dots */
+  .hero-carousel-prev,
+  .hero-carousel-next {
+    top: auto !important;
+    bottom: 5.5rem !important;
+    transform: none !important;
+  }
   /* Booking widget — full width, no overflow */
   #lodgify-search-bar,
   [id*="lodgify"],
@@ -2511,4 +2515,9 @@ object {
     max-width: 100% !important;
     overflow: hidden !important;
   }
+}
+
+/* Reserve space for the sticky CTA so the footer's last line stays reachable */
+@media (max-width: 1023px) {
+  body:has(.sticky-cta) .site-footer { padding-bottom: 120px; }
 }

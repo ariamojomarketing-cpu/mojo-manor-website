@@ -2,3 +2,7 @@ name = "mojo-manor-chat"
 main = "worker.js"
 compatibility_date = "2024-09-23"
 account_id = "f822552de04813e8808e660ba186372d"
+
+[[kv_namespaces]]
+binding = "PPC"
+id = "f553c09dc71c4100a1554ab5e8715648"

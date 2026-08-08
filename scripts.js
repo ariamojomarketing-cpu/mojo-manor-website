@@ -610,3 +610,28 @@
     requestAnimationFrame(function () { setTimeout(initMedallion, 0); });
   }
 })();
+
+/* ── First-party Google Ads landing beacon (once per session) ── */
+(function () {
+  try {
+    var q = new URLSearchParams(location.search);
+    var gclid = q.get('gclid');
+    if (!gclid && q.get('utm_medium') !== 'cpc') return;
+    if (sessionStorage.getItem('mojo_ppc_logged')) return;
+    sessionStorage.setItem('mojo_ppc_logged', '1');
+    var payload = JSON.stringify({
+      page: location.pathname,
+      gclid: gclid || '',
+      utm_campaign: q.get('utm_campaign') || '',
+      utm_content: q.get('utm_content') || '',
+      utm_term: q.get('utm_term') || '',
+      ref: document.referrer || ''
+    });
+    var url = 'https://mojo-manor-chat.aria-mojomarketing.workers.dev/ppc';
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(url, new Blob([payload], { type: 'application/json' }));
+    } else {
+      fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true });
+    }
+  } catch (e) { /* never break the page for analytics */ }
+})();

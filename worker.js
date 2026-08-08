@@ -146,7 +146,56 @@ export default {
       return new Response(null, { headers: corsHeaders });
     }
 
-    if (request.method !== 'POST' || !new URL(request.url).pathname.endsWith('/api/chat')) {
+    const url = new URL(request.url);
+
+    // ── First-party PPC click log (Google Ads gclid landings) ──
+    if (url.pathname.endsWith('/ppc') && request.method === 'POST') {
+      try {
+        const b = await request.json();
+        const day = new Date().toISOString().slice(0, 10);
+        const rec = {
+          ts: Date.now(),
+          page: String(b.page || '').slice(0, 200),
+          gclid: String(b.gclid || '').slice(0, 120),
+          utm_campaign: String(b.utm_campaign || '').slice(0, 40),
+          utm_content: String(b.utm_content || '').slice(0, 40),
+          utm_term: String(b.utm_term || '').slice(0, 80),
+          ref: String(b.ref || '').slice(0, 200),
+        };
+        await env.PPC.put(`c:${day}:${crypto.randomUUID()}`, JSON.stringify(rec), { expirationTtl: 60 * 60 * 24 * 90 });
+        return new Response('{"ok":true}', { headers: { 'Content-Type': 'application/json', ...corsHeaders } });
+      } catch {
+        return new Response('{"ok":false}', { status: 400, headers: { 'Content-Type': 'application/json', ...corsHeaders } });
+      }
+    }
+
+    // Daily-brief aggregation: GET /ppc/summary?days=7&token=...
+    if (url.pathname.endsWith('/ppc/summary') && request.method === 'GET') {
+      if (url.searchParams.get('token') !== env.PPC_TOKEN) {
+        return new Response('Forbidden', { status: 403 });
+      }
+      const days = Math.min(parseInt(url.searchParams.get('days') || '7', 10) || 7, 30);
+      const byDay = {}, byAd = {}, pages = {};
+      for (let i = 0; i < days; i++) {
+        const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+        let cursor;
+        do {
+          const list = await env.PPC.list({ prefix: `c:${d}:`, cursor });
+          byDay[d] = (byDay[d] || 0) + list.keys.length;
+          for (const k of list.keys) {
+            const rec = JSON.parse((await env.PPC.get(k.name)) || '{}');
+            if (rec.utm_content) byAd[rec.utm_content] = (byAd[rec.utm_content] || 0) + 1;
+            if (rec.page) pages[rec.page] = (pages[rec.page] || 0) + 1;
+          }
+          cursor = list.list_complete ? null : list.cursor;
+        } while (cursor);
+      }
+      return new Response(JSON.stringify({ byDay, byAd, pages }), {
+        headers: { 'Content-Type': 'application/json', ...corsHeaders },
+      });
+    }
+
+    if (request.method !== 'POST' || !url.pathname.endsWith('/api/chat')) {
       return new Response('Not found', { status: 404 });
     }
 

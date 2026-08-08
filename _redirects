@@ -1,0 +1,4 @@
+# Google Vacation Rentals sends direct-booking clicks to the Lodgify listing
+# path on our main domain (Lodgify ticket #1268437, 2026-08-08). That page only
+# exists on the lodgify.com subdomain, so route it home with GVR attribution.
+/listing/* /?utm_source=google&utm_medium=organic&utm_campaign=google_vacation_rentals 301

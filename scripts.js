@@ -628,10 +628,14 @@
       ref: document.referrer || ''
     });
     var url = 'https://mojo-manor-chat.aria-mojomarketing.workers.dev/ppc';
-    if (navigator.sendBeacon) {
-      navigator.sendBeacon(url, new Blob([payload], { type: 'application/json' }));
-    } else {
-      fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload, keepalive: true });
+    // text/plain = CORS-safelisted (no preflight). sendBeacon is credentialed and
+    // an application/json Blob forces a preflight the worker's "*" origin can't
+    // satisfy for credentialed requests — every real-visitor beacon was dropped.
+    if (window.fetch) {
+      fetch(url, { method: 'POST', body: payload, keepalive: true, mode: 'cors', credentials: 'omit' })
+        .catch(function () {});
+    } else if (navigator.sendBeacon) {
+      navigator.sendBeacon(url, new Blob([payload], { type: 'text/plain' }));
     }
   } catch (e) { /* never break the page for analytics */ }
 })();

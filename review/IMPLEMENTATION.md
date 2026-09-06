@@ -77,3 +77,7 @@ Other sites' proposed changes remain in the shared site-review handoff. This bra
 ## Owner-requested arcade ceiling revision
 
 Codex Astra 6 updated the homepage and original/concept slider to `arcade-concept-v2` after Jake requested removal of the garage-door opener hardware from the ceiling. Both opener units and their rails, springs, brackets and cords were digitally removed. The labeled AI concept retains the white ceiling structure, round light and blue perimeter lighting. Original property-gallery photographs are unchanged. Confirm the real ceiling condition when preparing the production photography. The prior concept remains in versioned assets/history.
+
+## Owner-requested fire-pit background revision
+
+Codex Astra 6 updated the By the fire scene and its original/concept slider to `firepit-concept-v2` after Jake requested removal of the utility pole and power lines behind the fence. The edited concept removes poles, overhead wires and the pole-mounted lamp/glare while retaining the yard and fence lighting. This is a digital preview edit, not evidence that the real utilities have been removed. Original property-gallery photos remain unchanged. See `review/after-firepit.png` for the updated page view and `IMAGE-PROMPTS.md` for the full prompt.

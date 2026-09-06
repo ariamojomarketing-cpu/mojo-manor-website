@@ -72,7 +72,9 @@
       "displayDate": "February 2026 • 10 min read",
       "published": "2026-02-22",
       "topic": "outdoors",
-      "url": "/blog/best-waterfalls-near-waynesville-nc"
+      "url": "/blog/best-waterfalls-near-waynesville-nc",
+      "homepageFeatured": true,
+      "homepageSummary": "Find a waterfall outing for your next day beyond town."
     },
     {
       "slug": "fall-foliage-waynesville-nc",
@@ -84,7 +86,9 @@
       "displayDate": "February 2026 • 9 min read",
       "published": "2026-02-23",
       "topic": "seasonal",
-      "url": "/blog/fall-foliage-waynesville-nc"
+      "url": "/blog/fall-foliage-waynesville-nc",
+      "homepageFeatured": true,
+      "homepageSummary": "Plan an autumn visit with ideas for scenic drives and mountain days."
     },
     {
       "slug": "great-smoky-mountains-from-waynesville",
@@ -132,7 +136,9 @@
       "displayDate": "February 2026 • 9 min read",
       "published": "2026-02-23",
       "topic": "staying",
-      "url": "/blog/things-to-do-waynesville-nc-families"
+      "url": "/blog/things-to-do-waynesville-nc-families",
+      "homepageFeatured": true,
+      "homepageSummary": "Explore ideas for family days out, with the Manor waiting when it is time to unwind."
     },
     {
       "slug": "group-vacation-rentals-waynesville-nc",

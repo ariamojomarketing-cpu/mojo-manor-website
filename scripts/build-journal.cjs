@@ -17,4 +17,11 @@ for(const a of articles){
  });
  html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(all,json)=>{let o;try{o=JSON.parse(json)}catch{return all}if(!['Article','BlogPosting'].includes(o['@type']))return all;o.image=site+a.image;return '<script type="application/ld+json">'+JSON.stringify(o)+'</script>'});fs.writeFileSync(file,html.replace(/[\t ]+$/gm,''))
 }
-console.log(`Built ${articles.length} journal cards, matching Blog schema and feed.xml.`);
+const homepagePath=path.join(root,'index.html');let homepage=fs.readFileSync(homepagePath,'utf8');
+if(homepage.includes('<!-- HOMEPAGE_BLOG_START -->')){
+ const featured=articles.filter(a=>a.homepageFeatured).slice(0,3);
+ if(!featured.length)throw Error('Choose at least one homepageFeatured article in content/journal.json');
+ const previews=featured.map(a=>`<a class="homepage-blog-card" href="${esc(a.url)}"><div class="homepage-blog-photo"><img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" width="1200" height="800" loading="lazy" decoding="async"></div><p class="eyebrow">${esc(a.tag)}</p><h3>${esc(a.title)}</h3><p>${esc(a.homepageSummary||a.excerpt)}</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a>`).join('\n');
+ homepage=homepage.replace(/<!-- HOMEPAGE_BLOG_START -->[\s\S]*?<!-- HOMEPAGE_BLOG_END -->/,'<!-- HOMEPAGE_BLOG_START -->\n'+previews+'\n<!-- HOMEPAGE_BLOG_END -->');fs.writeFileSync(homepagePath,homepage);
+}
+console.log(`Built ${articles.length} journal cards, matching Blog schema, feed.xml and homepage article previews.`);

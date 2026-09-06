@@ -14,3 +14,4 @@ html{scroll-padding-top:115px}body{background:#fdfbf7}.site-header,.site-header.
 @media(min-width:640px){.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(min-width:1024px){.blog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:1050px){.blog-grid>.blog-card:first-child{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+.gallery-jump-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}.gallery-jump-links a{font:12px var(--font-body);color:#243d34;border:1px solid #bcc6b3;padding:9px 14px;border-radius:25px}.gallery-jump-links a:hover{background:#243d34;color:#fdfbf7}.gallery-section-label{scroll-margin-top:125px}

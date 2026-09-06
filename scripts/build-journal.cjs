@@ -21,7 +21,7 @@ const homepagePath=path.join(root,'index.html');let homepage=fs.readFileSync(hom
 if(homepage.includes('<!-- HOMEPAGE_BLOG_START -->')){
  const featured=articles.filter(a=>a.homepageFeatured).slice(0,3);
  if(!featured.length)throw Error('Choose at least one homepageFeatured article in content/journal.json');
- const previews=featured.map(a=>`<a class="homepage-blog-card" href="${esc(a.url)}"><div class="homepage-blog-photo"><img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" width="1200" height="800" loading="lazy" decoding="async"></div><p class="eyebrow">${esc(a.tag)}</p><h3>${esc(a.title)}</h3><p>${esc(a.homepageSummary||a.excerpt)}</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a>`).join('\n');
+ const previews=featured.map(a=>`<a class="homepage-blog-card" href="${esc(a.url)}"><div class="homepage-blog-photo"><img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" width="1200" height="800" loading="lazy" decoding="async"></div><p class="eyebrow">${esc(a.tag)}</p><h3>${esc(a.homepageTitle||a.title)}</h3><p>${esc(a.homepageSummary||a.excerpt)}</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a>`).join('\n');
  homepage=homepage.replace(/<!-- HOMEPAGE_BLOG_START -->[\s\S]*?<!-- HOMEPAGE_BLOG_END -->/,'<!-- HOMEPAGE_BLOG_START -->\n'+previews+'\n<!-- HOMEPAGE_BLOG_END -->');fs.writeFileSync(homepagePath,homepage);
 }
 const sitemapPath=path.join(root,'sitemap.xml');let sitemap=fs.readFileSync(sitemapPath,'utf8');

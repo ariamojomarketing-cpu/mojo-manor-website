@@ -76,6 +76,7 @@
       "topic": "outdoors",
       "url": "/blog/best-waterfalls-near-waynesville-nc",
       "homepageFeatured": true,
+      "homepageTitle": "A day for waterfalls.",
       "homepageSummary": "Find a waterfall outing for your next day beyond town."
     },
     {
@@ -90,6 +91,7 @@
       "topic": "seasonal",
       "url": "/blog/fall-foliage-waynesville-nc",
       "homepageFeatured": true,
+      "homepageTitle": "Find your fall color.",
       "homepageSummary": "Plan an autumn visit with ideas for scenic drives and mountain days.",
       "modified": "2026-09-06"
     },
@@ -142,6 +144,7 @@
       "topic": "staying",
       "url": "/blog/things-to-do-waynesville-nc-families",
       "homepageFeatured": true,
+      "homepageTitle": "Good days with the whole crew.",
       "homepageSummary": "Explore ideas for family days out, with the Manor waiting when it is time to unwind."
     },
     {

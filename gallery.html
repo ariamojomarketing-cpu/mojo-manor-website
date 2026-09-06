@@ -76,7 +76,7 @@
     .video-section { background: var(--color-navy); padding: clamp(3rem,6vw,5rem) 0; }
   </style>
   <link rel="stylesheet" href="chat.css">
-<link rel="stylesheet" href="/manor-brand.css"><link rel="stylesheet" href="/subpages.css"><script src="/manor-analytics.js" defer=""></script></head>
+<link rel="stylesheet" href="/manor-brand.css"><link rel="stylesheet" href="/subpages.css"><script src="/manor-analytics.js" defer=""></script><script src="/manor-gallery.js" defer=""></script><script src="/manor-media.js" defer=""></script><link rel="stylesheet" href="/manor-completion.css"></head>
 <body>
 
   <div class="scroll-progress" aria-hidden="true">
@@ -86,7 +86,7 @@
   <!-- NAVIGATION -->
   <header class="site-header scrolled" id="siteHeader"><nav class="nav-container" aria-label="Main navigation"><a href="/" class="nav-logo" aria-label="Mojo Manor home"><svg class="brand-medallion" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="48" fill="#faf6eb" stroke="#d3c2a0" stroke-width="1"></circle><circle cx="50" cy="50" r="43" fill="none" stroke="#b69660" stroke-width="1.4"></circle><image href="/Images/redesign/mojo-crest.png" x="10" y="10" width="80" height="80"></image><circle class="mojo-rim" cx="50" cy="50" r="47" fill="none" stroke="#a47b40" stroke-width="2.3" stroke-linecap="round" stroke-dasharray="42 254"></circle></svg><span class="logo-text">Mojo Manor</span></a><ul class="nav-links" id="navLinks"><li><a href="/#experience">The experience</a></li><li><a href="/gallery" aria-current="page">The house</a></li><li><a href="/local-guide">Local Guide</a></li><li><a href="/blog/">Blog</a></li></ul><a href="/?book=1" class="nav-cta btn btn-primary btn-sm">Check dates ↗</a><button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false"><span class="hamburger"></span></button></nav></header>
 
-  <div class="mobile-nav" id="mobileNav" aria-hidden="true"><ul class="mobile-nav-links"><li><a href="/#experience">The experience</a></li><li><a href="/gallery">Explore the house</a></li><li><a href="/#rooms">The rooms</a></li><li><a href="/local-guide">Local Guide</a></li><li><a href="/blog/">Blog</a></li><li><a href="/rates">Rates &amp; policies</a></li></ul><a href="/?book=1" class="btn btn-primary btn-lg mobile-nav-cta">Check dates ↗</a></div>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true"><ul class="mobile-nav-links"><li><a href="/#experience">The experience</a></li><li><a href="/gallery">Explore the house</a></li><li><a href="/#rooms">The rooms</a></li><li><a href="/local-guide">Local Guide</a></li><li><a href="/blog/">Blog</a></li><li><a href="/rates">Rates &amp; policies</a></li><li><a href="/tour">Watch the film</a></li></ul><a href="/?book=1" class="btn btn-primary btn-lg mobile-nav-cta">Check dates ↗</a></div>
 
   <!-- PAGE HERO -->
   <section class="page-hero">
@@ -98,28 +98,14 @@
       </nav>
       <p class="page-hero-tag">Inside Mojo Manor</p>
       <h1 class="page-hero-title">Photo Gallery</h1>
-      <p class="page-hero-subtitle">44 photos of the rooms, bathrooms, arcade and outdoor spaces. Choose a category to take a closer look.</p>
-    <nav class="gallery-jump-links" aria-label="Jump to a photo category"><a href="#living">Living Spaces</a><a href="#bedrooms">Bedrooms</a><a href="#bathrooms">Bathrooms</a><a href="#kitchen">Kitchen &amp; Coffee Bar</a><a href="#arcade">Mojo's Arcade</a><a href="#hot-tub">Hot Tub</a><a href="#outdoors">Outdoor Spaces</a></nav></div>
+      <p class="page-hero-subtitle"><span data-photo-total="">46</span> photographs of every room, the games and the real setting. Choose a category or open any photograph.</p>
+    <nav class="gallery-jump-links" aria-label="Jump to a photo category"><!-- GALLERY_NAV_START -->
+<a href="#living">Living spaces</a><a href="#bedrooms">Bedrooms</a><a href="#bathrooms">Bathrooms</a><a href="#kitchen">Kitchen &amp; coffee</a><a href="#arcade">Mojo’s Arcade</a><a href="#outdoors">Backyard &amp; hot tub</a><a href="#arrival">Arrival &amp; setting</a>
+<!-- GALLERY_NAV_END --></nav></div>
   </section>
 
   <!-- PROPERTY TOUR -->
-  <section class="video-section">
-    <div class="container">
-      <div class="section-header section-header-center" style="margin-bottom:2rem;">
-        <span class="section-tag section-tag-light">Property Tour</span>
-        <h2 class="section-title section-title-light">Every Corner of Mojo Manor</h2>
-        <p class="section-subtitle section-subtitle-light" style="margin-top:0.5rem;">Scroll down for the full photo gallery  -  or click any image to view full screen.</p>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.625rem;border-radius:var(--radius-xl);overflow:hidden;max-width:960px;margin:0 auto;">
-        <picture><source srcset="Images/redesign/living-1200.webp" type="image/webp"><img src="Images/redesign/living-1200.webp" alt="Front living room" width="1600" height="900" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;"></picture>
-        <picture><source srcset="Images/redesign/kitchen-1200.webp" type="image/webp"><img src="Images/redesign/kitchen-1200.webp" alt="Kitchen island" width="1600" height="900" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;"></picture>
-        <picture><source srcset="Images/redesign/suite-1200.webp" type="image/webp"><img src="Images/redesign/suite-1200.webp" alt="The Royal Suite" width="1600" height="900" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;"></picture>
-        <picture><source srcset="Images/redesign/arcade-1200.webp" type="image/webp"><img src="Images/redesign/arcade-1200.webp" alt="Mojo’s Arcade at night" width="1600" height="900" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;"></picture>
-        <picture><source srcset="Images/redesign/yard-1200.webp" type="image/webp"><img src="Images/redesign/yard-1200.webp" alt="Fenced backyard" width="1600" height="900" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;"></picture>
-        <picture><source srcset="Images/redesign/exterior-1200.webp" type="image/webp"><img src="Images/redesign/exterior-1200.webp" alt="The real exterior and in-town setting" width="1600" height="900" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;"></picture>
-      </div>
-    </div>
-  </section>
+  <section class="gallery-film"><div class="film-feature"><button class="film-poster" data-film="" aria-label="Play the 45-second Mojo Manor film"><img src="/Images/redesign/living-1200.webp" alt="The front living room at Mojo Manor" width="1200" height="675" loading="lazy"><span><b aria-hidden="true">▶</b> Watch the Manor · 45 seconds</span></button><div><p class="eyebrow">A LITTLE LOOK AROUND</p><h3>Your next stay.<br>Before you even arrive.</h3><p>From slow mornings on the porch to the arcade after dinner. Take a short photo tour of the rooms, the backyard and the good times waiting here.</p><a href="/tour">Explore the property film ↗</a></div></div></section>
 
   <!-- PHOTO GALLERY -->
   <section class="section grain" id="photos">
@@ -131,231 +117,66 @@
         <p class="section-subtitle">Tap any image to view full size.</p>
       </div>
 
-      <div class="gallery-full-grid" id="galleryGrid">
-
-        <!-- Living Spaces -->
-        <p class="gallery-section-label" id="living">Living Spaces</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Living room with 85-inch TV">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Living Room - New2 85TV.jpg" alt="Living room with 85-inch Smart TV and wood slat accent wall" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Living Room  -  85" TV</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Living room wide angle">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Living Room - New4 Wide.jpg" alt="Living room open to dining and kitchen" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Living Room  -  Wide</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Family room with electric fireplace">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Family Room - New1.jpg" alt="Family room with electric fireplace, barn door, and backyard access" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Family Room  -  Fireplace</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Family room alternate angle">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Family Room - New2.jpg" alt="Family room with sliding glass door to backyard" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Family Room  -  Backyard Access</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Dining area">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Living Room - New3 Dining.jpg" alt="Dining area with round wood table and designer pendant lights" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Dining Area</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Kitchen and island">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Living Room - New5 Kitchen View.jpg" alt="Kitchen peninsula and island from family room" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Kitchen &amp; Island</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Family room smart drapes">
-          <picture><source srcset="Images/Optimized/furnished/Family%20Room%20-%20Smart%20Drapes.webp" type="image/webp"><img src="Images/Optimized/furnished/Family Room - Smart Drapes.jpg" alt="Family room with smart motorized drapes, electric fireplace, and backyard access" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Family Room  -  Smart Drapes</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Karaoke">
-          <picture><source srcset="Images/Optimized/furnished/Karaoke.webp" type="image/webp"><img src="Images/Optimized/furnished/Karaoke.jpg" alt="Karaoke machine in family room" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Karaoke</span></div>
-        </div>
-
-        <!-- Bedrooms -->
-        <p class="gallery-section-label" id="bedrooms">Bedrooms</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Royal Suite">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Royal Suite - Bed2.jpg" alt="Royal Suite king bedroom with wall sconces and ensuite bath" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Royal Suite  -  King</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Royal Suite ensuite">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Royal Suite - Bed3 Ensuite View.jpg" alt="Royal Suite with ensuite bathroom visible" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Royal Suite  -  Ensuite</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Bigfoot's Hideaway">
-          <picture><source srcset="Images/Optimized/furnished/Bigfoots%20Hideaway%20-%20New%20Best.webp" type="image/webp"><img src="Images/Optimized/furnished/Bigfoots Hideaway - New Best.jpg" alt="Bigfoot's Hideaway king bedroom with navy bedding and mountain art" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Bigfoot's Hideaway  -  King</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Mountain Bunkhouse">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Mountain Bunkhouse - Best.jpg" alt="Mountain Bunkhouse with mural wall and LED hex lights" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Mountain Bunkhouse</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: The Gatsby Room">
-          <picture><source srcset="Images/Optimized/furnished/Gatsby%20Room%20-%20New%20Best.webp" type="image/webp"><img src="Images/Optimized/furnished/Gatsby Room - New Best.jpg" alt="The Gatsby Room queen bedroom with gold accents, vanity desk, and designer art" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>The Gatsby Room  -  Queen</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: The Gatsby Room desk angle">
-          <picture><source srcset="Images/Optimized/furnished/Gatsby%20Room%20-%20Desk%20Angle.webp" type="image/webp"><img src="Images/Optimized/furnished/Gatsby Room - Desk Angle.jpg" alt="The Gatsby Room with vanity desk, gold sconces, and blue abstract art" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>The Gatsby Room  -  Desk &amp; Vanity</span></div>
-        </div>
-
-        <!-- Bathrooms -->
-        <p class="gallery-section-label" id="bathrooms">Bathrooms</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Royal Suite ensuite bath">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Royal Suite - Ensuite Bath.jpg" alt="Royal Suite private ensuite with tiled walk-in shower" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Royal Suite  -  Private Ensuite</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Hall bath vanity close">
-          <picture><source srcset="Images/Optimized/furnished/Hall%20Bath%20-%20Vanity%20Close.webp" type="image/webp"><img src="Images/Optimized/furnished/Hall Bath - Vanity Close.jpg" alt="Hall bathroom vanity with gold faucet, navy mirror, and designer accessories" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Hall Bath  -  Vanity</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Hall bath full view">
-          <picture><source srcset="Images/Optimized/furnished/Hall%20Bath%20-%20Vanity%20Full.webp" type="image/webp"><img src="Images/Optimized/furnished/Hall Bath - Vanity Full.jpg" alt="Upstairs hall bathroom showing the vanity, toilet and shower curtain" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Hall Bath  -  Full View</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Half bath powder room">
-          <picture><source srcset="Images/Optimized/furnished/Half%20Bath%20-%20Powder%20Room.webp" type="image/webp"><img src="Images/Optimized/furnished/Half Bath - Powder Room.jpg" alt="Downstairs half bath powder room with gold fixtures and bear artwork reflected in mirror" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Half Bath  -  Bear Art</span></div>
-        </div>
-
-        <!-- Kitchen & Coffee Bar -->
-        <p class="gallery-section-label" id="kitchen">Kitchen &amp; Coffee Bar</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Kitchen full wide">
-          <picture><source srcset="Images/Optimized/furnished/Kitchen%20Full%20Wide.webp" type="image/webp"><img src="Images/Optimized/furnished/Kitchen Full Wide.jpg" alt="Full kitchen with white shaker cabinets, stainless appliances, and open view to family room" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Full Kitchen</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Kitchen island wide">
-          <picture><source srcset="Images/Optimized/furnished/Kitchen%20Island%20Wide%20v2.webp" type="image/webp"><img src="Images/Optimized/furnished/Kitchen Island Wide v2.jpg" alt="Chef's kitchen with expansive quartz waterfall island and pendant lights" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Quartz Island</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Kitchen island bar and family room">
-          <picture><source srcset="Images/Optimized/furnished/Kitchen%20Island%20Bar%20Family%20Room%20View.webp" type="image/webp"><img src="Images/Optimized/furnished/Kitchen Island Bar Family Room View.jpg" alt="Kitchen island bar with family room and dining area beyond" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Island Bar &amp; Open Plan</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Kitchen stove and appliances">
-          <picture><source srcset="Images/Optimized/furnished/Kitchen%20Stove%20Appliances.webp" type="image/webp"><img src="Images/Optimized/furnished/Kitchen Stove Appliances.jpg" alt="Stainless range, microwave, and 4-door French door refrigerator" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Full Appliance Suite</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Coffee bar close">
-          <picture><source srcset="Images/Optimized/furnished/Coffee%20Bar%20Close%20New.webp" type="image/webp"><img src="Images/Optimized/furnished/Coffee Bar Close New.jpg" alt="Coffee bar with Keurig, Torani syrups, creamer caddies, and assorted teas" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Coffee Bar</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Dining area">
-          <picture><source srcset="Images/Optimized/furnished/Dining%20Area%20New.webp" type="image/webp"><img src="Images/Optimized/furnished/Dining Area New.jpg" alt="Dining area with round wood table, designer pendant light, and seating for 6" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Dining Area</span></div>
-        </div>
-
-        <!-- Mojo's Arcade -->
-        <p class="gallery-section-label" id="arcade">Mojo's Arcade</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Mojo's Arcade neon sign night">
-          <picture><source srcset="Images/Optimized/furnished/Mojos%20Arcade%20-%20Neon%20Night.webp" type="image/webp"><img src="Images/Optimized/furnished/Mojos Arcade - Neon Night.jpg" alt="Mojo's Arcade glowing neon sign with retro arcade games and velvet futon" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Mojo's Arcade  -  Night</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Arcade neon sign close-up">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Mojos Arcade - Neon Sign Close.jpg" alt="Mojo's Arcade neon sign close up" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>The Sign</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Shuffleboard table close up">
-          <picture><source srcset="Images/Optimized/furnished/Shuffleboard%20-%20LED%20Top.webp" type="image/webp"><img src="Images/Optimized/furnished/Shuffleboard - LED Top.jpg" alt="Shuffleboard table with LED lighting at Mojo's Arcade" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Shuffleboard</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Arcade foosball and games">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Mojos Arcade - Day.jpg" alt="Foosball, skee-ball, and retro arcade cabs at Mojo's Arcade" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Foosball &amp; Retro Cabs</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Shuffleboard full side view">
-          <picture><source srcset="Images/Optimized/furnished/Shuffleboard%20-%20Side%20Full.webp" type="image/webp"><img src="Images/Optimized/furnished/Shuffleboard - Side Full.jpg" alt="Full length shuffleboard table at Mojo's Arcade" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Shuffleboard  -  Full View</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Arcade full room">
-          <picture><source srcset="Images/Optimized/furnished/Arcade%20-%20Full%20Room%20v2.webp" type="image/webp"><img src="Images/Optimized/furnished/Arcade - Full Room v2.jpg" alt="Mojo's Arcade full room with foosball, pool table, and arcade cabinets" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Full Room</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Arcade foosball and pool view">
-          <picture><source srcset="Images/Optimized/furnished/Mojos%20Arcade%20-%20Foosball%20Pool%20View.webp" type="image/webp"><img src="Images/Optimized/furnished/Mojos Arcade - Foosball Pool View.jpg" alt="Foosball table and covered pool table with Mojo's Arcade sign" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Foosball &amp; Pool Table</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Shuffleboard puck close-up">
-          <picture><source srcset="Images/Optimized/furnished/Shuffleboard%20-%20Puck%20Close.webp" type="image/webp"><img src="Images/Optimized/furnished/Shuffleboard - Puck Close.jpg" alt="Shuffleboard table close-up with puck and sand" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Shuffleboard  -  Puck View</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Pool table back view">
-          <picture><source srcset="Images/Optimized/furnished/Mojos%20Arcade%20-%20Pool%20Table%20Back.webp" type="image/webp"><img src="Images/Optimized/furnished/Mojos Arcade - Pool Table Back.jpg" alt="Pool table from behind with full arcade room view" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Pool Table</span></div>
-        </div>
-
-        <!-- Hot Tub -->
-        <p class="gallery-section-label" id="hot-tub">Hot Tub</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Hot tub at night">
-          <picture><source srcset="Images/Optimized/furnished/Hot%20Tub%20-%20Night%20best.webp" type="image/webp"><img src="Images/Optimized/furnished/Hot Tub - Night best.jpg" alt="Hot tub under the stars with string lights at Mojo Manor" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Hot Tub  -  Night</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Hot tub daytime">
-          <picture><source srcset="Images/Optimized/furnished/Hot%20Tub%20-%201.webp" type="image/webp"><img src="Images/Optimized/furnished/Hot Tub - 1.jpg" alt="Hot tub on covered deck during the day" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Hot Tub</span></div>
-        </div>
-
-        <!-- Outdoor Spaces -->
-        <p class="gallery-section-label" id="outdoors">Outdoor Spaces</p>
-        <div class="gallery-item gal-wide gallery-item-wide" tabindex="0" role="button" aria-label="View large: Backyard wide">
-          <picture><!-- Missing WebP removed; picture uses its verified JPEG image below. --><img src="Images/Optimized/furnished/Backyard - New Wide.jpg" alt="Spacious fenced backyard with fire pit, playset, and hammock" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Backyard</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Front porch">
-          <picture><source srcset="Images/Optimized/furnished/Front%20Porch%20-%20Sign.webp" type="image/webp"><img src="Images/Optimized/furnished/Front Porch - Sign.jpg" alt="Mojo Manor front porch with white rocking chairs and custom metal sign" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Front Porch</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Fire pit at night">
-          <picture><source srcset="Images/Optimized/furnished/Fire%20Pit%20+%20Boccee%20-%20Night.webp" type="image/webp"><img src="Images/Optimized/furnished/Fire Pit + Boccee - Night.jpg" alt="Fire pit and bocce ball court lit up at night" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Fire Pit  -  Night</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Fire pit and bocce">
-          <picture><source srcset="Images/Optimized/furnished/Fire%20Pit%20+%20Boccee%20.webp" type="image/webp"><img src="Images/Optimized/furnished/Fire Pit + Boccee .jpg" alt="Fire pit with bocce ball court" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Fire Pit &amp; Bocce</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Putting green">
-          <picture><source srcset="Images/Optimized/furnished/Putting%20Green.webp" type="image/webp"><img src="Images/Optimized/furnished/Putting Green.jpg" alt="3-hole outdoor putting green" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Putting Green</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Putting green at night">
-          <picture><source srcset="Images/Optimized/furnished/Putting%20Green%20-%20Night.webp" type="image/webp"><img src="Images/Optimized/furnished/Putting Green - Night.jpg" alt="Putting green lit up at night" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Putting Green  -  Night</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Bocce and cornhole court">
-          <picture><source srcset="Images/Optimized/furnished/Outdoor%20-%20Bocce%20Cornhole%20Court.webp" type="image/webp"><img src="Images/Optimized/furnished/Outdoor - Bocce Cornhole Court.jpg" alt="Bocce and cornhole court with disc golf basket in fenced backyard" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Bocce &amp; Cornhole Court</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Backyard hammock and playset">
-          <picture><source srcset="Images/Optimized/furnished/Backyard%20-%20Hammock%20Playset%20Wide.webp" type="image/webp"><img src="Images/Optimized/furnished/Backyard - Hammock Playset Wide.jpg" alt="Backyard with hammock, kids playset, fire pit, and ladder golf" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Backyard  -  Hammock &amp; Playset</span></div>
-        </div>
-        <div class="gallery-item gal-item" tabindex="0" role="button" aria-label="View large: Kids playset">
-          <picture><source srcset="Images/Optimized/furnished/Playset.webp" type="image/webp"><img src="Images/Optimized/furnished/Playset.jpg" alt="Kids playset with swings and multi-level tower in fenced backyard" loading="lazy"></picture>
-          <div class="gallery-item-overlay"><span>Kids Playset</span></div>
-        </div>
-
-
-      </div>
+      <div class="gallery-full-grid" id="galleryGrid"><!-- GALLERY_GRID_START -->
+<p class="gallery-section-label" id="living">Living spaces</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="living" data-photo-category="Living" aria-label="View Living Room - 85&quot; TV"><img src="/Images/Optimized/furnished/Living Room - New2 85TV.jpg" alt="Living room with 85-inch Smart TV and wood slat accent wall" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Living Room - 85&quot; TV</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-2" data-photo-category="Living" aria-label="View Living Room - Wide"><img src="/Images/Optimized/furnished/Living Room - New4 Wide.jpg" alt="Living room open to dining and kitchen" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Living Room - Wide</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="family" data-photo-category="Living" aria-label="View Family room · fireplace and deck access"><img src="/Images/Optimized/furnished/Family Room - New1.jpg" alt="Family room with electric fireplace, barn door, and backyard access" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Family room · fireplace and deck access</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-4" data-photo-category="Living" aria-label="View Family Room - Backyard Access"><img src="/Images/Optimized/furnished/Family Room - New2.jpg" alt="Family room with sliding glass door to backyard" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Family Room - Backyard Access</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-5" data-photo-category="Living" aria-label="View Front living room · dining-room connection"><img src="/Images/Optimized/furnished/Living Room - New3 Dining.jpg" alt="Front living room seen toward the dining area" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Front living room · dining-room connection</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-6" data-photo-category="Living" aria-label="View Kitchen &amp; Island"><img src="/Images/Optimized/furnished/Living Room - New5 Kitchen View.jpg" alt="Kitchen peninsula and island from family room" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Kitchen &amp; Island</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-7" data-photo-category="Living" aria-label="View Family Room - Smart Drapes"><img src="/Images/Optimized/furnished/Family Room - Smart Drapes.jpg" alt="Family room with smart motorized drapes, electric fireplace, and backyard access" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Family Room - Smart Drapes</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="karaoke" data-photo-category="Living" aria-label="View Karaoke in the family room"><img src="/Images/Optimized/furnished/Karaoke.jpg" alt="Karaoke machine in family room" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Karaoke in the family room</span></span></button>
+<p class="gallery-section-label" id="bedrooms">Bedrooms</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="suite" data-photo-category="Bedrooms" aria-label="View Royal Suite - King"><img src="/Images/Optimized/furnished/Royal Suite - Bed2.jpg" alt="Royal Suite king bedroom with wall sconces and ensuite bath" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Royal Suite - King</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-10" data-photo-category="Bedrooms" aria-label="View Royal Suite - Ensuite"><img src="/Images/Optimized/furnished/Royal Suite - Bed3 Ensuite View.jpg" alt="Royal Suite with ensuite bathroom visible" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Royal Suite - Ensuite</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="bigfoot" data-photo-category="Bedrooms" aria-label="View Bigfoot&#39;s Hideaway - King"><img src="/Images/Optimized/furnished/Bigfoots Hideaway - New Best.jpg" alt="Bigfoot&#39;s Hideaway king bedroom with navy bedding and mountain art" width="1280" height="721" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Bigfoot&#39;s Hideaway - King</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="bunk" data-photo-category="Bedrooms" aria-label="View Mountain Bunkhouse"><img src="/Images/Optimized/furnished/Mountain Bunkhouse - Best.jpg" alt="Mountain Bunkhouse with mural wall and LED hex lights" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Mountain Bunkhouse</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="gatsby" data-photo-category="Bedrooms" aria-label="View The Gatsby Room - Queen"><img src="/Images/Optimized/furnished/Gatsby Room - New Best.jpg" alt="The Gatsby Room queen bedroom with gold accents, vanity desk, and designer art" width="1280" height="721" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>The Gatsby Room - Queen</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-14" data-photo-category="Bedrooms" aria-label="View The Gatsby Room - Desk &amp; Vanity"><img src="/Images/Optimized/furnished/Gatsby Room - Desk Angle.jpg" alt="The Gatsby Room with vanity desk, gold sconces, and blue abstract art" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>The Gatsby Room - Desk &amp; Vanity</span></span></button>
+<p class="gallery-section-label" id="bathrooms">Bathrooms</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="bath" data-photo-category="Bathrooms" aria-label="View Royal Suite ensuite"><img src="/Images/Optimized/furnished/Royal Suite - Ensuite Bath.jpg" alt="Royal Suite private ensuite with tiled walk-in shower" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Royal Suite ensuite</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-16" data-photo-category="Bathrooms" aria-label="View Hall Bath - Vanity"><img src="/Images/Optimized/furnished/Hall Bath - Vanity Close.jpg" alt="Hall bathroom vanity with gold faucet, navy mirror, and designer accessories" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Hall Bath - Vanity</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="hallBath" data-photo-category="Bathrooms" aria-label="View Upstairs hall bathroom"><img src="/Images/Optimized/furnished/Hall Bath - Vanity Full.jpg" alt="Upstairs hall bathroom showing the vanity, toilet and shower curtain" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Upstairs hall bathroom</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="powderRoom" data-photo-category="Bathrooms" aria-label="View Downstairs half bath"><img src="/Images/Optimized/furnished/Half Bath - Powder Room.jpg" alt="Downstairs half bath powder room with gold fixtures and bear artwork reflected in mirror" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Downstairs half bath</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="ensuiteDetail" data-photo-category="Bathrooms" aria-label="View Royal Suite ensuite · shower and vanity"><img src="/Images/redesign/ensuiteDetail-1600.webp" alt="Royal Suite ensuite shower and vanity" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Royal Suite ensuite · shower and vanity</span></span></button>
+<p class="gallery-section-label" id="kitchen">Kitchen &amp; coffee</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="photo-19" data-photo-category="Kitchen" aria-label="View Full Kitchen"><img src="/Images/Optimized/furnished/Kitchen Full Wide.jpg" alt="Full kitchen with white shaker cabinets, stainless appliances, and open view to family room" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Full Kitchen</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="kitchen" data-photo-category="Kitchen" aria-label="View Quartz Island"><img src="/Images/Optimized/furnished/Kitchen Island Wide v2.jpg" alt="Chef&#39;s kitchen with expansive quartz waterfall island and pendant lights" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Quartz Island</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-21" data-photo-category="Kitchen" aria-label="View Island Bar &amp; Open Plan"><img src="/Images/Optimized/furnished/Kitchen Island Bar Family Room View.jpg" alt="Kitchen island bar with family room and dining area beyond" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Island Bar &amp; Open Plan</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-22" data-photo-category="Kitchen" aria-label="View Full Appliance Suite"><img src="/Images/Optimized/furnished/Kitchen Stove Appliances.jpg" alt="Stainless range, microwave, and 4-door French door refrigerator" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Full Appliance Suite</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="coffee" data-photo-category="Kitchen" aria-label="View Coffee Bar"><img src="/Images/Optimized/furnished/Coffee Bar Close New.jpg" alt="Coffee bar with Keurig, Torani syrups, creamer caddies, and assorted teas" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Coffee Bar</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="dining" data-photo-category="Kitchen" aria-label="View Dining Area"><img src="/Images/Optimized/furnished/Dining Area New.jpg" alt="Dining area with round wood table, designer pendant light, and seating for 6" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Dining Area</span></span></button>
+<p class="gallery-section-label" id="arcade"><span id="play"></span>Mojo’s Arcade</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="arcade" data-photo-category="Play" aria-label="View Mojo’s Arcade · neon and futon"><img src="/Images/Optimized/furnished/Mojos Arcade - Neon Night.jpg" alt="Mojo&#39;s Arcade glowing neon sign with retro arcade games and velvet futon" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Mojo’s Arcade · neon and futon</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-26" data-photo-category="Play" aria-label="View The Sign"><img src="/Images/Optimized/furnished/Mojos Arcade - Neon Sign Close.jpg" alt="Mojo&#39;s Arcade neon sign close up" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>The Sign</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="shuffleboard" data-photo-category="Play" aria-label="View Shuffleboard"><img src="/Images/Optimized/furnished/Shuffleboard - LED Top.jpg" alt="Shuffleboard table with LED lighting at Mojo&#39;s Arcade" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Shuffleboard</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-28" data-photo-category="Play" aria-label="View Foosball &amp; Retro Cabs"><img src="/Images/Optimized/furnished/Mojos Arcade - Day.jpg" alt="Foosball, skee-ball, and retro arcade cabs at Mojo&#39;s Arcade" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Foosball &amp; Retro Cabs</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-29" data-photo-category="Play" aria-label="View Shuffleboard - Full View"><img src="/Images/Optimized/furnished/Shuffleboard - Side Full.jpg" alt="Full length shuffleboard table at Mojo&#39;s Arcade" width="1400" height="787" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Shuffleboard - Full View</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="arcadeWide" data-photo-category="Play" aria-label="View Full Room"><img src="/Images/Optimized/furnished/Arcade - Full Room v2.jpg" alt="Mojo&#39;s Arcade full room with foosball, pool table, and arcade cabinets" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Full Room</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-31" data-photo-category="Play" aria-label="View Foosball &amp; Pool Table"><img src="/Images/Optimized/furnished/Mojos Arcade - Foosball Pool View.jpg" alt="Foosball table and covered pool table with Mojo&#39;s Arcade sign" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Foosball &amp; Pool Table</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-32" data-photo-category="Play" aria-label="View Shuffleboard - Puck View"><img src="/Images/Optimized/furnished/Shuffleboard - Puck Close.jpg" alt="Shuffleboard table close-up with puck and sand" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Shuffleboard - Puck View</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-33" data-photo-category="Play" aria-label="View Pool Table"><img src="/Images/Optimized/furnished/Mojos Arcade - Pool Table Back.jpg" alt="Pool table from behind with full arcade room view" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Pool Table</span></span></button>
+<p class="gallery-section-label" id="outdoors"><span id="hot-tub"></span>Backyard &amp; hot tub</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="hotTubOriginal" data-photo-category="Outdoors" aria-label="View Hot Tub - Night"><img src="/Images/Optimized/furnished/Hot Tub - Night best.jpg" alt="Hot tub under the stars with string lights at Mojo Manor" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Hot Tub - Night</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="deck" data-photo-category="Outdoors" aria-label="View Back deck · grill and covered hot tub"><img src="/Images/Optimized/furnished/Hot Tub - 1.jpg" alt="Hot tub on covered deck during the day" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Back deck · grill and covered hot tub</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-36" data-photo-category="Outdoors" aria-label="View Backyard"><img src="/Images/Optimized/furnished/Backyard - New Wide.jpg" alt="Spacious fenced backyard with fire pit, playset, and hammock" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Backyard</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="firepitOriginal" data-photo-category="Outdoors" aria-label="View Fire Pit - Night"><img src="/Images/Optimized/furnished/Fire Pit + Boccee - Night.jpg" alt="Fire pit and bocce ball court lit up at night" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Fire Pit - Night</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-39" data-photo-category="Outdoors" aria-label="View Fire Pit &amp; Bocce"><img src="/Images/Optimized/furnished/Fire Pit + Boccee .jpg" alt="Fire pit with bocce ball court" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Fire Pit &amp; Bocce</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="photo-40" data-photo-category="Outdoors" aria-label="View Putting Green"><img src="/Images/Optimized/furnished/Putting Green.jpg" alt="3-hole outdoor putting green" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Putting Green</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="putting" data-photo-category="Outdoors" aria-label="View Putting Green - Night"><img src="/Images/Optimized/furnished/Putting Green - Night.jpg" alt="Putting green lit up at night" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Putting Green - Night</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="court" data-photo-category="Outdoors" aria-label="View Bocce and cornhole court · disc golf"><img src="/Images/Optimized/furnished/Outdoor - Bocce Cornhole Court.jpg" alt="Bocce and cornhole court with disc golf basket in fenced backyard" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Bocce and cornhole court · disc golf</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="yard" data-photo-category="Outdoors" aria-label="View Fenced backyard · hammock and playset"><img src="/Images/Optimized/furnished/Backyard - Hammock Playset Wide.jpg" alt="Backyard with hammock, kids playset, fire pit, and ladder golf" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Fenced backyard · hammock and playset</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="playset" data-photo-category="Outdoors" aria-label="View Kids Playset"><img src="/Images/Optimized/furnished/Playset.jpg" alt="Kids playset with swings and multi-level tower in fenced backyard" width="900" height="1600" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Kids Playset</span></span></button>
+<p class="gallery-section-label" id="arrival">Arrival &amp; setting</p><button type="button" class="gallery-item gal-item gal-wide gallery-item-wide" data-photo="porch" data-photo-category="Arrival" aria-label="View Front Porch"><img src="/Images/Optimized/furnished/Front Porch - Sign.jpg" alt="Mojo Manor front porch with white rocking chairs and custom metal sign" width="1280" height="720" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>Front Porch</span></span></button>
+<button type="button" class="gallery-item gal-item" data-photo="exterior" data-photo-category="Arrival" aria-label="View The house and its in-town setting"><img src="/Images/redesign/exterior-1600.webp" alt="The front exterior of Mojo Manor in its residential Waynesville setting" width="1600" height="900" loading="lazy" decoding="async"><span class="gallery-item-overlay"><span>The house and its in-town setting</span></span></button>
+<!-- GALLERY_GRID_END --></div>
     </div>
   </section>
 
   <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden="">
-    <button class="lightbox-close" aria-label="Close image viewer">×</button>
-    <button class="lightbox-prev" aria-label="Previous image">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-    </button>
-    <button class="lightbox-next" aria-label="Next image">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-    </button>
-    <div class="lightbox-content">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg">
-    </div>
-    <div class="lightbox-counter" id="lightboxCounter"></div>
-  </div>
+
 
   <!-- BOOKING CTA -->
   <section class="section section-dark">
     <div class="container" style="text-align:center;max-width:560px;">
       <span class="section-tag section-tag-light">Ready to Experience It?</span>
       <h2 class="section-title section-title-light">Book <em>Mojo Manor</em></h2>
-      <p class="section-subtitle section-subtitle-light" style="margin:0 auto 2rem;">4 bedrooms • 2.5 baths • Sleeps 10 • From $350/night</p>
+      <p class="section-subtitle section-subtitle-light" style="margin:0 auto 2rem;">4 bedrooms • 2.5 baths • Sleeps 10 • See your dates for current pricing</p>
       <a href="/?book=1" class="btn btn-primary btn-lg">Check Availability</a>
     </div>
   </section>
@@ -370,7 +191,7 @@
             <span class="logo-text">Mojo Manor</span>
           </a>
           <p>Mountain days. Manor nights. A modern Waynesville home, one mile from downtown.</p>
-        </div>
+        <nav class="social-links" aria-label="Mojo Manor social profiles"><a href="https://www.instagram.com/mojomanorwaynesville/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.youtube.com/@mojomanorwaynesville" target="_blank" rel="noopener">YouTube ↗</a><a href="/tour">Property film ↗</a></nav></div>
         <div class="footer-links">
           <h4>Explore</h4>
           <ul>
@@ -406,9 +227,11 @@
     </div>
   </footer>
 
-  <script src="scripts.js" defer=""></script>
+  <script src="/subpages.js" defer=""></script>
 
 
 
 
+
+<dialog class="photo-dialog" id="gallery-dialog" aria-labelledby="gallery-title"><div class="photo-dialog-head"><h2 id="gallery-title">The house, in pictures.</h2><button class="photo-close" data-photo-close="" aria-label="Close photo gallery" autofocus="">×</button></div><div class="photo-filters" aria-label="Photo categories" role="group"></div><div class="photo-stage"><img id="gallery-photo" alt=""><button data-photo-prev="" aria-label="Previous photo">‹</button><button data-photo-next="" aria-label="Next photo">›</button></div><p class="photo-caption" aria-live="polite"><span id="gallery-caption"></span><span id="gallery-count"></span></p><div class="photo-thumbs" aria-label="Choose a photo"></div></dialog><dialog class="film-dialog" id="film-dialog" aria-labelledby="film-title"><div class="film-dialog-head"><h2 id="film-title">Meet the Manor. In 45 seconds.</h2><button class="film-close" data-film-close="" aria-label="Close video" autofocus="">×</button></div><div class="film-player"></div><div class="film-links"><a href="/tour">About the film ↗</a><a href="https://www.youtube.com/watch?v=8DX7RP8Gfgk" target="_blank" rel="noopener">Watch on YouTube ↗</a><a href="/?book=1">Check your dates ↗</a></div></dialog><script type="application/json" id="gallery-data">[{"src":"/Images/Optimized/furnished/Living Room - New2 85TV.jpg","alt":"Living room with 85-inch Smart TV and wood slat accent wall","caption":"Living Room - 85\" TV","category":"Living","id":"living","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/living.webp"},{"src":"/Images/Optimized/furnished/Living Room - New4 Wide.jpg","alt":"Living room open to dining and kitchen","caption":"Living Room - Wide","category":"Living","id":"photo-2","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-2.webp"},{"src":"/Images/Optimized/furnished/Family Room - New1.jpg","alt":"Family room with electric fireplace, barn door, and backyard access","caption":"Family room · fireplace and deck access","category":"Living","id":"family","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/family.webp"},{"src":"/Images/Optimized/furnished/Family Room - New2.jpg","alt":"Family room with sliding glass door to backyard","caption":"Family Room - Backyard Access","category":"Living","id":"photo-4","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-4.webp"},{"src":"/Images/Optimized/furnished/Living Room - New3 Dining.jpg","alt":"Front living room seen toward the dining area","caption":"Front living room · dining-room connection","category":"Living","id":"photo-5","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-5.webp"},{"src":"/Images/Optimized/furnished/Living Room - New5 Kitchen View.jpg","alt":"Kitchen peninsula and island from family room","caption":"Kitchen & Island","category":"Living","id":"photo-6","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-6.webp"},{"src":"/Images/Optimized/furnished/Family Room - Smart Drapes.jpg","alt":"Family room with smart motorized drapes, electric fireplace, and backyard access","caption":"Family Room - Smart Drapes","category":"Living","id":"photo-7","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-7.webp"},{"src":"/Images/Optimized/furnished/Karaoke.jpg","alt":"Karaoke machine in family room","caption":"Karaoke in the family room","category":"Living","id":"karaoke","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/karaoke.webp"},{"src":"/Images/Optimized/furnished/Royal Suite - Bed2.jpg","alt":"Royal Suite king bedroom with wall sconces and ensuite bath","caption":"Royal Suite - King","category":"Bedrooms","id":"suite","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/suite.webp"},{"src":"/Images/Optimized/furnished/Royal Suite - Bed3 Ensuite View.jpg","alt":"Royal Suite with ensuite bathroom visible","caption":"Royal Suite - Ensuite","category":"Bedrooms","id":"photo-10","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-10.webp"},{"src":"/Images/Optimized/furnished/Bigfoots Hideaway - New Best.jpg","alt":"Bigfoot's Hideaway king bedroom with navy bedding and mountain art","caption":"Bigfoot's Hideaway - King","category":"Bedrooms","id":"bigfoot","width":1280,"height":721,"thumb":"/Images/gallery-thumbs/bigfoot.webp"},{"src":"/Images/Optimized/furnished/Mountain Bunkhouse - Best.jpg","alt":"Mountain Bunkhouse with mural wall and LED hex lights","caption":"Mountain Bunkhouse","category":"Bedrooms","id":"bunk","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/bunk.webp"},{"src":"/Images/Optimized/furnished/Gatsby Room - New Best.jpg","alt":"The Gatsby Room queen bedroom with gold accents, vanity desk, and designer art","caption":"The Gatsby Room - Queen","category":"Bedrooms","id":"gatsby","width":1280,"height":721,"thumb":"/Images/gallery-thumbs/gatsby.webp"},{"src":"/Images/Optimized/furnished/Gatsby Room - Desk Angle.jpg","alt":"The Gatsby Room with vanity desk, gold sconces, and blue abstract art","caption":"The Gatsby Room - Desk & Vanity","category":"Bedrooms","id":"photo-14","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-14.webp"},{"src":"/Images/Optimized/furnished/Royal Suite - Ensuite Bath.jpg","alt":"Royal Suite private ensuite with tiled walk-in shower","caption":"Royal Suite ensuite","category":"Bathrooms","id":"bath","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/bath.webp"},{"src":"/Images/Optimized/furnished/Hall Bath - Vanity Close.jpg","alt":"Hall bathroom vanity with gold faucet, navy mirror, and designer accessories","caption":"Hall Bath - Vanity","category":"Bathrooms","id":"photo-16","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-16.webp"},{"src":"/Images/Optimized/furnished/Hall Bath - Vanity Full.jpg","alt":"Upstairs hall bathroom showing the vanity, toilet and shower curtain","caption":"Upstairs hall bathroom","category":"Bathrooms","id":"hallBath","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/hallBath.webp"},{"src":"/Images/Optimized/furnished/Half Bath - Powder Room.jpg","alt":"Downstairs half bath powder room with gold fixtures and bear artwork reflected in mirror","caption":"Downstairs half bath","category":"Bathrooms","id":"powderRoom","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/powderRoom.webp"},{"src":"/Images/Optimized/furnished/Kitchen Full Wide.jpg","alt":"Full kitchen with white shaker cabinets, stainless appliances, and open view to family room","caption":"Full Kitchen","category":"Kitchen","id":"photo-19","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/photo-19.webp"},{"src":"/Images/Optimized/furnished/Kitchen Island Wide v2.jpg","alt":"Chef's kitchen with expansive quartz waterfall island and pendant lights","caption":"Quartz Island","category":"Kitchen","id":"kitchen","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/kitchen.webp"},{"src":"/Images/Optimized/furnished/Kitchen Island Bar Family Room View.jpg","alt":"Kitchen island bar with family room and dining area beyond","caption":"Island Bar & Open Plan","category":"Kitchen","id":"photo-21","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/photo-21.webp"},{"src":"/Images/Optimized/furnished/Kitchen Stove Appliances.jpg","alt":"Stainless range, microwave, and 4-door French door refrigerator","caption":"Full Appliance Suite","category":"Kitchen","id":"photo-22","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/photo-22.webp"},{"src":"/Images/Optimized/furnished/Coffee Bar Close New.jpg","alt":"Coffee bar with Keurig, Torani syrups, creamer caddies, and assorted teas","caption":"Coffee Bar","category":"Kitchen","id":"coffee","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/coffee.webp"},{"src":"/Images/Optimized/furnished/Dining Area New.jpg","alt":"Dining area with round wood table, designer pendant light, and seating for 6","caption":"Dining Area","category":"Kitchen","id":"dining","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/dining.webp"},{"src":"/Images/Optimized/furnished/Mojos Arcade - Neon Night.jpg","alt":"Mojo's Arcade glowing neon sign with retro arcade games and velvet futon","caption":"Mojo’s Arcade · neon and futon","category":"Play","id":"arcade","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/arcade.webp"},{"src":"/Images/Optimized/furnished/Mojos Arcade - Neon Sign Close.jpg","alt":"Mojo's Arcade neon sign close up","caption":"The Sign","category":"Play","id":"photo-26","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-26.webp"},{"src":"/Images/Optimized/furnished/Shuffleboard - LED Top.jpg","alt":"Shuffleboard table with LED lighting at Mojo's Arcade","caption":"Shuffleboard","category":"Play","id":"shuffleboard","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/shuffleboard.webp"},{"src":"/Images/Optimized/furnished/Mojos Arcade - Day.jpg","alt":"Foosball, skee-ball, and retro arcade cabs at Mojo's Arcade","caption":"Foosball & Retro Cabs","category":"Play","id":"photo-28","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-28.webp"},{"src":"/Images/Optimized/furnished/Shuffleboard - Side Full.jpg","alt":"Full length shuffleboard table at Mojo's Arcade","caption":"Shuffleboard - Full View","category":"Play","id":"photo-29","width":1400,"height":787,"thumb":"/Images/gallery-thumbs/photo-29.webp"},{"src":"/Images/Optimized/furnished/Arcade - Full Room v2.jpg","alt":"Mojo's Arcade full room with foosball, pool table, and arcade cabinets","caption":"Full Room","category":"Play","id":"arcadeWide","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/arcadeWide.webp"},{"src":"/Images/Optimized/furnished/Mojos Arcade - Foosball Pool View.jpg","alt":"Foosball table and covered pool table with Mojo's Arcade sign","caption":"Foosball & Pool Table","category":"Play","id":"photo-31","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-31.webp"},{"src":"/Images/Optimized/furnished/Shuffleboard - Puck Close.jpg","alt":"Shuffleboard table close-up with puck and sand","caption":"Shuffleboard - Puck View","category":"Play","id":"photo-32","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-32.webp"},{"src":"/Images/Optimized/furnished/Mojos Arcade - Pool Table Back.jpg","alt":"Pool table from behind with full arcade room view","caption":"Pool Table","category":"Play","id":"photo-33","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-33.webp"},{"src":"/Images/Optimized/furnished/Hot Tub - Night best.jpg","alt":"Hot tub under the stars with string lights at Mojo Manor","caption":"Hot Tub - Night","category":"Outdoors","id":"hotTubOriginal","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/hotTubOriginal.webp"},{"src":"/Images/Optimized/furnished/Hot Tub - 1.jpg","alt":"Hot tub on covered deck during the day","caption":"Back deck · grill and covered hot tub","category":"Outdoors","id":"deck","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/deck.webp"},{"src":"/Images/Optimized/furnished/Backyard - New Wide.jpg","alt":"Spacious fenced backyard with fire pit, playset, and hammock","caption":"Backyard","category":"Outdoors","id":"photo-36","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/photo-36.webp"},{"src":"/Images/Optimized/furnished/Front Porch - Sign.jpg","alt":"Mojo Manor front porch with white rocking chairs and custom metal sign","caption":"Front Porch","category":"Arrival","id":"porch","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/porch.webp"},{"src":"/Images/Optimized/furnished/Fire Pit + Boccee - Night.jpg","alt":"Fire pit and bocce ball court lit up at night","caption":"Fire Pit - Night","category":"Outdoors","id":"firepitOriginal","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/firepitOriginal.webp"},{"src":"/Images/Optimized/furnished/Fire Pit + Boccee .jpg","alt":"Fire pit with bocce ball court","caption":"Fire Pit & Bocce","category":"Outdoors","id":"photo-39","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/photo-39.webp"},{"src":"/Images/Optimized/furnished/Putting Green.jpg","alt":"3-hole outdoor putting green","caption":"Putting Green","category":"Outdoors","id":"photo-40","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/photo-40.webp"},{"src":"/Images/Optimized/furnished/Putting Green - Night.jpg","alt":"Putting green lit up at night","caption":"Putting Green - Night","category":"Outdoors","id":"putting","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/putting.webp"},{"src":"/Images/Optimized/furnished/Outdoor - Bocce Cornhole Court.jpg","alt":"Bocce and cornhole court with disc golf basket in fenced backyard","caption":"Bocce and cornhole court · disc golf","category":"Outdoors","id":"court","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/court.webp"},{"src":"/Images/Optimized/furnished/Backyard - Hammock Playset Wide.jpg","alt":"Backyard with hammock, kids playset, fire pit, and ladder golf","caption":"Fenced backyard · hammock and playset","category":"Outdoors","id":"yard","width":1280,"height":720,"thumb":"/Images/gallery-thumbs/yard.webp"},{"src":"/Images/Optimized/furnished/Playset.jpg","alt":"Kids playset with swings and multi-level tower in fenced backyard","caption":"Kids Playset","category":"Outdoors","id":"playset","width":900,"height":1600,"thumb":"/Images/gallery-thumbs/playset.webp"},{"id":"exterior","category":"Arrival","src":"/Images/redesign/exterior-1600.webp","alt":"The front exterior of Mojo Manor in its residential Waynesville setting","caption":"The house and its in-town setting","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/exterior.webp"},{"id":"ensuiteDetail","category":"Bathrooms","src":"/Images/redesign/ensuiteDetail-1600.webp","alt":"Royal Suite ensuite shower and vanity","caption":"Royal Suite ensuite · shower and vanity","width":1600,"height":900,"thumb":"/Images/gallery-thumbs/ensuiteDetail.webp"}]</script>
 </body></html>

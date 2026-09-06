@@ -4,27 +4,29 @@
   "articles": [
     {
       "slug": "waynesville-nc-fall-events-2026",
-      "title": "Fall 2026 Events in Waynesville & Maggie Valley: Festivals, Car Shows & Leaf Season",
+      "title": "Fall 2026 Events in Waynesville & Maggie Valley",
       "tag": "Events & Festivals",
-      "excerpt": "Apple Harvest Festival, Thunder in the Smokies, truck shows at the Festival Grounds, the Cataloochee elk rut, and peak leaf timing - plan your fall trip now.",
+      "excerpt": "Confirmed fall 2026 festival dates in Waynesville and Maggie Valley, including Apple Harvest on October 17, with official links and practical trip planning.",
       "image": "/Images/blog/soco-autumn.jpg",
       "imageAlt": "Fall color in the mountains near Waynesville NC during festival season",
-      "displayDate": "July 2026 • 7 min read",
+      "displayDate": "Updated September 2026 · 4 min read",
       "published": "2026-07-12",
       "topic": "seasonal",
-      "url": "/blog/waynesville-nc-fall-events-2026"
+      "url": "/blog/waynesville-nc-fall-events-2026",
+      "modified": "2026-09-06"
     },
     {
       "slug": "dog-friendly-vacation-rental-waynesville-nc",
-      "title": "Dog-Friendly Vacation Rentals in Western NC",
+      "title": "A Dog-Friendly Stay in Waynesville, NC",
       "tag": "Property Feature",
-      "excerpt": "A fenced backyard, room to settle in and a home base near town. Plan a stay with your dog, including the house pet policy and local rules.",
+      "excerpt": "Plan a stay with your dog at Mojo Manor: a fenced backyard, a clear pet policy, and accurate guidance for visiting the Smokies with dogs.",
       "image": "/Images/redesign/yard-1200.webp",
       "imageAlt": "The fenced backyard at Mojo Manor",
-      "displayDate": "May 2026 • 4 min read",
+      "displayDate": "Updated September 2026 · 4 min read",
       "published": "2026-05-06",
       "topic": "staying",
-      "url": "/blog/dog-friendly-vacation-rental-waynesville-nc"
+      "url": "/blog/dog-friendly-vacation-rental-waynesville-nc",
+      "modified": "2026-09-06"
     },
     {
       "slug": "spring-waynesville-nc",
@@ -78,29 +80,31 @@
     },
     {
       "slug": "fall-foliage-waynesville-nc",
-      "title": "Fall Foliage in Waynesville, NC: When to Go, Where to Look, and What to Expect",
+      "title": "Fall Foliage in Waynesville, NC: How to Plan Your Visit",
       "tag": "Fall Foliage",
-      "excerpt": "Peak timing by elevation, the best overlooks and scenic drives, photography tips, and how to book before October weekends sell out.",
+      "excerpt": "Plan a flexible autumn stay in Waynesville with elevation-based fall color guidance, Parkway road checks, and a relaxed three-day itinerary.",
       "image": "/Images/guide/blue-ridge-parkway-fall.jpg",
       "imageAlt": "Autumn foliage beside a mountain road",
-      "displayDate": "February 2026 • 9 min read",
+      "displayDate": "Updated September 2026 · 4 min read",
       "published": "2026-02-23",
       "topic": "seasonal",
       "url": "/blog/fall-foliage-waynesville-nc",
       "homepageFeatured": true,
-      "homepageSummary": "Plan an autumn visit with ideas for scenic drives and mountain days."
+      "homepageSummary": "Plan an autumn visit with ideas for scenic drives and mountain days.",
+      "modified": "2026-09-06"
     },
     {
       "slug": "great-smoky-mountains-from-waynesville",
       "title": "Day Trips to Great Smoky Mountains National Park from Waynesville, NC",
       "tag": "Day Trips",
-      "excerpt": "Cataloochee elk, Clingmans Dome, Alum Cave Trail, and the Cherokee entrance  -  the best Smokies day trips from your Waynesville base, 30 minutes away.",
+      "excerpt": "Cataloochee Valley, Kuwohi and the Cherokee entrance: plan a Smokies outing with current road information and time for mountain travel.",
       "image": "/Images/guide/blue-ridge-parkway.jpg",
       "imageAlt": "Layers of forested mountain ridges",
       "displayDate": "February 2026 • 9 min read",
       "published": "2026-02-23",
       "topic": "outdoors",
-      "url": "/blog/great-smoky-mountains-from-waynesville"
+      "url": "/blog/great-smoky-mountains-from-waynesville",
+      "modified": "2026-09-06"
     },
     {
       "slug": "asheville-day-trip-from-waynesville",

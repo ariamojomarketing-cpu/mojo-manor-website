@@ -46,7 +46,7 @@
   <!-- Blog Posts -->
   <url>
     <loc>https://mojomanorwaynesville.com/blog/dog-friendly-vacation-rental-waynesville-nc</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -64,57 +64,58 @@
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/best-hikes-near-waynesville-nc</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/best-waterfalls-near-waynesville-nc</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/fall-foliage-waynesville-nc</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/things-to-do-waynesville-nc-families</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/waynesville-nc-breweries-guide</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/great-smoky-mountains-from-waynesville</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/asheville-day-trip-from-waynesville</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojomanorwaynesville.com/blog/group-vacation-rentals-waynesville-nc</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://mojomanorwaynesville.com/blog/waynesville-nc-fall-events-2026</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://mojomanorwaynesville.com/tour</loc><lastmod>2026-09-06</lastmod></url>
 </urlset>

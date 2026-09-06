@@ -15,7 +15,7 @@ for(const a of articles){
   const slug=new URL(href,site+a.url).pathname.split('/').pop().replace(/\.html$/,'');const related=articles.find(r=>r.slug===slug);if(!related)return card;
   return card.replace(/<source\b[^>]*>/g,'').replace(/<img\b[^>]*>/,`<img src="${esc(related.image)}" alt="${esc(related.imageAlt)}" loading="lazy" width="1200" height="800">`);
  });
- html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(all,json)=>{let o;try{o=JSON.parse(json)}catch{return all}if(!['Article','BlogPosting'].includes(o['@type']))return all;o.image=site+a.image;return '<script type="application/ld+json">'+JSON.stringify(o)+'</script>'});fs.writeFileSync(file,html.replace(/[\t ]+$/gm,''))
+ html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(all,json)=>{let o;try{o=JSON.parse(json)}catch{return all}if(!['Article','BlogPosting'].includes(o['@type']))return all;o.image=site+a.image;o.datePublished=a.published;if(a.modified){if(Number.isNaN(Date.parse(a.modified))||a.modified<a.published)throw Error('Invalid modified date: '+a.slug);o.dateModified=a.modified}o.mainEntityOfPage=site+a.url;return '<script type="application/ld+json">'+JSON.stringify(o)+'</script>'});fs.writeFileSync(file,html.replace(/[\t ]+$/gm,''))
 }
 const homepagePath=path.join(root,'index.html');let homepage=fs.readFileSync(homepagePath,'utf8');
 if(homepage.includes('<!-- HOMEPAGE_BLOG_START -->')){
@@ -24,4 +24,8 @@ if(homepage.includes('<!-- HOMEPAGE_BLOG_START -->')){
  const previews=featured.map(a=>`<a class="homepage-blog-card" href="${esc(a.url)}"><div class="homepage-blog-photo"><img src="${esc(a.image)}" alt="${esc(a.imageAlt)}" width="1200" height="800" loading="lazy" decoding="async"></div><p class="eyebrow">${esc(a.tag)}</p><h3>${esc(a.title)}</h3><p>${esc(a.homepageSummary||a.excerpt)}</p><span class="text-link">Read the guide <span aria-hidden="true">↗</span></span></a>`).join('\n');
  homepage=homepage.replace(/<!-- HOMEPAGE_BLOG_START -->[\s\S]*?<!-- HOMEPAGE_BLOG_END -->/,'<!-- HOMEPAGE_BLOG_START -->\n'+previews+'\n<!-- HOMEPAGE_BLOG_END -->');fs.writeFileSync(homepagePath,homepage);
 }
-console.log(`Built ${articles.length} journal cards, matching Blog schema, feed.xml and homepage article previews.`);
+const sitemapPath=path.join(root,'sitemap.xml');let sitemap=fs.readFileSync(sitemapPath,'utf8');
+for(const a of articles){const pattern=new RegExp('(<loc>'+site+a.url+'</loc>\\s*<lastmod>)[^<]*(</lastmod>)');const publishedHtml=fs.readFileSync(path.join(root,'blog',a.slug+'.html'),'utf8');const existingModified=publishedHtml.match(/"dateModified":"([0-9-]+)"/)?.[1];const lastmod=a.modified||[a.published,existingModified].filter(Boolean).sort().pop();if(!pattern.test(sitemap))sitemap=sitemap.replace('</urlset>',`  <url><loc>${site+a.url}</loc><lastmod>${lastmod}</lastmod></url>\n</urlset>`);else sitemap=sitemap.replace(pattern,`$1${lastmod}$2`)}
+if(!sitemap.includes('<loc>'+site+'/tour</loc>'))sitemap=sitemap.replace('</urlset>',`  <url><loc>${site}/tour</loc><lastmod>2026-09-06</lastmod></url>\n</urlset>`);
+fs.writeFileSync(sitemapPath,sitemap);
+console.log(`Built ${articles.length} journal cards, Blog schema, feed.xml, sitemap dates and homepage article previews.`);

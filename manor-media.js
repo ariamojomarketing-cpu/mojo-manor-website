@@ -1,0 +1,7 @@
+/* Load YouTube only after a visitor chooses to watch. */
+(()=>{'use strict';
+  const dialog=document.querySelector('#film-dialog');let trigger=null;
+  function player(autoplay){const iframe=document.createElement('iframe');iframe.src=`https://www.youtube-nocookie.com/embed/8DX7RP8Gfgk?autoplay=${autoplay?1:0}&playsinline=1&rel=0&cc_lang_pref=en&origin=${encodeURIComponent(location.origin)}`;iframe.title='Mojo Manor — 45-second property film';iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';iframe.allowFullscreen=true;iframe.referrerPolicy='strict-origin-when-cross-origin';return iframe;}
+  document.querySelectorAll('[data-film]').forEach(button=>button.addEventListener('click',()=>{if(!dialog)return;trigger=button;dialog.querySelector('.film-player').replaceChildren(player(true));dialog.showModal();document.body.classList.add('film-open');window.gtag?.('event','property_film_open',{video_id:'8DX7RP8Gfgk',page_path:location.pathname});}));
+  if(dialog){dialog.querySelector('[data-film-close]').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{dialog.querySelector('.film-player').replaceChildren();document.body.classList.remove('film-open');trigger?.focus({preventScroll:true})});dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});}
+})();

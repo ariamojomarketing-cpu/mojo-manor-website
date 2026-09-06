@@ -11,3 +11,6 @@
 /content/* /blog/ 302
 /scripts/* / 302
 /blog/post-template /blog/ 302
+
+# Short, attributable booking link for the owner's YouTube video description.
+/youtube /?book=1&utm_source=youtube&utm_medium=organic_video&utm_campaign=manor_45s_southern&utm_content=description_book_direct 302

@@ -6,7 +6,7 @@ Prepared by **Codex Astra 6**, 2026-09-06. Coordinate implementation with the Ma
 
 - A shared Mojo header, animated medallion, forest/ivory styling and booking navigation across the gallery, rates, privacy page, Local Guide, journal and all 12 existing articles.
 - Topic filters and server-rendered journal cards. Article URLs remain unchanged.
-- `content/journal.json` is the article index. Run `node scripts/build-journal.cjs` after editing it. The script validates local image paths and article files, then updates the journal cards, related-card photos, article hero/share images, Blog schema and `/feed.xml`. It does not write or publish article copy and does not update the sitemap automatically.
+- `content/journal.json` is the article index. Run `node scripts/build-journal.cjs` after editing it. The script validates local image paths and article files, then updates the journal cards, related-card photos, article hero/share images, Blog schema, `/feed.xml` and article sitemap dates. An optional `modified` date updates Article metadata without changing the original publication date. It does not write or publish article copy.
 - Corrected broken/mismatched article photo mappings using existing assets. Removed several visibly unrelated Local Guide images (for example, a skier used for gem mining). Full licensing/source provenance for inherited destination imagery remains part of the editorial audit; filenames are not proof of location or rights.
 - Local Guide links to current NPS road/park conditions and positions the home correctly: a residential Waynesville setting about one mile from downtown.
 - Main page/gallery property presentation uses 4 bedrooms, up to 10 guests and 2.5 bathrooms. AI-edited feature images remain visibly labelled, with original photographs accessible. New real nighttime photos should eventually replace concepts.
@@ -27,8 +27,8 @@ Two substantial article releases or refreshes per month, a short weekly factual/
 
 | Timing | Article work | Required verification |
 | --- | --- | --- |
-| Week of Sep 7 | Refresh `/blog/fall-foliage-waynesville-nc` | Current park/road access, realistic seasonal uncertainty, original image provenance, remove unsupported first-person experience and guaranteed-color claims |
-| Week of Sep 14 | Refresh `/blog/waynesville-nc-fall-events-2026` | Organizer event dates/status, links, current availability before advertising a specific stay; retain original publication date |
+| Completed Sep 6 | Refreshed foliage, fall events and dog-friendly guides at their existing URLs | Primary-source links, corrected pet fees/park access, official 2026 festival dates, flexible road/weather planning; original publication dates retained |
+| Week of Sep 14 | Check the refreshed event information and audit the existing family guide | Current organizer status, winter height requirements, realistic travel times and remaining inherited destination claims |
 | Week of Sep 21 | Maintain Local Guide and improve links from existing articles | Business identity/hours, outdated place names, travel-time and walkability claims, remaining inherited stock photos |
 | Week of Sep 28 | Review search queries and guest questions; select October's two article slots | Search Console/analytics data if available; no duplicate competing article on an existing topic |
 
@@ -50,6 +50,6 @@ The Brain records overlapping Aria/Mac and Windows blog/social automations. Inve
 
 ## Current limitations and priorities
 
-This launch primarily changes design, imagery mapping and navigation. Existing article bodies retain older research and still need the scheduled factual/editorial audit. Do not describe all 12 guides as freshly fact-checked. Existing newsletter signup is retained, but delivery and subscriber-account ownership were not tested; no marketing email was sent. Production analytics IDs and PPC attribution remain in place, but field conversion delivery and Core Web Vitals need post-launch measurement.
+The September 6 completion release refreshes the dog-friendly, fall foliage and fall events bodies, corrects the Smokies guide's Kuwohi naming and selected travel claims, and fixes selected Local Guide facts. Other inherited guides and destination-image provenance still need the scheduled audit. Do not describe all 12 guides as freshly fact-checked. Existing newsletter signup is retained, but delivery and subscriber-account ownership were not tested; no marketing email was sent. Production analytics IDs and PPC attribution remain in place, but field conversion delivery and Core Web Vitals need post-launch measurement. The YouTube setup handoff is in `release/YOUTUBE-45S-SETUP.md`; its private Studio actions remain separate.
 
 Primary references: [Google people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [Blue Ridge Parkway current road status](https://www.nps.gov/blri/planyourvisit/roadclosures.htm), [Great Smoky Mountains current conditions](https://www.nps.gov/grsm/planyourvisit/conditions.htm). Park links checked 2026-09-06; conditions change.

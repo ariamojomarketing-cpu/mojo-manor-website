@@ -1,0 +1,465 @@
+{
+  "updated": "2026-09-06",
+  "photos": [
+    {
+      "src": "/Images/Optimized/furnished/Living Room - New2 85TV.jpg",
+      "alt": "Living room with 85-inch Smart TV and wood slat accent wall",
+      "caption": "Living Room - 85\" TV",
+      "category": "Living",
+      "id": "living",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/living.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Living Room - New4 Wide.jpg",
+      "alt": "Living room open to dining and kitchen",
+      "caption": "Living Room - Wide",
+      "category": "Living",
+      "id": "photo-2",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-2.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Family Room - New1.jpg",
+      "alt": "Family room with electric fireplace, barn door, and backyard access",
+      "caption": "Family room · fireplace and deck access",
+      "category": "Living",
+      "id": "family",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/family.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Family Room - New2.jpg",
+      "alt": "Family room with sliding glass door to backyard",
+      "caption": "Family Room - Backyard Access",
+      "category": "Living",
+      "id": "photo-4",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-4.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Living Room - New3 Dining.jpg",
+      "alt": "Front living room seen toward the dining area",
+      "caption": "Front living room · dining-room connection",
+      "category": "Living",
+      "id": "photo-5",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-5.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Living Room - New5 Kitchen View.jpg",
+      "alt": "Kitchen peninsula and island from family room",
+      "caption": "Kitchen & Island",
+      "category": "Living",
+      "id": "photo-6",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-6.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Family Room - Smart Drapes.jpg",
+      "alt": "Family room with smart motorized drapes, electric fireplace, and backyard access",
+      "caption": "Family Room - Smart Drapes",
+      "category": "Living",
+      "id": "photo-7",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-7.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Karaoke.jpg",
+      "alt": "Karaoke machine in family room",
+      "caption": "Karaoke in the family room",
+      "category": "Living",
+      "id": "karaoke",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/karaoke.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Royal Suite - Bed2.jpg",
+      "alt": "Royal Suite king bedroom with wall sconces and ensuite bath",
+      "caption": "Royal Suite - King",
+      "category": "Bedrooms",
+      "id": "suite",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/suite.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Royal Suite - Bed3 Ensuite View.jpg",
+      "alt": "Royal Suite with ensuite bathroom visible",
+      "caption": "Royal Suite - Ensuite",
+      "category": "Bedrooms",
+      "id": "photo-10",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-10.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Bigfoots Hideaway - New Best.jpg",
+      "alt": "Bigfoot's Hideaway king bedroom with navy bedding and mountain art",
+      "caption": "Bigfoot's Hideaway - King",
+      "category": "Bedrooms",
+      "id": "bigfoot",
+      "width": 1280,
+      "height": 721,
+      "thumb": "/Images/gallery-thumbs/bigfoot.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Mountain Bunkhouse - Best.jpg",
+      "alt": "Mountain Bunkhouse with mural wall and LED hex lights",
+      "caption": "Mountain Bunkhouse",
+      "category": "Bedrooms",
+      "id": "bunk",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/bunk.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Gatsby Room - New Best.jpg",
+      "alt": "The Gatsby Room queen bedroom with gold accents, vanity desk, and designer art",
+      "caption": "The Gatsby Room - Queen",
+      "category": "Bedrooms",
+      "id": "gatsby",
+      "width": 1280,
+      "height": 721,
+      "thumb": "/Images/gallery-thumbs/gatsby.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Gatsby Room - Desk Angle.jpg",
+      "alt": "The Gatsby Room with vanity desk, gold sconces, and blue abstract art",
+      "caption": "The Gatsby Room - Desk & Vanity",
+      "category": "Bedrooms",
+      "id": "photo-14",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-14.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Royal Suite - Ensuite Bath.jpg",
+      "alt": "Royal Suite private ensuite with tiled walk-in shower",
+      "caption": "Royal Suite ensuite",
+      "category": "Bathrooms",
+      "id": "bath",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/bath.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Hall Bath - Vanity Close.jpg",
+      "alt": "Hall bathroom vanity with gold faucet, navy mirror, and designer accessories",
+      "caption": "Hall Bath - Vanity",
+      "category": "Bathrooms",
+      "id": "photo-16",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-16.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Hall Bath - Vanity Full.jpg",
+      "alt": "Upstairs hall bathroom showing the vanity, toilet and shower curtain",
+      "caption": "Upstairs hall bathroom",
+      "category": "Bathrooms",
+      "id": "hallBath",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/hallBath.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Half Bath - Powder Room.jpg",
+      "alt": "Downstairs half bath powder room with gold fixtures and bear artwork reflected in mirror",
+      "caption": "Downstairs half bath",
+      "category": "Bathrooms",
+      "id": "powderRoom",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/powderRoom.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Kitchen Full Wide.jpg",
+      "alt": "Full kitchen with white shaker cabinets, stainless appliances, and open view to family room",
+      "caption": "Full Kitchen",
+      "category": "Kitchen",
+      "id": "photo-19",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/photo-19.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Kitchen Island Wide v2.jpg",
+      "alt": "Chef's kitchen with expansive quartz waterfall island and pendant lights",
+      "caption": "Quartz Island",
+      "category": "Kitchen",
+      "id": "kitchen",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/kitchen.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Kitchen Island Bar Family Room View.jpg",
+      "alt": "Kitchen island bar with family room and dining area beyond",
+      "caption": "Island Bar & Open Plan",
+      "category": "Kitchen",
+      "id": "photo-21",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/photo-21.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Kitchen Stove Appliances.jpg",
+      "alt": "Stainless range, microwave, and 4-door French door refrigerator",
+      "caption": "Full Appliance Suite",
+      "category": "Kitchen",
+      "id": "photo-22",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/photo-22.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Coffee Bar Close New.jpg",
+      "alt": "Coffee bar with Keurig, Torani syrups, creamer caddies, and assorted teas",
+      "caption": "Coffee Bar",
+      "category": "Kitchen",
+      "id": "coffee",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/coffee.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Dining Area New.jpg",
+      "alt": "Dining area with round wood table, designer pendant light, and seating for 6",
+      "caption": "Dining Area",
+      "category": "Kitchen",
+      "id": "dining",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/dining.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Mojos Arcade - Neon Night.jpg",
+      "alt": "Mojo's Arcade glowing neon sign with retro arcade games and velvet futon",
+      "caption": "Mojo’s Arcade · neon and futon",
+      "category": "Play",
+      "id": "arcade",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/arcade.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Mojos Arcade - Neon Sign Close.jpg",
+      "alt": "Mojo's Arcade neon sign close up",
+      "caption": "The Sign",
+      "category": "Play",
+      "id": "photo-26",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-26.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Shuffleboard - LED Top.jpg",
+      "alt": "Shuffleboard table with LED lighting at Mojo's Arcade",
+      "caption": "Shuffleboard",
+      "category": "Play",
+      "id": "shuffleboard",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/shuffleboard.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Mojos Arcade - Day.jpg",
+      "alt": "Foosball, skee-ball, and retro arcade cabs at Mojo's Arcade",
+      "caption": "Foosball & Retro Cabs",
+      "category": "Play",
+      "id": "photo-28",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-28.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Shuffleboard - Side Full.jpg",
+      "alt": "Full length shuffleboard table at Mojo's Arcade",
+      "caption": "Shuffleboard - Full View",
+      "category": "Play",
+      "id": "photo-29",
+      "width": 1400,
+      "height": 787,
+      "thumb": "/Images/gallery-thumbs/photo-29.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Arcade - Full Room v2.jpg",
+      "alt": "Mojo's Arcade full room with foosball, pool table, and arcade cabinets",
+      "caption": "Full Room",
+      "category": "Play",
+      "id": "arcadeWide",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/arcadeWide.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Mojos Arcade - Foosball Pool View.jpg",
+      "alt": "Foosball table and covered pool table with Mojo's Arcade sign",
+      "caption": "Foosball & Pool Table",
+      "category": "Play",
+      "id": "photo-31",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-31.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Shuffleboard - Puck Close.jpg",
+      "alt": "Shuffleboard table close-up with puck and sand",
+      "caption": "Shuffleboard - Puck View",
+      "category": "Play",
+      "id": "photo-32",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-32.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Mojos Arcade - Pool Table Back.jpg",
+      "alt": "Pool table from behind with full arcade room view",
+      "caption": "Pool Table",
+      "category": "Play",
+      "id": "photo-33",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-33.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Hot Tub - Night best.jpg",
+      "alt": "Hot tub under the stars with string lights at Mojo Manor",
+      "caption": "Hot Tub - Night",
+      "category": "Outdoors",
+      "id": "hotTubOriginal",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/hotTubOriginal.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Hot Tub - 1.jpg",
+      "alt": "Hot tub on covered deck during the day",
+      "caption": "Back deck · grill and covered hot tub",
+      "category": "Outdoors",
+      "id": "deck",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/deck.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Backyard - New Wide.jpg",
+      "alt": "Spacious fenced backyard with fire pit, playset, and hammock",
+      "caption": "Backyard",
+      "category": "Outdoors",
+      "id": "photo-36",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/photo-36.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Front Porch - Sign.jpg",
+      "alt": "Mojo Manor front porch with white rocking chairs and custom metal sign",
+      "caption": "Front Porch",
+      "category": "Arrival",
+      "id": "porch",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/porch.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Fire Pit + Boccee - Night.jpg",
+      "alt": "Fire pit and bocce ball court lit up at night",
+      "caption": "Fire Pit - Night",
+      "category": "Outdoors",
+      "id": "firepitOriginal",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/firepitOriginal.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Fire Pit + Boccee .jpg",
+      "alt": "Fire pit with bocce ball court",
+      "caption": "Fire Pit & Bocce",
+      "category": "Outdoors",
+      "id": "photo-39",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/photo-39.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Putting Green.jpg",
+      "alt": "3-hole outdoor putting green",
+      "caption": "Putting Green",
+      "category": "Outdoors",
+      "id": "photo-40",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/photo-40.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Putting Green - Night.jpg",
+      "alt": "Putting green lit up at night",
+      "caption": "Putting Green - Night",
+      "category": "Outdoors",
+      "id": "putting",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/putting.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Outdoor - Bocce Cornhole Court.jpg",
+      "alt": "Bocce and cornhole court with disc golf basket in fenced backyard",
+      "caption": "Bocce and cornhole court · disc golf",
+      "category": "Outdoors",
+      "id": "court",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/court.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Backyard - Hammock Playset Wide.jpg",
+      "alt": "Backyard with hammock, kids playset, fire pit, and ladder golf",
+      "caption": "Fenced backyard · hammock and playset",
+      "category": "Outdoors",
+      "id": "yard",
+      "width": 1280,
+      "height": 720,
+      "thumb": "/Images/gallery-thumbs/yard.webp"
+    },
+    {
+      "src": "/Images/Optimized/furnished/Playset.jpg",
+      "alt": "Kids playset with swings and multi-level tower in fenced backyard",
+      "caption": "Kids Playset",
+      "category": "Outdoors",
+      "id": "playset",
+      "width": 900,
+      "height": 1600,
+      "thumb": "/Images/gallery-thumbs/playset.webp"
+    },
+    {
+      "id": "exterior",
+      "category": "Arrival",
+      "src": "/Images/redesign/exterior-1600.webp",
+      "alt": "The front exterior of Mojo Manor in its residential Waynesville setting",
+      "caption": "The house and its in-town setting",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/exterior.webp"
+    },
+    {
+      "id": "ensuiteDetail",
+      "category": "Bathrooms",
+      "src": "/Images/redesign/ensuiteDetail-1600.webp",
+      "alt": "Royal Suite ensuite shower and vanity",
+      "caption": "Royal Suite ensuite · shower and vanity",
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/ensuiteDetail.webp"
+    }
+  ]
+}

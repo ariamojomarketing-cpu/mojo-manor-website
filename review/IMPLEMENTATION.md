@@ -43,7 +43,7 @@ The original website ID `637973`, rental `768708`, checkout destination and gues
 - `_redirects`, Google Vacation Rentals listing routing, article URLs, rate/policy URLs, Cloudflare functions and worker code remain.
 - GA4 `G-ZZJS8E767M`, Google Ads `AW-18375451046` and the existing PPC landing beacon are retained in `manor-analytics.js`; it and the existing chat script activate only on the real production hostname. Other legacy pages retain their existing tracking code.
 - This is the existing Cloudflare Pages project. No migration to Sites or Vercel was performed.
-- The “before” frame is the homepage captured from the base commit, with a root base path, noindex and its homepage GA loader removed for review. It uses original styles/scripts and contains original content faults; it is not a claim about a concurrently edited live deployment.
+- The “before” frame is the homepage captured from the base commit, with a root base path, noindex and its homepage GA loader removed for review. Its internal anchors point back to the captured page so its menu stays within the before pane. It uses original styles/scripts and contains original content faults; it is not a claim about a concurrently edited live deployment.
 
 ## Validation performed
 

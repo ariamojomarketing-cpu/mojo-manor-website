@@ -1,0 +1,9 @@
+/* Original Mojo artwork, presented in a lightweight SVG medallion. */
+.brand-medallion{display:block;width:100%;height:100%;overflow:visible}
+.brand-medallion .mojo-rim{transform-origin:50px 50px;animation:mojo-rim-turn 14s linear infinite}
+.wordmark .crest{width:64px;height:64px;padding:0;border:0;background:none;box-shadow:none;flex-shrink:0}
+.wordmark:hover .crest{transform:perspective(300px) rotateY(-12deg)}
+.dog-emblem .brand-medallion{width:144px;height:144px;margin:auto}
+@keyframes mojo-rim-turn{to{transform:rotate(360deg)}}
+@media(max-width:550px){.wordmark .crest{width:48px;height:48px}.dog-emblem .brand-medallion{width:112px;height:112px}}
+@media(prefers-reduced-motion:reduce){.brand-medallion .mojo-rim{animation:none}.wordmark:hover .crest{transform:none}}

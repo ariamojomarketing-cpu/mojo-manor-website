@@ -30,5 +30,5 @@ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(argu
   } catch (e) { /* never break the page for analytics */ }
 })();
 
-const chat=document.createElement('script');chat.src='chat.js';document.body.append(chat);
+const chat=document.createElement('script');chat.src='/chat.js';document.body.append(chat);
 }

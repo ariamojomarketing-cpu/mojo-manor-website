@@ -72,3 +72,8 @@ Not measured: field Core Web Vitals, Search Console coverage, current rankings, 
 7. Check the real social share image after deployment; its production URL will not resolve until those assets are released. Recheck mobile and browser performance on the final host.
 
 Other sites' proposed changes remain in the shared site-review handoff. This branch implements Mojo Manor only.
+
+
+## Owner-requested arcade ceiling revision
+
+Codex Astra 6 updated the homepage and original/concept slider to `arcade-concept-v2` after Jake requested removal of the garage-door opener hardware from the ceiling. Both opener units and their rails, springs, brackets and cords were digitally removed. The labeled AI concept retains the white ceiling structure, round light and blue perimeter lighting. Original property-gallery photographs are unchanged. Confirm the real ceiling condition when preparing the production photography. The prior concept remains in versioned assets/history.

@@ -1,0 +1,20 @@
+{
+  "missingWebpPlacementsRemoved": 14,
+  "uniqueMissingWebps": [
+    "Images/Optimized/furnished/Family Room - New1.webp",
+    "Images/Optimized/furnished/Living Room - New2 85TV.webp",
+    "Images/Optimized/furnished/Living Room - New4 Wide.webp",
+    "Images/Optimized/furnished/Family Room - New2.webp",
+    "Images/Optimized/furnished/Living Room - New3 Dining.webp",
+    "Images/Optimized/furnished/Living Room - New5 Kitchen View.webp",
+    "Images/Optimized/furnished/Royal Suite - Bed2.webp",
+    "Images/Optimized/furnished/Royal Suite - Bed3 Ensuite View.webp",
+    "Images/Optimized/furnished/Mountain Bunkhouse - Best.webp",
+    "Images/Optimized/furnished/Royal Suite - Ensuite Bath.webp",
+    "Images/Optimized/furnished/Mojos Arcade - Neon Sign Close.webp",
+    "Images/Optimized/furnished/Mojos Arcade - Day.webp",
+    "Images/Optimized/furnished/Backyard - New Wide.webp"
+  ],
+  "galleryOpeningReordered": 6,
+  "bathCount": "2.5, consistent with homepage and walkthrough notes"
+}

@@ -1,0 +1,150 @@
+{
+  "name": "WNC Insider",
+  "description": "The Mojo Manor travel journal: thoughtful guides for Waynesville and Western North Carolina.",
+  "articles": [
+    {
+      "slug": "waynesville-nc-fall-events-2026",
+      "title": "Fall 2026 Events in Waynesville & Maggie Valley: Festivals, Car Shows & Leaf Season",
+      "tag": "Events & Festivals",
+      "excerpt": "Apple Harvest Festival, Thunder in the Smokies, truck shows at the Festival Grounds, the Cataloochee elk rut, and peak leaf timing - plan your fall trip now.",
+      "image": "/Images/blog/soco-autumn.jpg",
+      "imageAlt": "Fall color in the mountains near Waynesville NC during festival season",
+      "displayDate": "July 2026 • 7 min read",
+      "published": "2026-07-12",
+      "topic": "seasonal",
+      "url": "/blog/waynesville-nc-fall-events-2026"
+    },
+    {
+      "slug": "dog-friendly-vacation-rental-waynesville-nc",
+      "title": "Dog-Friendly Vacation Rentals in Western NC",
+      "tag": "Property Feature",
+      "excerpt": "A fenced backyard, room to settle in and a home base near town. Plan a stay with your dog, including the house pet policy and local rules.",
+      "image": "/Images/redesign/yard-1200.webp",
+      "imageAlt": "The fenced backyard at Mojo Manor",
+      "displayDate": "May 2026 • 4 min read",
+      "published": "2026-05-06",
+      "topic": "staying",
+      "url": "/blog/dog-friendly-vacation-rental-waynesville-nc"
+    },
+    {
+      "slug": "spring-waynesville-nc",
+      "title": "Spring in Waynesville, NC: What's Actually Worth Doing Right Now",
+      "tag": "Seasonal Guides",
+      "excerpt": "Spring trip ideas, seasonal wildlife and waterfall walks. Check current road and trail conditions before setting out.",
+      "image": "/Images/guide/blue-ridge-parkway.jpg",
+      "imageAlt": "Forested mountain ridges beneath a cloudy sky",
+      "displayDate": "April 2026 • 5 min read",
+      "published": "2026-04-21",
+      "topic": "seasonal",
+      "url": "/blog/spring-waynesville-nc"
+    },
+    {
+      "slug": "soco-falls-waynesville-nc-hike",
+      "title": "Soco Falls: The Hidden Double Waterfall 20 Minutes from Waynesville NC",
+      "tag": "Waterfalls & Day Trips",
+      "excerpt": "A free double waterfall just off US-19 near Cherokee - 0.5 miles round trip, no permit needed, and most guests have no idea it's there until we tell them.",
+      "image": "/Images/blog/soco-falls-waynesville-nc-hike.jpg",
+      "imageAlt": "Soco Falls double waterfall near Waynesville NC",
+      "displayDate": "March 2026 • 5 min read",
+      "published": "2026-03-10",
+      "topic": "outdoors",
+      "url": "/blog/soco-falls-waynesville-nc-hike"
+    },
+    {
+      "slug": "best-hikes-near-waynesville-nc",
+      "title": "The 8 Best Hikes Near Waynesville, NC for Every Skill Level",
+      "tag": "Hiking",
+      "excerpt": "From easy roadside trails to summit scrambles on the Appalachian Trail  -  your complete guide to hiking near Mojo Manor in Western North Carolina.",
+      "image": "/Images/guide/waterrock-knob.jpg",
+      "imageAlt": "Forested ridges viewed from Waterrock Knob",
+      "displayDate": "February 2026 • 8 min read",
+      "published": "2026-02-22",
+      "topic": "outdoors",
+      "url": "/blog/best-hikes-near-waynesville-nc"
+    },
+    {
+      "slug": "best-waterfalls-near-waynesville-nc",
+      "title": "The Best Waterfalls Near Waynesville, NC (Your Complete Day-Trip Guide)",
+      "tag": "Waterfalls & Day Trips",
+      "excerpt": "From roadside cascades to Smoky Mountain plunges  -  9 waterfalls, 3 ready-made itineraries, and everything you need to plan the perfect waterfall day from Waynesville.",
+      "image": "/Images/guide/looking-glass-falls.jpg",
+      "imageAlt": "Looking Glass Falls in Pisgah National Forest",
+      "displayDate": "February 2026 • 10 min read",
+      "published": "2026-02-22",
+      "topic": "outdoors",
+      "url": "/blog/best-waterfalls-near-waynesville-nc"
+    },
+    {
+      "slug": "fall-foliage-waynesville-nc",
+      "title": "Fall Foliage in Waynesville, NC: When to Go, Where to Look, and What to Expect",
+      "tag": "Fall Foliage",
+      "excerpt": "Peak timing by elevation, the best overlooks and scenic drives, photography tips, and how to book before October weekends sell out.",
+      "image": "/Images/guide/blue-ridge-parkway-fall.jpg",
+      "imageAlt": "Autumn foliage beside a mountain road",
+      "displayDate": "February 2026 • 9 min read",
+      "published": "2026-02-23",
+      "topic": "seasonal",
+      "url": "/blog/fall-foliage-waynesville-nc"
+    },
+    {
+      "slug": "great-smoky-mountains-from-waynesville",
+      "title": "Day Trips to Great Smoky Mountains National Park from Waynesville, NC",
+      "tag": "Day Trips",
+      "excerpt": "Cataloochee elk, Clingmans Dome, Alum Cave Trail, and the Cherokee entrance  -  the best Smokies day trips from your Waynesville base, 30 minutes away.",
+      "image": "/Images/guide/blue-ridge-parkway.jpg",
+      "imageAlt": "Layers of forested mountain ridges",
+      "displayDate": "February 2026 • 9 min read",
+      "published": "2026-02-23",
+      "topic": "outdoors",
+      "url": "/blog/great-smoky-mountains-from-waynesville"
+    },
+    {
+      "slug": "asheville-day-trip-from-waynesville",
+      "title": "A Perfect Day Trip to Asheville from Waynesville, NC",
+      "tag": "Day Trips",
+      "excerpt": "River Arts District, Biltmore Estate, the South Slope brewery district, and where to eat  -  how to spend a great day in Asheville when you're staying 30 minutes away.",
+      "image": "/Images/guide/biltmore-estate.jpg",
+      "imageAlt": "The front facade of Biltmore House",
+      "displayDate": "February 2026 • 8 min read",
+      "published": "2026-02-23",
+      "topic": "outdoors",
+      "url": "/blog/asheville-day-trip-from-waynesville"
+    },
+    {
+      "slug": "waynesville-nc-breweries-guide",
+      "title": "Best Breweries Near Waynesville and Maggie Valley, NC",
+      "tag": "Craft Beer",
+      "excerpt": "Panacea Brewing five minutes from Mojo Manor, Boojum and BearWaters nearby, and Asheville's entire South Slope brewery district 30 minutes out.",
+      "image": "/Images/guide/boojum-exterior.jpg",
+      "imageAlt": "Boojum Brewing on Main Street in Waynesville",
+      "displayDate": "February 2026 • 7 min read",
+      "published": "2026-02-23",
+      "topic": "town",
+      "url": "/blog/waynesville-nc-breweries-guide"
+    },
+    {
+      "slug": "things-to-do-waynesville-nc-families",
+      "title": "Best Things to Do in Waynesville, NC with Kids and Families",
+      "tag": "Family Travel",
+      "excerpt": "Gem mining, elk viewing in Cataloochee, easy hikes, Cherokee, Cataloochee Ski Area, and honest rainy-day backup plans  -  a real family guide from people who know the area.",
+      "image": "/Images/guide/cataloochee-elk.jpg",
+      "imageAlt": "An elk standing beside a meadow",
+      "displayDate": "February 2026 • 9 min read",
+      "published": "2026-02-23",
+      "topic": "staying",
+      "url": "/blog/things-to-do-waynesville-nc-families"
+    },
+    {
+      "slug": "group-vacation-rentals-waynesville-nc",
+      "title": "Group Vacation Rentals in Waynesville, NC: What to Look For",
+      "tag": "Group Travel",
+      "excerpt": "Bachelorette weekends, family reunions, friend trips  -  what actually matters when booking a large vacation rental, and why Waynesville works so well for groups.",
+      "image": "/Images/redesign/yard-1200.webp",
+      "imageAlt": "The backyard gathering space at Mojo Manor",
+      "displayDate": "February 2026 • 8 min read",
+      "published": "2026-02-23",
+      "topic": "staying",
+      "url": "/blog/group-vacation-rentals-waynesville-nc"
+    }
+  ]
+}

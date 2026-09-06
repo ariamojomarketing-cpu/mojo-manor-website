@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-06",
+  "author": "Codex Astra 6",
+  "baseline": "115c6579647b8f9d3f7dadff3d5d5027d93bebe9",
+  "reviewBranch": "codex/mojo-manor-homepage-review",
+  "launchBranch": "codex/mojo-manor-launch",
+  "archive": "/old/",
+  "articleCount": 12,
+  "subpagesStyled": [
+    "gallery.html",
+    "local-guide.html",
+    "rates.html",
+    "privacy-policy.html",
+    "blog/asheville-day-trip-from-waynesville.html",
+    "blog/best-hikes-near-waynesville-nc.html",
+    "blog/best-waterfalls-near-waynesville-nc.html",
+    "blog/dog-friendly-vacation-rental-waynesville-nc.html",
+    "blog/fall-foliage-waynesville-nc.html",
+    "blog/great-smoky-mountains-from-waynesville.html",
+    "blog/group-vacation-rentals-waynesville-nc.html",
+    "blog/index.html",
+    "blog/soco-falls-waynesville-nc-hike.html",
+    "blog/spring-waynesville-nc.html",
+    "blog/things-to-do-waynesville-nc-families.html",
+    "blog/waynesville-nc-breweries-guide.html",
+    "blog/waynesville-nc-fall-events-2026.html",
+    "neighborhood-map.html"
+  ],
+  "productionStatus": "Release candidate; consult the dated Brain handoff for the verified production commit and deployment status.",
+  "bookingCheck": "Automated browser reached provider security challenge; live site showed the same blocked API calls."
+}

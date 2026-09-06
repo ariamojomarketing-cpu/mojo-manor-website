@@ -2,3 +2,9 @@
 *.mov
 *.avi
 Images/Listing Photos/
+
+review/
+release/
+content/
+scripts/
+blog/post-template.html

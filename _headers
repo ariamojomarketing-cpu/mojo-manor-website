@@ -1,0 +1,12 @@
+/old/*
+  X-Robots-Tag: noindex, follow
+/old
+  X-Robots-Tag: noindex, follow
+/review/*
+  X-Robots-Tag: noindex, nofollow
+/booking-widget
+  X-Robots-Tag: noindex, nofollow
+/booking-widget.html
+  X-Robots-Tag: noindex, nofollow
+/blog/post-template
+  X-Robots-Tag: noindex, nofollow

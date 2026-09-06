@@ -1,0 +1,49 @@
+{
+  "errors": [
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/search/637973/filters' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v1/external-widgets/events' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' h",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/currencies' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' heade",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v3/websites/search/637973' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' he",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/localization' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' hea",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://checkout.lodgify.com/api/v1/checkout/calendar?propertyId=768708&startDate=2026-09-05' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to fetch",
+    "Access to fetch at 'https://checkout.lodgify.com/api/v1/checkout/calendar?propertyId=768708&startDate=2026-09-05' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/search/637973/filters' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v1/external-widgets/events' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' h",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/localization' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' hea",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/currencies' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' heade",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v3/websites/search/637973' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' he",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to fetch",
+    "Access to fetch at 'https://websiteserver.lodgify.com/v2/websites/search/637973/filters' from origin 'http://127.0.0.1:4173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "requests": [],
+  "widths": [
+    {
+      "width": 1440,
+      "datePickerNextMonthClickable": true,
+      "calendarText": "October 2026\nMon\tTue\tWed\tThu\tFri\tSat\tSun\n\n28\n\t\n29\n\t\n30\n",
+      "frameWidth": 698,
+      "frameOverflow": false
+    },
+    {
+      "width": 390,
+      "datePickerNextMonthClickable": true,
+      "calendarText": "October 2026\nMon\tTue\tWed\tThu\tFri\tSat\tSun\n\n28\n\t\n29\n\t\n30\n",
+      "frameWidth": 322,
+      "frameOverflow": false
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "viewportChecks": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "brokenHomepageImages": [],
+  "brokenGalleryImages": [],
+  "pageErrors": [
+    "Failed to fetch",
+    "Failed to fetch"
+  ],
+  "failedRequests": [
+    {
+      "url": "https://checkout.lodgify.com/api/v1/checkout/calendar?propertyId=768708&startDate=2026-09-05",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v1/external-widgets/events",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/localization",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/currencies",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v3/websites/search/637973",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/search/637973/filters",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/localization",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v3/websites/search/637973",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/search/637973/filters",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/search/637973/filters",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-ZZJS8E767M",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/localization",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/currencies",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://checkout.lodgify.com/api/v1/checkout/calendar?propertyId=768708&startDate=2026-09-05",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v3/websites/search/637973",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v2/websites/search/637973/filters",
+      "error": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://websiteserver.lodgify.com/v1/external-widgets/events",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "widgetText": "Check-in\nCheck-out\nGuests\n1 adult\nSearch",
+  "dateInteraction": "date control opened; see separate booking-validation.json for calendar navigation and provider limitations",
+  "checked": [
+    "Single H1",
+    "Homepage/gallery image decoding",
+    "Gallery category count and arrow navigation",
+    "Escape closes dialog",
+    "Mobile menu",
+    "Evening scene toggle",
+    "5 viewport widths",
+    "Reduced motion",
+    "Before/after chapter and device controls",
+    "Concept comparison sliders"
+  ],
+  "notTested": [
+    "Paid booking",
+    "Lodgify final confirmation",
+    "Production analytics delivery",
+    "Field Core Web Vitals"
+  ],
+  "structuredDataBlocksParsed": 2,
+  "localReferencesChecked": 56,
+  "missingLocalReferences": []
+}

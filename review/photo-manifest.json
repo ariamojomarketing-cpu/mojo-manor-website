@@ -1,0 +1,108 @@
+[
+  {
+    "name": "living",
+    "inventory": "L017",
+    "original": "2.18.26/Family Room1.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "kitchen",
+    "inventory": "L028",
+    "original": "2.18.26/Kitchen Alt ANgle.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "suite",
+    "inventory": "L036",
+    "original": "2.18.26/Master Bedroom1.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "bunk",
+    "inventory": "L008",
+    "original": "2.18.26/Bunk Bed Room 1.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "gatsby",
+    "inventory": "L051",
+    "original": "2.9.26-Queen Bed.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "bigfoot",
+    "inventory": "L027",
+    "original": "2.18.26/King Room.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "coffee",
+    "inventory": "L010",
+    "original": "2.18.26/Coffee Bar.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "exterior",
+    "inventory": "L003",
+    "original": "2.18.26 - Front2.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "putting",
+    "inventory": "L109",
+    "original": "Putting Green - Night.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "firepitOriginal",
+    "inventory": "L090",
+    "original": "Fire Pit + Boccee - Night.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "hotTubOriginal",
+    "inventory": "L100",
+    "original": "Hot Tub - Night best.jpeg",
+    "aiGenerated": false
+  },
+  {
+    "name": "arcade",
+    "original": "Images/Optimized/furnished/Mojos Arcade - Neon Night.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "arcadeWide",
+    "original": "Images/Optimized/furnished/Arcade - Full Room v2.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "shuffleboard",
+    "original": "Images/Optimized/furnished/Shuffleboard - LED Top.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "yard",
+    "original": "Images/Optimized/furnished/Backyard - Hammock Playset Wide.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "family",
+    "original": "Images/Optimized/furnished/Family Room - New1.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "porch",
+    "original": "Images/Optimized/furnished/Front Porch - Sign.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "dining",
+    "original": "Images/Optimized/furnished/Dining Area New.jpg",
+    "aiGenerated": false
+  },
+  {
+    "name": "bath",
+    "original": "Images/Optimized/furnished/Royal Suite - Ensuite Bath.jpg",
+    "aiGenerated": false
+  }
+]

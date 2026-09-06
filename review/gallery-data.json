@@ -1,0 +1,97 @@
+[
+  [
+    "living",
+    "Front living room",
+    "Living"
+  ],
+  [
+    "kitchen",
+    "The kitchen island",
+    "Living"
+  ],
+  [
+    "family",
+    "Rear family room",
+    "Living"
+  ],
+  [
+    "dining",
+    "Gather around the table",
+    "Living"
+  ],
+  [
+    "coffee",
+    "Coffee, before anything",
+    "Living"
+  ],
+  [
+    "suite",
+    "The Royal Suite",
+    "Bedrooms"
+  ],
+  [
+    "bigfoot",
+    "Bigfoot’s Hideaway",
+    "Bedrooms"
+  ],
+  [
+    "bunk",
+    "Mountain Bunkhouse",
+    "Bedrooms"
+  ],
+  [
+    "gatsby",
+    "The Gatsby Room",
+    "Bedrooms"
+  ],
+  [
+    "bath",
+    "Royal Suite ensuite",
+    "Bedrooms"
+  ],
+  [
+    "arcade",
+    "Mojo’s Arcade at night",
+    "Play"
+  ],
+  [
+    "arcadeWide",
+    "The full game room · current photo",
+    "Play"
+  ],
+  [
+    "shuffleboard",
+    "A little friendly competition",
+    "Play"
+  ],
+  [
+    "yard",
+    "The fenced backyard",
+    "Outdoors"
+  ],
+  [
+    "putting",
+    "Putting green after dark",
+    "Outdoors"
+  ],
+  [
+    "hotTubOriginal",
+    "Hot tub · original property photo",
+    "Outdoors"
+  ],
+  [
+    "firepitOriginal",
+    "Fire pit · original property photo",
+    "Outdoors"
+  ],
+  [
+    "porch",
+    "Your welcome to the Manor",
+    "Arrival"
+  ],
+  [
+    "exterior",
+    "The house, in its real in-town setting",
+    "Arrival"
+  ]
+]

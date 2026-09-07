@@ -1,55 +1,53 @@
 # Mojo Manor journal and local-guide publishing plan
 
-Prepared by **Codex Astra 6**, 2026-09-06. Coordinate implementation with the Mac through `ariamojomarketing-cpu/brain-vault` and its `Projects/MojoManor/Publishing-Launch-Checklist-2026-09-05.md`. This is an editorial plan; no additional scheduler, social publisher or newsletter campaign was enabled by the website release.
+Updated by **Codex Astra 6**, September 7, 2026. Coordinate through `ariamojomarketing-cpu/brain-vault`. The Mac's `Projects/MojoManor/Social-Campaign-2026-09/Setup-Status.md` and `Blog-Topic-Queue.md` are the current operational references. This document does not create a scheduler or enable social publication.
 
-## Implemented in the website release
+## Website roles and implemented foundation
 
-- A shared Mojo header, animated medallion, forest/ivory styling and booking navigation across the gallery, rates, privacy page, Local Guide, journal and all 12 existing articles.
-- Topic filters and server-rendered journal cards. Article URLs remain unchanged.
-- `content/journal.json` is the article index. Run `node scripts/build-journal.cjs` after editing it. The script validates local image paths and article files, then updates the journal cards, related-card photos, article hero/share images, Blog schema, `/feed.xml` and article sitemap dates. An optional `modified` date updates Article metadata without changing the original publication date. It does not write or publish article copy.
-- Corrected broken/mismatched article photo mappings using existing assets. Removed several visibly unrelated Local Guide images (for example, a skier used for gem mining). Full licensing/source provenance for inherited destination imagery remains part of the editorial audit; filenames are not proof of location or rights.
-- Local Guide links to current NPS road/park conditions and positions the home correctly: a residential Waynesville setting about one mile from downtown.
-- Main page/gallery property presentation uses 4 bedrooms, up to 10 guests and 2.5 bathrooms. AI-edited feature images remain visibly labelled, with original photographs accessible. New real nighttime photos should eventually replace concepts.
+- The homepage presents the house and booking journey, with three curated article previews. It is not the full article archive.
+- `/blog/` (WNC Insider) contains all 12 existing articles with topic filters. Future articles belong here; feature a relevant selection on the homepage.
+- `/local-guide` remains the concise attraction directory, linking to deeper journal advice and official visitor information.
+- Gallery, film and Rates & Policies provide the room, amenity, layout and booking details that support each article's invitation to stay.
+- The shared Mojo medallion, visual styling, navigation and booking access remain in place. The homepage's restrained welcome and scroll motion shipped separately at e3adcac. `/old/` retains the original homepage with noindex.
+- September 6 refreshed dog-friendly, foliage and fall-events articles. The September 7 release refreshes the other nine existing article bodies, preserving their URLs and original publication dates. Related-card titles, modification dates, share metadata, RSS and sitemap are synchronized. See `2026-09-07-GUIDE-ACCURACY.md` for scope and sources.
 
-## Editorial roles
+## Current cadence and ownership
 
-Homepage: sell the stay through the actual house, clear amenities, location and booking access.
+The Mac setup record reports one `com.codex.mojo-editorial` LaunchAgent, with article/editorial dispatch enabled and social publication disabled. It dispatches preparation 48 hours ahead, Monday reviews and scheduled releases through the existing Mac Codex task. A September 6 queue test was acknowledged. This Windows review has not verified a post-power-outage editorial run on the Mac; its separate Telegram recovery does not establish that.
 
-Local Guide (`/local-guide`): a concise, maintained directory for deciding what to do. Keep useful categories, links to businesses/parks, route planning and links to fuller journal articles. Do not turn this into another stream of overlapping posts.
+**New articles:** every 14 days, Thursday at 10 AM Eastern, September 10–November 19. These are six complete drafts and scheduled release tasks, not already published pages.
 
-Travel journal (`/blog/`, WNC Insider): answer one useful guest question per article, using specific local facts and a natural invitation to stay. Refresh existing URLs when they already cover the topic.
+| Date | New article |
+| --- | --- |
+| September 10 | A Slow Morning at Lake Junaluska, Then Back to Waynesville |
+| September 24 | Coffee in Frog Level, a Browse on Main Street |
+| October 8 | A Rainy Day in Waynesville |
+| October 22 | A Waynesville Weekend Without a Packed Itinerary |
+| November 5 | A Winter Weekend in Waynesville, Even If You Do Not Ski |
+| November 19 | Make a Weekend of Holiday Shopping in Waynesville |
 
-Gallery and Rates & Policies: practical evidence and booking reassurance. Keep layout, room descriptions, pet policy, cancellation terms and the live booking engine consistent. Booking-engine totals remain authoritative.
+The two September references to existing foliage and events articles are reviews only. Preserve those pages and the September 7 corrections. Later brewery, family, waterfall and spring refresh candidates should add substantive current value to these existing URLs, not replay the earlier correction task.
 
-## Cadence and first month — proposed
+**Social:** one core Wednesday post weekly, September 9–January 20, with Facebook at 9 AM and Instagram at 12:15 PM Eastern. An article may supply that week's topic without adding publication volume. Social activation still requires working Composio project API access and live confirmation of Facebook business Page 1052123634642557 and Instagram @mojomanorwaynesville. Dashboard connection status alone is insufficient. The legacy social owner remains in place until verified cutover; preserve unrelated X/Pinterest jobs. Do not add a Windows scheduler.
 
-Two substantial article releases or refreshes per month, a short weekly factual/link check, and a monthly performance review. This matches the Mac's existing plan. Three social posts per week can draw on these articles and actual property photos through the separately coordinated marketing workflow.
-
-| Timing | Article work | Required verification |
-| --- | --- | --- |
-| Completed Sep 6 | Refreshed foliage, fall events and dog-friendly guides at their existing URLs | Primary-source links, corrected pet fees/park access, official 2026 festival dates, flexible road/weather planning; original publication dates retained |
-| Week of Sep 14 | Check the refreshed event information and audit the existing family guide | Current organizer status, winter height requirements, realistic travel times and remaining inherited destination claims |
-| Week of Sep 21 | Maintain Local Guide and improve links from existing articles | Business identity/hours, outdated place names, travel-time and walkability claims, remaining inherited stock photos |
-| Week of Sep 28 | Review search queries and guest questions; select October's two article slots | Search Console/analytics data if available; no duplicate competing article on an existing topic |
-
-Possible later topics: a rainy-day itinerary, an in-town winter weekend, and a renovation story pairing Jake's verified before/current photos. These are candidates, not commissioned or published articles. Current existing hiking, waterfalls, family, brewery, dog-friendly, group and Asheville guides should be audited before creating similar articles.
-
-## One publication owner
-
-The Brain records overlapping Aria/Mac and Windows blog/social automations. Inventory their next runs and destinations, then choose one publication owner per channel before cutover. Do not add another scheduler on top of them. Existing owner's publishing authority and Jake's instructions govern release; this document does not invent a new approval requirement. Record the chosen owner and job IDs in Brain when cutover actually occurs.
+The Mac must be awake and online with its Codex task available. Late or uncertain dispatches are held. Check the current Mac status and receipts before describing the schedule as running after the outage.
 
 ## Repeatable article release
 
-1. Pull the website and Brain repositories; inspect the current article inventory and pending campaigns. Work in a `codex/` branch.
-2. Choose the existing URL or a distinct unmet reader need. Check current facts using primary sources: park agencies, event organizers and business websites. Store source links and verification dates in the campaign note. Do not invent host experience or infer destination identity from a filename.
-3. Edit/create the article using `blog/post-template.html`. Replace every placeholder. Give it a unique title/description, canonical URL, one H1, appropriate Article markup, accessible headings and useful links to the Guide, related articles and the house.
-4. Use owned/licensed, relevant photographs with appropriate crops and accurate alt text. Optimise new media for phone loading. Retain original publication dates; update visible modification date and structured data only when the article changes substantively. Update the article's sitemap lastmod honestly.
-5. Add/update `content/journal.json`, run `node scripts/build-journal.cjs`, and inspect the actual desktop/mobile page, card, related links, share image, RSS and sitemap. Check the booking invitation without submitting a reservation. Never claim live availability from an old calendar snapshot.
-6. Publish through the established Cloudflare Pages production path. Verify the live article and record branch, commit, URL and verified sources in Brain. Generate social drafts from the same facts and media through the single marketing owner.
-7. Review useful search impressions/clicks, engaged reading, booking-button actions and attributable reservations after enough data. Track completed bookings only through a verified provider integration; a button click is not a reservation. No ranking or revenue guarantee is implied.
+1. Pull fresh website and Brain repositories and inspect upcoming campaigns. Use a `codex/` branch. Choose an existing URL for a refresh or a distinct unanswered guest question for a new article.
+2. Research current facts through attraction operators, park agencies and event organizers. Record URLs and check dates. Write useful trip advice with accurate property details and natural language; do not invent host visits or use publishing frequency as a ranking promise.
+3. Use the current production article shell or `blog/post-template.html`, replacing all placeholders. Use one H1, a unique title/description, the correct canonical, accessible headings and Article metadata. Never deploy the Mac's noindex review HTML directly.
+4. Choose relevant owned or licensed photos, verify their provenance, provide attribution where required, optimize file sizes and inspect the actual crop. Preserve original publication dates on refreshes; set modification dates only for substantive changes.
+5. Update `content/journal.json`; run `node scripts/build-journal.cjs`. It builds journal cards, related-card photos/titles, hero/share images, optional image credits, Blog schema, RSS, sitemap dates and three selected homepage previews. It does not author the article body. Inspect phone and desktop layouts, links, metadata and the booking invitation without submitting a reservation.
+6. Publish through the existing Cloudflare Pages `mojo-manor` production branch, `main`. Verify the live deployment before marking complete. Record URLs, branch, commit, sources and remaining limitations in Brain's desktop or Mac handoff lane as appropriate.
+7. Review search visibility and visitor behavior after sufficient data. Separate booking-button clicks from verified reservations. Review new articles at 30, 60 and 90 days; use the results and guest questions to extend the queue.
 
-## Current limitations and priorities
+## Remaining work
 
-The September 6 completion release refreshes the dog-friendly, fall foliage and fall events bodies, corrects the Smokies guide's Kuwohi naming and selected travel claims, and fixes selected Local Guide facts. Other inherited guides and destination-image provenance still need the scheduled audit. Do not describe all 12 guides as freshly fact-checked. Existing newsletter signup is retained, but delivery and subscriber-account ownership were not tested; no marketing email was sent. Production analytics IDs and PPC attribution remain in place, but field conversion delivery and Core Web Vitals need post-launch measurement. The YouTube setup handoff is in `release/YOUTUBE-45S-SETUP.md`; its private Studio actions remain separate.
+- YouTube: the 45-second film is already embedded. The tracked `/youtube` booking redirect exists; private Studio changes remain pending sign-in to jcphilli21@gmail.com. Use `YOUTUBE-45S-SETUP.md`. No YouTube changes were saved by the September 7 guide release.
+- Verify the Mac editorial dispatcher after the outage and resolve the existing social access prerequisite through its current owner.
+- Obtain actual Search Console/GA4 data and prove completed-booking attribution before reporting search or revenue gains. Newsletter delivery has not been verified.
+- Continue inherited destination-image provenance checks. The Soco autumn image has verified source and credit in the September 7 release; that is not a rights audit of every image.
+- Replace the visibly labeled AI-edited property concepts with real nighttime photography when available. Keep the original property gallery available.
 
-Primary references: [Google people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [Blue Ridge Parkway current road status](https://www.nps.gov/blri/planyourvisit/roadclosures.htm), [Great Smoky Mountains current conditions](https://www.nps.gov/grsm/planyourvisit/conditions.htm). Park links checked 2026-09-06; conditions change.
+References: [Google people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [Parkway road status](https://www.nps.gov/blri/planyourvisit/roadclosures.htm), [Smokies conditions](https://www.nps.gov/grsm/planyourvisit/conditions.htm). Recheck changing conditions at publication and before a visit.

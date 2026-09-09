@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-09-09T21:03:35.431Z",
+  "scope": "Local rendering and read-only entry controls; no booking, dates, payment, subscriber or chat submission",
+  "reports": [
+    {
+      "page": "home",
+      "width": 320,
+      "height": 13222,
+      "overflow": false,
+      "proofTop": 1234,
+      "badImages": [],
+      "bathrooms": 0,
+      "bedrooms": 0,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "providerErrors": [],
+      "errors": []
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "height": 12553,
+      "overflow": false,
+      "proofTop": 1184,
+      "badImages": [],
+      "bathrooms": 0,
+      "bedrooms": 0,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "providerErrors": [
+        "Uncaught (in promise) TypeError: Failed to fetch\n    at <anonymous> (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:290:119109)\n    at os (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:98007)\n    at Ec (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:117952)\n    at cc (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:110345)\n    at Uo (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:51581)\n    at <anonymous> (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:116784)\n    at Cc (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:116789)\n    at ac (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:109353)\n    at C (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:171742)\n    at M (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:172274)"
+      ],
+      "errors": []
+    },
+    {
+      "page": "home",
+      "width": 768,
+      "height": 11153,
+      "overflow": false,
+      "proofTop": 1358,
+      "badImages": [],
+      "bathrooms": 0,
+      "bedrooms": 0,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "providerErrors": [],
+      "errors": []
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "height": 9610,
+      "overflow": false,
+      "proofTop": 1005,
+      "badImages": [],
+      "bathrooms": 0,
+      "bedrooms": 0,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "providerErrors": [
+        "Uncaught (in promise) TypeError: Failed to fetch\n    at <anonymous> (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:290:119109)\n    at os (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:98007)\n    at Ec (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:117952)\n    at cc (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:110345)\n    at Uo (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:51581)\n    at <anonymous> (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:116784)\n    at Cc (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:116789)\n    at ac (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:109353)\n    at C (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:171742)\n    at M (https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js:641:172274)"
+      ],
+      "errors": []
+    }
+  ],
+  "broken_links": []
+}

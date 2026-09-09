@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-09",
   "photos": [
     {
       "src": "/Images/Optimized/furnished/Living Room - New2 85TV.jpg",
@@ -82,14 +82,14 @@
       "thumb": "/Images/gallery-thumbs/karaoke.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Royal Suite - Bed2.jpg",
+      "src": "/Images/redesign/suite-polished-20260909-1600.webp",
       "alt": "Royal Suite king bedroom with wall sconces and ensuite bath",
       "caption": "Royal Suite - King",
       "category": "Bedrooms",
       "id": "suite",
-      "width": 1280,
-      "height": 720,
-      "thumb": "/Images/gallery-thumbs/suite.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/suite-polished-20260909.webp"
     },
     {
       "src": "/Images/Optimized/furnished/Royal Suite - Bed3 Ensuite View.jpg",
@@ -122,64 +122,64 @@
       "thumb": "/Images/gallery-thumbs/bunk.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Gatsby Room - New Best.jpg",
+      "src": "/Images/redesign/gatsby-polished-20260909-1600.webp",
       "alt": "The Gatsby Room queen bedroom with gold accents, vanity desk, and designer art",
       "caption": "The Gatsby Room - Queen",
       "category": "Bedrooms",
       "id": "gatsby",
-      "width": 1280,
-      "height": 721,
-      "thumb": "/Images/gallery-thumbs/gatsby.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/gatsby-polished-20260909.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Gatsby Room - Desk Angle.jpg",
+      "src": "/Images/redesign/gatsbyAngle-polished-20260909-1600.webp",
       "alt": "The Gatsby Room with vanity desk, gold sconces, and blue abstract art",
       "caption": "The Gatsby Room - Desk & Vanity",
       "category": "Bedrooms",
       "id": "photo-14",
-      "width": 1280,
-      "height": 720,
-      "thumb": "/Images/gallery-thumbs/photo-14.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/gatsbyAngle-polished-20260909.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Royal Suite - Ensuite Bath.jpg",
+      "src": "/Images/redesign/bath-polished-20260909-1600.webp",
       "alt": "Royal Suite private ensuite with tiled walk-in shower",
       "caption": "Royal Suite ensuite",
       "category": "Bathrooms",
       "id": "bath",
-      "width": 1280,
-      "height": 720,
-      "thumb": "/Images/gallery-thumbs/bath.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/bath-polished-20260909.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Hall Bath - Vanity Close.jpg",
+      "src": "/Images/redesign/hallVanity-polished-20260909-1600.webp",
       "alt": "Hall bathroom vanity with gold faucet, navy mirror, and designer accessories",
       "caption": "Hall Bath - Vanity",
       "category": "Bathrooms",
       "id": "photo-16",
-      "width": 1280,
-      "height": 720,
-      "thumb": "/Images/gallery-thumbs/photo-16.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/hallVanity-polished-20260909.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Hall Bath - Vanity Full.jpg",
+      "src": "/Images/redesign/hallBath-polished-20260909-1600.webp",
       "alt": "Upstairs hall bathroom showing the vanity, toilet and shower curtain",
       "caption": "Upstairs hall bathroom",
       "category": "Bathrooms",
       "id": "hallBath",
-      "width": 1280,
-      "height": 720,
-      "thumb": "/Images/gallery-thumbs/hallBath.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/hallBath-polished-20260909.webp"
     },
     {
-      "src": "/Images/Optimized/furnished/Half Bath - Powder Room.jpg",
+      "src": "/Images/redesign/powderRoom-polished-20260909-1600.webp",
       "alt": "Downstairs half bath powder room with gold fixtures and bear artwork reflected in mirror",
       "caption": "Downstairs half bath",
       "category": "Bathrooms",
       "id": "powderRoom",
-      "width": 1280,
-      "height": 720,
-      "thumb": "/Images/gallery-thumbs/powderRoom.webp"
+      "width": 1600,
+      "height": 900,
+      "thumb": "/Images/gallery-thumbs/powderRoom-polished-20260909.webp"
     },
     {
       "src": "/Images/Optimized/furnished/Kitchen Full Wide.jpg",
@@ -454,12 +454,12 @@
     {
       "id": "ensuiteDetail",
       "category": "Bathrooms",
-      "src": "/Images/redesign/ensuiteDetail-1600.webp",
+      "src": "/Images/redesign/ensuiteDetail-polished-20260909-1600.webp",
       "alt": "Royal Suite ensuite shower and vanity",
       "caption": "Royal Suite ensuite · shower and vanity",
       "width": 1600,
       "height": 900,
-      "thumb": "/Images/gallery-thumbs/ensuiteDetail.webp"
+      "thumb": "/Images/gallery-thumbs/ensuiteDetail-polished-20260909.webp"
     }
   ]
 }

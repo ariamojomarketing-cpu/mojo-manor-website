@@ -10,7 +10,7 @@ Final integration preserves Mac's newer amenities-focused production commit `31c
 - Revised room photographs appear in the full gallery and shared photo viewer. Mac's latest homepage intentionally leads with amenities, living spaces and the backyard; bedroom/bathroom photo cards are not restored.
 - Full gallery JSON, rendered gallery and thumbnails share the same revised selections. All 46 entries, including five bathroom angles and all four bedrooms, remain.
 - Removed both large `DIGITALLY EDITED PHOTO` badges. Ordinary room retouching has no guest-facing edit labels. Existing evening visualizations retain short scene-specific captions and descriptive alt text.
-- Added a noindex before/after comparison at `/review/photo-polish-20260909/`; the original `/old/` and all source photographs remain intact.
+- Added a noindex before/after comparison source at `review/photo-polish-20260909/index.html`, served locally on port 4191. Production intentionally redirects `/review/*` to the original archive; that rule is preserved. The original `/old/` and all source photographs remain intact.
 - Gallery sitemap date updated. Mac's layout, journal and booking behavior preserved.
 
 ## Validation

@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-09-09T21:04:02.103371+00:00",
+  "reviewed_by": "Mac Astra",
+  "source_base": "85f2c4d2e324be05a257661a4bafaf09f934f921",
+  "scope": "Jake-requested homepage amenities focus; no article publication",
+  "passed": true,
+  "checks": {
+    "reader_value": "Backyard activities, game room, kitchen, both living rooms, coffee and karaoke lead; sleeping/bath details remain accessible.",
+    "hook_and_flow": "Dedicated bathroom section and four bedroom feature cards replaced by compact factual summary after location.",
+    "natural_voice": "Changed copy reviewed for clear, house-specific language; no invented guest story, superlatives or urgency.",
+    "facts_and_limits": "4 bedrooms, 2.5 baths, ten maximum and upstairs/full-bath/futon limitations retained. One mile to downtown retained from owner data. Laurel Ridge official page checked September 9: currently public tee times subject to availability; no access or golf included with stay.",
+    "image_and_rights": "Existing owner catalog only; selected backyard, court, coffee and karaoke photos visually inspected. Living-room and putting photos from prior verified selection. Existing digitally edited scene labels retained; all 46 photo records unchanged.",
+    "links_and_cta": "Photo IDs checked against selected image paths; bedroom, bath and futon links go to real gallery anchors; booking entry and direct provider fallback retained.",
+    "channel_and_overlap": "Homepage/CSS only. Blog articles, generator, schedule, policies, gallery catalog, analytics and booking scripts untouched.",
+    "final_render": "Four widths checked, with mobile photo-crop refinement; zero horizontal overflow or broken page images. Provider-origin fetch errors logged separately from site errors."
+  },
+  "sources": [
+    {
+      "url": "https://www.laurelridgeexperience.com/golf-course",
+      "checked": "2026-09-09",
+      "finding": "Club advertises public golf by required tee time, availability limited and member preferred times; homepage links direct without promising access."
+    }
+  ],
+  "files": {
+    "index.html": "73ddc37002aba67e90500980604453f18396c426864a038347ddecabfe1ec4ee",
+    "manor-polish.css": "df9f88f499e76729001ae2c3b913a7802c2eb38d4f8f4358f1035665e03d86d9"
+  }
+}

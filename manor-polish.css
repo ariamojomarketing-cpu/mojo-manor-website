@@ -21,21 +21,13 @@
 .manor-polish-page .experience-secondary { padding-top: 64px; }
 .manor-polish-page .evening-header { padding-top: 54px; padding-bottom: 35px; }
 .manor-polish-page .evening-photo { height: 540px; }
-.manor-polish-page .gallery-actions { align-items: flex-end; }
+.manor-polish-page .gallery-actions { align-items: flex-end; flex-shrink: 0; }
+.manor-polish-page .gallery-actions .text-link { white-space: nowrap; }
 .manor-polish-page .editorial-gallery { grid-template-rows: 215px 215px; }
 .manor-polish-page .editorial-gallery .gallery-main img { object-position: 48% center; }
-.house-touches { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 30px; }
-.house-touches button { text-align: left; background: none; padding: 20px 0; border-top: 1px solid var(--line); }
-.house-touches strong { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; font-weight: 550; }
-.house-touches strong span { color: var(--bronze); }
-.house-touches button > span { display: block; font-size: 12px; margin-top: 6px; color: var(--muted); }
 .manor-polish-page .amenity-groups { margin-top: 8px; }
 .manor-polish-page .amenity-groups details { padding-bottom: 0; }
 .manor-polish-page .amenity-groups details[open] { padding-bottom: 18px; }
-.manor-polish-page .bathrooms-section { padding-top: 54px; padding-bottom: 54px; }
-.manor-polish-page .bathroom-card button { padding: 0; }
-.manor-polish-page .bathroom-card img { aspect-ratio: 16 / 10; }
-.manor-polish-page .bathroom-card h3 { font-size: 24px; }
 .manor-polish-page .dog-section { padding-top: 46px; padding-bottom: 46px; }
 .manor-polish-page .guest-grid { gap: 32px; }
 .manor-polish-page .guest-grid blockquote { padding: 24px 12px; }
@@ -82,14 +74,6 @@
   .manor-polish-page .editorial-gallery .gallery-main { grid-column: 1 / -1; grid-row: 1; }
   .manor-polish-page .editorial-gallery button > span { padding: 30px 12px 12px; font-size: 12px; gap: 7px; line-height: 1.4; }
   .manor-polish-page .gallery-actions { align-items: flex-start; }
-  .house-touches { grid-template-columns: 1fr; gap: 0; margin-top: 24px; }
-  .house-touches button { padding: 15px 0; }
-  .manor-polish-page .bathroom-grid { grid-template-columns: 1fr; gap: 20px; }
-  .manor-polish-page .bathroom-card { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 1fr); align-items: center; gap: 18px; }
-  .manor-polish-page .bathroom-card img { aspect-ratio: 1 / 1; }
-  .manor-polish-page .bathroom-card h3 { font-size: 22px; margin: 0 0 8px; }
-  .manor-polish-page .bathroom-card p { font-size: 12px; line-height: 1.65; }
-  .manor-polish-page .bathroom-card button > span { bottom: 8px; right: 8px; width: 28px; height: 28px; }
   .manor-polish-page .guest-grid { gap: 8px; }
   .manor-polish-page .guest-grid blockquote p { font-size: 23px; }
   .manor-polish-page .guest-grid blockquote { padding: 20px 0; }
@@ -105,11 +89,48 @@
   .journal-polish-page .blog-card-title { font-size: 26px; }
 }
 @media (max-width: 360px) {
-  .manor-polish-page .bathroom-card { gap: 12px; }
-  .manor-polish-page .bathroom-card h3 { font-size: 20px; }
   .manor-polish-page .editorial-gallery { grid-template-rows: 225px 175px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .journal-polish-page .blog-card-img img { transition: none; }
   .journal-polish-page .blog-card:hover .blog-card-img img { transform: none; }
+}
+
+/* Amenities lead the story; sleeping details remain easy to find. */
+.manor-polish-page .backyard-section { padding-top: 12px; padding-bottom: 32px; }
+.backyard-photos { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 20px; }
+.backyard-photos button { min-width: 0; padding: 0; background: none; text-align: left; }
+.backyard-photos img { display: block; width: 100%; height: 235px; object-fit: cover; }
+.backyard-photos button > span { display: flex; justify-content: space-between; gap: 10px; padding-top: 12px; font-size: 13px; line-height: 1.5; }
+.backyard-photos i { color: var(--bronze); font-style: normal; }
+.backyard-caption { max-width: 760px; margin: 24px 0 0; color: var(--muted); font-size: 15px; line-height: 1.8; }
+.manor-polish-page .living-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 340px; }
+.house-touches { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 28px 0; }
+.house-touches button { display: grid; grid-template-columns: 140px minmax(0,1fr); align-items: center; gap: 20px; padding: 18px 0; background: none; text-align: left; border-top: 1px solid var(--line); }
+.house-touches img { width: 100%; height: 130px; object-fit: cover; }
+.house-touches strong { display: flex; justify-content: space-between; gap: 10px; font: 25px/1.2 var(--serif); }
+.house-touches strong span { color: var(--bronze); font: 16px var(--sans); }
+.touch-copy > span { display: block; margin-top: 9px; font-size: 13px; color: var(--muted); line-height: 1.6; }
+.group-details { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; border-top: 1px solid var(--line); }
+.group-details h2 { font-size: clamp(30px, 3vw, 42px); margin-bottom: 16px; }
+.group-details p:not(.eyebrow) { font-size: 14px; line-height: 1.8; color: var(--muted); }
+.group-details-copy p + p { margin-top: 12px; }
+.group-photo-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 14px; }
+.group-photo-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
+@media (max-width: 900px) {
+  .house-touches button { grid-template-columns: 110px minmax(0,1fr); gap: 14px; }
+  .backyard-photos img { height: 195px; }
+}
+@media (max-width: 700px) {
+  .backyard-photos { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
+  .backyard-photos .backyard-wide { grid-column: 1 / -1; }
+  .backyard-photos img { height: auto; aspect-ratio: 16 / 10; }
+  .backyard-photos .backyard-wide img { height: auto; aspect-ratio: 16 / 9; }
+  .backyard-photos button > span { font-size: 12px; }
+  .backyard-caption { font-size: 14px; }
+  .manor-polish-page .living-gallery { grid-template-columns: 1fr; grid-template-rows: 245px 245px; gap: 14px; }
+  .house-touches { grid-template-columns: 1fr; gap: 0; margin: 16px 0 24px; }
+  .house-touches strong { font-size: 24px; }
+  .house-touches img { height: 115px; }
+  .group-details { grid-template-columns: 1fr; gap: 20px; }
 }

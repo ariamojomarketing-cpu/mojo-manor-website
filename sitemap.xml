@@ -4,7 +4,7 @@
   <!-- Core Pages -->
   <url>
     <loc>https://mojomanorwaynesville.com/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -38,7 +38,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://mojomanorwaynesville.com/blog/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

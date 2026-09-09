@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-09-09T20:28:00.078583+00:00",
+  "reviewed_by": "Mac Astra",
+  "scope": "Homepage/journal presentation release; zero new articles",
+  "passed": true,
+  "checks": {
+    "reader_value": "Guest proof is near the beginning; real rooms and concise expandable amenity details help visitors choose the stay.",
+    "hook_and_flow": "Kept Mountain days / Manor nights hero. Shortened repeated introduction and details; verified natural reading order at phone/desktop widths.",
+    "natural_voice": "Read all changed homepage/journal text and twelve short card titles; clear place/amenity descriptions, no invented guest experiences or unsupported urgency.",
+    "facts_and_limits": "Retained 4 upstairs bedrooms, 2.5 baths and 10 guest maximum. Airbnb aggregate rechecked at https://www.airbnb.com/rooms/1585995687935321620 (5.0/6). Early Sierra excerpt copied exactly from the existing independently checked testimonial.",
+    "image_and_rights": "Visually selected existing owner photos: Family Room - New2.jpg and Putting Green.jpg; viewer links checked to select exact same images. Existing edited-scene labels and all original images preserved. No new AI imagery.",
+    "links_and_cta": "All local homepage/journal destinations exist. Check dates opens the existing booking window with provider fallback; no reservation or payment submitted. Gallery, film and mobile menu entry verified.",
+    "channel_and_overlap": "Journal retains all twelve article URLs, full body text, original publication dates and metadata titles. Short card titles are separate display labels. No unscheduled article published.",
+    "final_render": "320,390,768,1440 widths: no overflow, loaded images, all three bathroom previews visible; compact-card overlap caught and corrected. Keyboard escape/focus returns and five topic filters passed."
+  },
+  "files": {
+    "index.html": "6567c8b08d64eab680b01107caabc4df68a851d4d233873bd6f8079b2cd4b97c",
+    "blog/index.html": "b19cdd19e5c8e5c58356726fdb32aa9aed514d9afb14effca02119abc4b148d6",
+    "manor-polish.css": "7a15e703002810f31284139452f56d9eb97d1db2d3c50ad19510c5474869424b",
+    "content/journal.json": "4c01cfc2b89f14e57691a84b4edd4124c8259229b413f3a0a80602811752b4d4",
+    "scripts/build-journal.cjs": "adf46aaa7d298df191db9429f9589600030a3b00d501a45209a6858c455ca3a8",
+    "scripts/test-journal-release.cjs": "43da62145bde133ca94152b274c24958930b83436c728a3a631b4e60c76c31f5",
+    "sitemap.xml": "bed3c8d88178eb066425eee534edbff958b1abd97758356cff4fa9d383449915"
+  },
+  "source_base": "f13b4c8",
+  "validation": "final-qa.json and scripts/test-journal-release.cjs",
+  "public_release": "pending"
+}

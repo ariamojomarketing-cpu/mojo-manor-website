@@ -1,0 +1,115 @@
+/* Focused homepage and journal refinements; shared guest pages stay intact. */
+.manor-polish-page .section-wrap { padding-top: 72px; padding-bottom: 72px; }
+.manor-polish-page .guest-proof {
+  display: grid; grid-template-columns: 220px minmax(0, 1fr) auto;
+  align-items: center; gap: 40px; padding-top: 30px; padding-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+.guest-proof-rating { display: flex; flex-direction: column; gap: 4px; }
+.guest-proof-rating strong { font: 30px/1.2 var(--serif); }
+.guest-proof-rating strong span { font: 12px var(--sans); }
+.guest-proof-rating > span:last-child { font-size: 10px; color: var(--muted); }
+.guest-proof blockquote { margin: 0; padding-left: 30px; border-left: 1px solid var(--line); }
+.guest-proof blockquote p { font: 23px/1.4 var(--serif); color: var(--ink); max-width: 570px; }
+.guest-proof blockquote footer { margin-top: 8px; font-size: 11px; color: var(--muted); }
+.guest-proof > .text-link { font-size: 12px; white-space: nowrap; }
+.manor-polish-page .intro { padding-top: 58px; padding-bottom: 48px; }
+.manor-polish-page .intro-grid { align-items: center; }
+.manor-polish-page .intro h2 { font-size: clamp(32px, 3.2vw, 45px); }
+.manor-polish-page .intro-grid .text-link { margin-top: 12px; }
+.manor-polish-page .experience { padding-top: 24px; }
+.manor-polish-page .experience-secondary { padding-top: 64px; }
+.manor-polish-page .evening-header { padding-top: 54px; padding-bottom: 35px; }
+.manor-polish-page .evening-photo { height: 540px; }
+.manor-polish-page .gallery-actions { align-items: flex-end; }
+.manor-polish-page .editorial-gallery { grid-template-rows: 215px 215px; }
+.manor-polish-page .editorial-gallery .gallery-main img { object-position: 48% center; }
+.house-touches { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 30px; }
+.house-touches button { text-align: left; background: none; padding: 20px 0; border-top: 1px solid var(--line); }
+.house-touches strong { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; font-weight: 550; }
+.house-touches strong span { color: var(--bronze); }
+.house-touches button > span { display: block; font-size: 12px; margin-top: 6px; color: var(--muted); }
+.manor-polish-page .amenity-groups { margin-top: 8px; }
+.manor-polish-page .amenity-groups details { padding-bottom: 0; }
+.manor-polish-page .amenity-groups details[open] { padding-bottom: 18px; }
+.manor-polish-page .bathrooms-section { padding-top: 54px; padding-bottom: 54px; }
+.manor-polish-page .bathroom-card button { padding: 0; }
+.manor-polish-page .bathroom-card img { aspect-ratio: 16 / 10; }
+.manor-polish-page .bathroom-card h3 { font-size: 24px; }
+.manor-polish-page .dog-section { padding-top: 46px; padding-bottom: 46px; }
+.manor-polish-page .guest-grid { gap: 32px; }
+.manor-polish-page .guest-grid blockquote { padding: 24px 12px; }
+.more-guest-stories { margin: 18px auto 0; }
+.more-guest-stories > summary { display: flex; align-items: center; justify-content: center; gap: 20px; padding: 14px; font-size: 13px; }
+.more-guest-stories > summary span { font-size: 20px; transition: transform .2s; }
+.more-guest-stories[open] > summary span { transform: rotate(45deg); }
+.manor-polish-page .host-note { margin-top: 22px; }
+.manor-polish-page .stay-glance { padding-top: 24px; padding-bottom: 48px; }
+.manor-polish-page .homepage-blog-photo { height: 220px; }
+
+.journal-polish-page .page-hero { padding-bottom: 44px; }
+.journal-polish-page .page-hero-title { font-size: clamp(40px, 4.8vw, 66px); max-width: 800px; }
+.journal-polish-page .page-hero-subtitle { max-width: 630px; }
+.journal-polish-page .page-hero-tag { margin-bottom: 14px; }
+.journal-polish-page .blog-card-img img { transition: transform .35s ease; }
+.journal-polish-page .blog-card:hover .blog-card-img img { transform: scale(1.025); }
+.journal-polish-page .blog-card-title { font-size: 26px; }
+.journal-polish-page .blog-card-excerpt { line-height: 1.7; }
+.journal-polish-page [data-journal-filter] { min-height: 44px; }
+
+@media (max-width: 1050px) {
+  .manor-polish-page .guest-proof { grid-template-columns: 190px minmax(0, 1fr); gap: 24px; }
+  .guest-proof > .text-link { grid-column: 2; justify-self: start; margin-top: -12px; }
+}
+@media (max-width: 700px) {
+  .manor-polish-page .section-wrap { padding-top: 48px; padding-bottom: 48px; }
+  .manor-polish-page .guest-proof { grid-template-columns: 1fr; gap: 18px; padding-top: 25px; padding-bottom: 25px; }
+  .guest-proof-rating { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: center; }
+  .guest-proof-rating .review-stars { grid-row: 1 / 3; font-size: 11px; }
+  .guest-proof-rating strong { font-size: 26px; }
+  .guest-proof-rating > span:last-child { grid-column: 2; }
+  .guest-proof blockquote { padding: 0; border: 0; }
+  .guest-proof blockquote p { font-size: 22px; }
+  .guest-proof > .text-link { grid-column: 1; margin-top: 0; }
+  .manor-polish-page .intro { padding-bottom: 36px; }
+  .manor-polish-page .intro-grid { gap: 18px; }
+  .manor-polish-page .intro-grid p { font-size: 15px; line-height: 1.75; }
+  .manor-polish-page .experience { padding-top: 12px; }
+  .manor-polish-page .experience-secondary { padding-top: 0; }
+  .manor-polish-page .evening-photo { height: 430px; }
+  .manor-polish-page .evening-header { padding-top: 40px; padding-bottom: 26px; }
+  .manor-polish-page .editorial-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 185px; gap: 12px; }
+  .manor-polish-page .editorial-gallery .gallery-main { grid-column: 1 / -1; grid-row: 1; }
+  .manor-polish-page .editorial-gallery button > span { padding: 30px 12px 12px; font-size: 12px; gap: 7px; line-height: 1.4; }
+  .manor-polish-page .gallery-actions { align-items: flex-start; }
+  .house-touches { grid-template-columns: 1fr; gap: 0; margin-top: 24px; }
+  .house-touches button { padding: 15px 0; }
+  .manor-polish-page .bathroom-grid { grid-template-columns: 1fr; gap: 20px; }
+  .manor-polish-page .bathroom-card { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 1fr); align-items: center; gap: 18px; }
+  .manor-polish-page .bathroom-card img { aspect-ratio: 1 / 1; }
+  .manor-polish-page .bathroom-card h3 { font-size: 22px; margin: 0 0 8px; }
+  .manor-polish-page .bathroom-card p { font-size: 12px; line-height: 1.65; }
+  .manor-polish-page .bathroom-card button > span { bottom: 8px; right: 8px; width: 28px; height: 28px; }
+  .manor-polish-page .guest-grid { gap: 8px; }
+  .manor-polish-page .guest-grid blockquote p { font-size: 23px; }
+  .manor-polish-page .guest-grid blockquote { padding: 20px 0; }
+  .manor-polish-page .homepage-blog-grid { gap: 24px; }
+  .manor-polish-page .homepage-blog-card { display: grid; grid-template-columns: 112px minmax(0, 1fr); column-gap: 18px; align-content: start; }
+  .manor-polish-page .homepage-blog-photo { grid-column: 1; grid-row: 1 / 5; width: 100%; min-width: 0; aspect-ratio: auto; height: 155px; margin: 0; }
+  .manor-polish-page .homepage-blog-card > .eyebrow { grid-column: 2; font-size: 9px; margin: 0 0 7px; }
+  .manor-polish-page .homepage-blog-card > h3 { grid-column: 2; font-size: 24px; margin: 0 0 8px; }
+  .manor-polish-page .homepage-blog-card > p:not(.eyebrow) { grid-column: 2; font-size: 12px; line-height: 1.6; margin: 0; }
+  .manor-polish-page .homepage-blog-card > .text-link { grid-column: 2; font-size: 12px; margin-top: 8px; justify-self: start; }
+  .journal-polish-page .page-hero { padding-bottom: 32px; }
+  .journal-polish-page .blog-card-content { padding-top: 18px; padding-bottom: 24px; }
+  .journal-polish-page .blog-card-title { font-size: 26px; }
+}
+@media (max-width: 360px) {
+  .manor-polish-page .bathroom-card { gap: 12px; }
+  .manor-polish-page .bathroom-card h3 { font-size: 20px; }
+  .manor-polish-page .editorial-gallery { grid-template-rows: 225px 175px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .journal-polish-page .blog-card-img img { transition: none; }
+  .journal-polish-page .blog-card:hover .blog-card-img img { transform: none; }
+}

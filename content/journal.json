@@ -22,7 +22,8 @@
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
         "changes": "Resized and compressed; cropped to fit the page."
       },
-      "imagePosition": "50% 35%"
+      "imagePosition": "50% 35%",
+      "cardTitle": "Fall festivals in Waynesville & Maggie Valley"
     },
     {
       "slug": "dog-friendly-vacation-rental-waynesville-nc",
@@ -35,7 +36,8 @@
       "published": "2026-05-06",
       "topic": "staying",
       "url": "/blog/dog-friendly-vacation-rental-waynesville-nc",
-      "modified": "2026-09-06"
+      "modified": "2026-09-06",
+      "cardTitle": "Bring your dog to Waynesville"
     },
     {
       "slug": "spring-waynesville-nc",
@@ -48,7 +50,8 @@
       "published": "2026-04-21",
       "topic": "seasonal",
       "url": "/blog/spring-waynesville-nc",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "A spring weekend in Waynesville"
     },
     {
       "slug": "soco-falls-waynesville-nc-hike",
@@ -70,7 +73,8 @@
         "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
         "changes": "Resized and compressed; cropped to fit the page."
       },
-      "imagePosition": "50% 35%"
+      "imagePosition": "50% 35%",
+      "cardTitle": "Plan a stop at Soco Falls"
     },
     {
       "slug": "best-hikes-near-waynesville-nc",
@@ -83,7 +87,8 @@
       "published": "2026-02-22",
       "topic": "outdoors",
       "url": "/blog/best-hikes-near-waynesville-nc",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "Eight walks and hikes for your kind of day"
     },
     {
       "slug": "best-waterfalls-near-waynesville-nc",
@@ -99,7 +104,8 @@
       "homepageFeatured": true,
       "homepageTitle": "A day for waterfalls.",
       "homepageSummary": "Find a waterfall outing for your next day beyond town.",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "Choose your waterfall outing"
     },
     {
       "slug": "fall-foliage-waynesville-nc",
@@ -115,7 +121,8 @@
       "homepageFeatured": true,
       "homepageTitle": "Find your fall color.",
       "homepageSummary": "Plan an autumn visit with ideas for scenic drives and mountain days.",
-      "modified": "2026-09-06"
+      "modified": "2026-09-06",
+      "cardTitle": "Find your fall color"
     },
     {
       "slug": "great-smoky-mountains-from-waynesville",
@@ -128,7 +135,8 @@
       "published": "2026-02-23",
       "topic": "outdoors",
       "url": "/blog/great-smoky-mountains-from-waynesville",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "A day in the Smokies"
     },
     {
       "slug": "asheville-day-trip-from-waynesville",
@@ -141,7 +149,8 @@
       "published": "2026-02-23",
       "topic": "outdoors",
       "url": "/blog/asheville-day-trip-from-waynesville",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "Three ways to spend a day in Asheville"
     },
     {
       "slug": "waynesville-nc-breweries-guide",
@@ -154,7 +163,8 @@
       "published": "2026-02-23",
       "topic": "town",
       "url": "/blog/waynesville-nc-breweries-guide",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "Local breweries: choose your stop"
     },
     {
       "slug": "things-to-do-waynesville-nc-families",
@@ -170,7 +180,8 @@
       "homepageFeatured": true,
       "homepageTitle": "Good days with the whole crew.",
       "homepageSummary": "Explore ideas for family days out, with the Manor waiting when it is time to unwind.",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "Good days with the whole family"
     },
     {
       "slug": "group-vacation-rentals-waynesville-nc",
@@ -183,7 +194,8 @@
       "published": "2026-02-23",
       "topic": "staying",
       "url": "/blog/group-vacation-rentals-waynesville-nc",
-      "modified": "2026-09-07"
+      "modified": "2026-09-07",
+      "cardTitle": "A house that fits your whole group"
     }
   ]
 }

@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-09-09T20:26:54.112Z",
+  "scope": "Local rendering and read-only entry controls; no booking, dates, payment, subscriber or chat submission",
+  "reports": [
+    {
+      "page": "home",
+      "width": 320,
+      "height": 13817,
+      "overflow": false,
+      "proofTop": 1234,
+      "badImages": [],
+      "bathrooms": 3,
+      "bedrooms": 4,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "errors": []
+    },
+    {
+      "page": "journal",
+      "width": 320,
+      "filters": "all five passed",
+      "cards": 12,
+      "overflow": false
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "height": 13308,
+      "overflow": false,
+      "proofTop": 1184,
+      "badImages": [],
+      "bathrooms": 3,
+      "bedrooms": 4,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "errors": []
+    },
+    {
+      "page": "journal",
+      "width": 390,
+      "filters": "all five passed",
+      "cards": 12,
+      "overflow": false
+    },
+    {
+      "page": "home",
+      "width": 768,
+      "height": 12113,
+      "overflow": false,
+      "proofTop": 1358,
+      "badImages": [],
+      "bathrooms": 3,
+      "bedrooms": 4,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "errors": []
+    },
+    {
+      "page": "journal",
+      "width": 768,
+      "filters": "all five passed",
+      "cards": 12,
+      "overflow": false
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "height": 10254,
+      "overflow": false,
+      "proofTop": 1005,
+      "badImages": [],
+      "bathrooms": 3,
+      "bedrooms": 4,
+      "features": 3,
+      "allUpstairs": true,
+      "h1": 1,
+      "canonical": "https://mojomanorwaynesville.com/",
+      "overlaps": false,
+      "menu_gallery_booking_film_accordions": "passed",
+      "provider_entry": "booking-widget.html",
+      "errors": []
+    },
+    {
+      "page": "journal",
+      "width": 1440,
+      "filters": "all five passed",
+      "cards": 12,
+      "overflow": false
+    }
+  ],
+  "broken_links": []
+}
